@@ -33,21 +33,18 @@ nav#main {
 -------------------------------------------------------------- */
 
 #content-wrapper {
+	background: #fff;
 }
 
 #content-sub {
-	float: left;
-	background: red;
+	padding: 0px;
 }
 
 #content-main {
-	float: right;
-	background: blue;
 	padding: 50px 50px 150px 68px;
 }
 
 #content-rows {
-	background: yellow;
 }
 
 
