@@ -5,16 +5,7 @@
 -------------------------------------------------------------- */
 
 body {
-	background: url("../images/bg-body-strip.png") repeat-x #f1f1f1;
-}
-
-.row {
-	background: #fff;
-}
-
-#container {
-	width: 100%;
-	background: #fff;
+	background: url("../images/bg-strip-body.png") repeat-x #f0f0f0;
 }
 
 
@@ -23,7 +14,7 @@ body {
 
 #masthead {
 	height: 150px;
-	background: none;
+	background: #f60;
 }
 
 
@@ -42,18 +33,21 @@ nav#main {
 -------------------------------------------------------------- */
 
 #content-wrapper {
-
 }
 
 #content-sub {
+	float: left;
+	background: red;
 }
 
 #content-main {
-	padding: 50px 0 150px 0;
+	float: right;
+	background: blue;
+	padding: 50px 50px 150px 68px;
 }
 
 #content-rows {
-	
+	background: yellow;
 }
 
 
@@ -61,10 +55,10 @@ nav#main {
 -------------------------------------------------------------- */
 
 #footer-wrapper {
-	width: 100%;
 }
 
 #footer-links {
+	height: 320px;
 	border-bottom: 6px solid #cc8a00;
 	background: #022040;
 	color: #fff;
@@ -77,7 +71,7 @@ nav#main {
 }
 
 #footer-logos {
-	width: 100%;
-	background: url("../images/bg-brand-pattern.jpg") repeat;
+	background: purple;
+	/*background: url("../images/bg-brand-pattern.jpg") repeat;*/
 }
 
