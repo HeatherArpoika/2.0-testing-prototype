@@ -6,15 +6,6 @@
 
 body {
 	background: url("../images/bg-strip-body.png") repeat-x #f0f0f0;
-	padding: 0;
-	margin: 0;
-}
-
-
-
-#container {
-	background: #000; 
-	overflow: visible;
 }
 
 
