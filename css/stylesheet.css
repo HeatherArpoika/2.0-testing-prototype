@@ -13,8 +13,8 @@ body {
 -------------------------------------------------------------- */
 
 #masthead {
-	height: 150px;
-	background: #f60;
+	height: 85px;
+	margin-top: 65px;
 }
 
 
@@ -25,6 +25,7 @@ nav#main {
 	height: 55px;
 	border-bottom: 6px solid #cc8a00;
 	background: #002855;
+	line-height: 55px;
 	color: #fff;
 }
 
@@ -33,21 +34,18 @@ nav#main {
 -------------------------------------------------------------- */
 
 #content-wrapper {
+	background: #fff;
 }
 
 #content-sub {
-	float: left;
-	background: red;
+	padding: 0px;
 }
 
 #content-main {
-	float: right;
-	background: blue;
 	padding: 50px 50px 150px 68px;
 }
 
 #content-rows {
-	background: yellow;
 }
 
 
@@ -62,6 +60,7 @@ nav#main {
 	border-bottom: 6px solid #cc8a00;
 	background: #022040;
 	color: #fff;
+	padding-top: 32px;
 }
 
 #footer-contact {
@@ -71,7 +70,6 @@ nav#main {
 }
 
 #footer-logos {
-	background: purple;
-	/*background: url("../images/bg-brand-pattern.jpg") repeat;*/
+	background: url("../images/bg-strip-malt.jpg") repeat;
 }
 
