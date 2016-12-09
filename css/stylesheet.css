@@ -187,6 +187,33 @@ nav#main {
 	transform: translateX(100%);
 }
 
+.main-nav-mobile {
+	color: white;
+}
+
+.is-accordion-submenu-parent>a:after {
+		border-color: transparent transparent transparent;
+	}
+
+.oc-nav a {
+	color: white;
+}
+
+.oc-nav > li > .menu.nested {
+	border-left: 2px #CC8A00 solid;
+	margin-left: 30px; 
+}
+
+.oc-nav > li > ul > li:first-child > a{
+	color: #CC8A00;
+	text-transform: uppercase;
+}
+
+.oc-nav > li > ul > li > a {
+	border-bottom: 1px solid #051444;
+	padding-left: 0;
+	margin-left: 15px;
+}
 
 /* CONTENT AREAS
 -------------------------------------------------------------- */
