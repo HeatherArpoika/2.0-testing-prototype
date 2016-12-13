@@ -1,19 +1,8 @@
 /* Main Stylesheet */
 
 
-/* BODY AND CONTAINER
+/* TYPOGRAPHY SETTINGS
 -------------------------------------------------------------- */
-
-html {
-	font-family: 'Jaldi', sans-serif;
-	font-size: 16px;
-	color: #545454;
-}
-
-body {
-	background: url("../images/bg-strip-body.png") repeat-x #f0f0f0;
-}
-
 h1 {
 	color: #002855;
 }
@@ -79,6 +68,20 @@ a:hover:before {
   transform: scaleX(1);
 }
 
+
+/* BODY AND CONTAINER
+-------------------------------------------------------------- */
+
+html {
+	font-family: 'Jaldi', sans-serif;
+	font-size: 16px;
+	color: #545454;
+}
+
+body {
+	background: url("../images/bg-strip-body.png") repeat-x #f0f0f0;
+	font-size: 62.5%; /*baseline*/
+}
 
 /* MASTHEAD
 -------------------------------------------------------------- */
@@ -195,10 +198,9 @@ nav#main {
 }
  
 .nav .nav-column h3 {
-	line-height: 18px;
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 14px;
-	color: #ac7600;
+	font-size: 1.5em;
+	color: #cc8a00;
+	font-weight: bold;
 	text-transform: uppercase;
 	margin: 20px 0 10px 0;
 }
@@ -230,6 +232,7 @@ nav#main {
 
 .off-canvas-content {
 	background: none;
+	box-shadow: none !important;
 }
 
 /* 	Changes the overlay on the page content when menu is open.
