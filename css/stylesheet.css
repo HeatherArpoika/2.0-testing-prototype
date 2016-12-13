@@ -1,37 +1,87 @@
 /* Main Stylesheet */
 
-/* RESET
---------------------------------------------------------*/
-article, aside, figure, footer, header, hgroup, 
-menu, nav, section { display: block; }
 
 /* TYPOGRAPHY SETTINGS
 -------------------------------------------------------------- */
-
 h1 {
-    font-size: 3em; /*36px*/
+	color: #002855;
+}
+
+#content-main h1 {
+	color: #ac7600;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.3rem;
+	border-bottom: 2px solid #e5e5e5;
+	margin-bottom: 40px;
 }
 
 h2 {
-    font-size: 2.34em; /*28px*/
+	font-size: 2rem;
+	color: #002855;
 }
 
 h3 {
-    font-size: 2em; /*24px*/
+	font-size: 1.7rem;
+	color: #002855;
 }
 
-p, a {
-    font-size: 1.67em; /*20px*/
+h4 {
+	font-size: 1.5rem;
+	color: #002855;
+}
+
+p{
+	color: #545454;
+}
+
+a {
+	color: #ac7600;
+	position: relative;
+	text-decoration: none;
+	padding-bottom: 1px;
+	border-bottom: 1px solid #ac7600;
+}
+
+a:hover {
+	color: #ac7600;
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 0;
+  left: 0;
+  background-color: #ac7600;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 
 /* BODY AND CONTAINER
 -------------------------------------------------------------- */
+
+html {
+	font-family: 'Jaldi', sans-serif;
+	font-size: 16px;
+	color: #545454;
+}
+
 body {
 	background: url("../images/bg-strip-body.png") repeat-x #f0f0f0;
 	font-size: 62.5%; /*baseline*/
 }
-
 
 /* MASTHEAD
 -------------------------------------------------------------- */
