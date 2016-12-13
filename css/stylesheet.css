@@ -159,6 +159,7 @@ nav#main {
 
 .off-canvas-content {
 	background: none;
+	box-shadow: none !important;
 }
 
 /* 	Changes the overlay on the page content when menu is open.
