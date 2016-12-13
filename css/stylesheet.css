@@ -4,6 +4,11 @@
 /* BODY AND CONTAINER
 -------------------------------------------------------------- */
 
+html {
+	font-family: 'Jaldi', sans-serif;
+	font-size: 16px;
+}
+
 body {
 	background: url("../images/bg-strip-body.png") repeat-x #f0f0f0;
 }
