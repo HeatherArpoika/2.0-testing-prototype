@@ -64,6 +64,7 @@
 		font-family: 'Jaldi', sans-serif;
 		font-size: 19px;
 		color: #545454;
+		line-height: normal;
 	}
 
 
@@ -296,8 +297,13 @@
 			border-color: transparent transparent transparent;
 		}
 
+	.oc-nav {
+		font-size: 1.2rem;
+	}
+
 	.oc-nav a {
 		color: white;
+		border-bottom: none;
 	}
 
 	.oc-nav > li > .menu.nested {
@@ -308,12 +314,48 @@
 	.oc-nav > li > ul > li:first-child > a{
 		color: #CC8A00;
 		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 1.1rem;
 	}
 
 	.oc-nav > li > ul > li > a {
 		border-bottom: 1px solid #051444;
 		padding-left: 0;
 		margin-left: 15px;
+		margin-right: 50px;
+	}
+
+	#oc-masthead {
+		color: #fdd26e;
+		height: 56px;
+		line-height: 50px;
+		vertical-align: middle;
+		border-bottom: 6px solid #cc8a00;
+	}
+
+	#oc-search {
+		background: none;
+		padding: 15px 10px 15px 10px;
+	}
+
+	#oc-search input[type=search] {
+		border: 1px solid #c9c9c9;
+		max-width: 300px;
+	}
+
+	#oc-search input[type=submit] {
+		background-color: #bbb;
+	}
+
+	#search-button {
+		color: #9b9b9b;
+		background: #c9c9c9;
+		height: 40px;
+		width: 40px;
+		padding: 8px;
+		border: 1px solid #c9c9c9;
+		display: inline-block;
+		text-align: center;
 	}
 
 /* CONTENT AREAS
