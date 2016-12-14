@@ -36,36 +36,17 @@ p{
 }
 
 a {
+	display: inline-block;
 	color: #ac7600;
 	position: relative;
 	text-decoration: none;
-	padding-bottom: 1px;
 	border-bottom: 1px solid #ac7600;
+	line-height: 100%;
+	padding-bottom: 1px;
 }
 
 a:hover {
 	color: #ac7600;
-}
-
-a:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  top: 0;
-  left: 0;
-  background-color: #ac7600;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
 }
 
 
@@ -74,13 +55,14 @@ a:hover:before {
 
 html {
 	font-family: 'Jaldi', sans-serif;
-	font-size: 16px;
 	color: #545454;
 }
 
 body {
 	background: url("../images/bg-strip-body.png") repeat-x #f0f0f0;
-	font-size: 62.5%; /*baseline*/
+	font-family: 'Jaldi', sans-serif;
+	font-size: 19px;
+	color: #545454;
 }
 
 /* MASTHEAD
@@ -198,20 +180,19 @@ nav#main {
 }
  
 .nav .nav-column h3 {
-	font-size: 1.5em;
+	font-size: 1rem;
 	color: #cc8a00;
-	font-weight: bold;
+	font-weight: 700;
 	text-transform: uppercase;
 	margin: 20px 0 10px 0;
 }
  
 .nav .nav-column li a {
 	display: block;
-	line-height: 26px;
- 
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 13px;
-	color: skyblue;
+ 	border: none;
+	font-size: 1.2rem;
+	padding: 5px 0 5px 0;
+	color: #5bc2e7;
 }
  
 .nav .nav-column li a:hover {
