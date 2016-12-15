@@ -4,35 +4,37 @@
 /* TYPOGRAPHY SETTINGS
 -------------------------------------------------------------- */
 	h1 {
-		font-size: 2.3rem;
-		color: #002855;
+		font: 2.57rem "Jaldi", sans-serif;
+		color: #002855; 
 	}
 
-	#content-main h1 {
-		color: #ac7600;
-		text-transform: uppercase;
-		font-weight: 700;
-		font-size: 1.3rem;
+	#content-main > h1 {
 		border-bottom: 2px solid #e5e5e5;
-		margin-bottom: 40px;
+		font: bold 1.71rem "Jaldi", sans-serif;
+		color: #a2762b;
+		text-transform: uppercase;
+		margin-bottom: 35px;
 	}
 
 	h2 {
-		font-size: 2rem;
+		font: 2.57rem "Jaldi", sans-serif;
 		color: #002855;
 	}
 
 	h3 {
-		font-size: 1.7rem;
+		font: 2rem "Jaldi", sans-serif;
 		color: #002855;
+		margin-top: 35px;
 	}
 
 	h4 {
-		font-size: 1.5rem;
+		font: 1.65rem "Jaldi", sans-serif;
 		color: #002855;
+		margin-top: 35px;
 	}
 
-	p{
+	p {
+		font: 1.33rem/1.83rem "Jaldi", sans-serif;
 		color: #545454;
 	}
 
@@ -55,13 +57,13 @@
 -------------------------------------------------------------- */
 
 	html {
-		font-family: 'Jaldi', sans-serif;
+		font: "Jaldi", sans-serif;
 		color: #545454;
 	}
 
 	body {
 		background: url("../images/bg-strip-body.png") repeat-x #f0f0f0;
-		font-family: 'Jaldi', sans-serif;
+		font: "Jaldi", sans-serif;
 		font-size: 19px;
 		color: #545454;
 		line-height: normal; /* Important! Stops page from having two scrollbars. Overrides foundation. */
