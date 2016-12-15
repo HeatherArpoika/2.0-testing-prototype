@@ -64,7 +64,7 @@
 		font-family: 'Jaldi', sans-serif;
 		font-size: 19px;
 		color: #545454;
-		line-height: normal;
+		line-height: normal; /* Important! Stops page from having two scrollbars. Overrides foundation. */
 	}
 
 
