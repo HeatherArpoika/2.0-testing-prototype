@@ -35,15 +35,15 @@
 
 	p {
 		font: 1.33rem/1.83rem "Jaldi", sans-serif;
-		color: #545454;
+		color: #4a4a4a;
 	}
 
 	a {
 		display: inline-block;
-		color: #ac7600;
+		color: #a2762b;
 		position: relative;
 		text-decoration: none;
-		border-bottom: 1px solid #ac7600;
+		border-bottom: 1px solid #a2762b;
 		line-height: 100%;
 		padding-bottom: 1px;
 	}
