@@ -76,12 +76,17 @@
 		margin-top: 65px;
 	}
 
-	#important-links {
+	#important-links, #important-links a {
 		background: none;
 		color: #002855;
 		font-size: 15px;
 		font-weight: 700;
 		white-space:nowrap;
+		border-bottom: none;
+	}
+
+	#important-links a:hover {
+		border-bottom: 1px solid #002855;
 	}
 
 	#important-links ul {
@@ -100,8 +105,7 @@
 	}
 
 	#search-bar input[type=search] {
-		width: 100%;
-		max-width: 300px;
+		width: 300px;
 		border: 1px solid #c9c9c9;
 	}
 
@@ -118,6 +122,10 @@
 		border: 1px solid #c9c9c9;
 		display: inline-block;
 		text-align: center;
+	}
+
+	#search-button .fa-lg {
+		vertical-align: 10%;
 	}
 
 
