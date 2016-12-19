@@ -292,10 +292,9 @@
 	}*/
 
 	.off-canvas {
-		background: #002855;
-		
-		color: #fff;
 		height: 100%;
+		background: #002855;
+		color: #fff;
 	}
 
 	/* Makes the off-canvas menu full width. */
@@ -310,51 +309,15 @@
 		transform: translateX(100%);
 	}
 
-	.main-nav-mobile {
-		color: white;
-	}
-
-	.is-accordion-submenu-parent>a:after {
-			border-color: transparent transparent transparent;
-		}
-
-	.oc-nav {
-		font: 1.1rem/1.2rem "Jaldi", sans-serif;
-	}
-
-	.oc-nav a {
-		color: #fff;
-		border-bottom: none;
-	}
-
-	.oc-nav > li > .menu.nested {
-		border-left: 2px #CC8a00 solid;
-		margin-left: 30px; 
-	}
-
-	.oc-nav > li > ul > li:first-child > a{
-		color: #CC8a00;
-		text-transform: uppercase;
-		font-weight: 700;
-		font-size: 0.9rem;
-		padding: 20px 0 0 0;
-	}
-
-	.oc-nav > li > ul > li > a {
-		padding-left: 0;
-		margin-left: 15px;
-		margin-right: 50px;
-		color: #5bc2e7;
-	}
-
 	#oc-masthead {
-		color: #fdd26e;
 		height: 56px;
-		line-height: 50px;
-		vertical-align: middle;
 		border-bottom: 6px solid #cc8a00;
+		line-height: 50px;
+		color: #fdd26e;
+		vertical-align: middle;
 	}
 
+	/* Start the Off-Canvas Search Bar */
 	#oc-search {
 		background: none;
 		padding: 15px 10px 15px 10px;
@@ -362,22 +325,59 @@
 
 	#oc-search input[type=search] {
 		border: 1px solid #c9c9c9;
-		max-width: 300px;
+		max-width: 250px;
 	}
 
 	#oc-search input[type=submit] {
-		background-color: #bbb;
+		background: #bbb;
 	}
 
 	#search-button {
-		color: #9b9b9b;
-		background: #c9c9c9;
+		display: inline-block;
 		height: 40px;
 		width: 40px;
-		padding: 8px;
 		border: 1px solid #c9c9c9;
-		display: inline-block;
+		background: #c9c9c9;
+		color: #9b9b9b;
 		text-align: center;
+		padding: 8px;
+	}
+
+	/* Start the Off-Canvas Navigation Menu */
+	.main-nav-mobile {
+		color: #fff;
+	}
+
+	.is-accordion-submenu-parent>a:after {
+		border-color: transparent transparent transparent;
+	}
+
+	.oc-nav {
+		font: 1.1rem/1.2rem "Jaldi", sans-serif;
+	}
+
+	.oc-nav a {
+		border-bottom: none;
+		color: #fff;
+	}
+
+	.oc-nav > li > .menu.nested {
+		border-left: 2px #CC8a00 solid;
+		margin-left: 30px; 
+	}
+
+	.oc-nav > li > ul > li:first-child > a {
+		color: #CC8a00;
+		font-size: 0.9rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		padding: 20px 0 0 0;
+	}
+
+	.oc-nav > li > ul > li > a {
+		padding-left: 0;
+		margin: 0 50px 0 15px;
+		color: #5bc2e7;
 	}
 
 
