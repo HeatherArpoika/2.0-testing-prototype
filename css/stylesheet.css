@@ -78,27 +78,31 @@
 		margin-top: 65px;
 	}
 
-	#important-links {
-		background: none;
+	#quick-links a {
+		border: none;
+		font: bold 1.05rem "Jaldi", sans-serif;
 		color: #002855;
-		font-size: 15px;
-		font-weight: 700;
 		white-space:nowrap;
 	}
 
-	#important-links ul {
+	#quick-links a:hover {
+		text-decoration: underline;
+		color: #a2762b;
+	}
+
+	#quick-links ul {
 		list-style: none;
 		margin-bottom: 0;
 	}
 
-	#important-links li {
+	#quick-links li {
 		display: inline;
-		padding-left: 32.5px;
+		padding-left: 28px;
 	}
 
 	#search-bar {
-		background: none;
 		float: right;
+		background: none;
 	}
 
 	#search-bar input[type=search] {
@@ -108,18 +112,18 @@
 	}
 
 	#search-bar input[type=submit] {
-		background-color: #bbb;
+		background: #bbb;
 	}
 
 	#search-button {
-		color: #9b9b9b;
-		background: #c9c9c9;
-		height: 40px;
 		width: 40px;
-		padding: 8px;
+		height: 40px;
 		border: 1px solid #c9c9c9;
-		display: inline-block;
+		background: #c9c9c9;
+		color: #9b9b9b;
 		text-align: center;
+		display: inline-block;
+		padding: 8px;
 	}
 
 
