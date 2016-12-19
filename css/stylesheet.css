@@ -258,7 +258,7 @@
 
 	.dropdown-container {
 		/* Provides background color for shorter columms.*/
-		background-color: #002544;
+		background: #002544;
 	}
 
 	/* Creates the arrow effect on hover.
@@ -271,7 +271,7 @@
 	    border: 13px solid transparent; /* Adjust for larger or smaller arrow. */
 	    border-bottom-color: #cc8a00;
 	    position: absolute;
-	    bottom: 0px;
+	    bottom: 4px;
 	    left: 50%;
 	    margin-left: -13px; /* Also adjust. */
 	}
