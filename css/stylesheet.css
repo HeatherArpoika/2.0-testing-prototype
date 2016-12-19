@@ -78,6 +78,16 @@
 		margin-top: 65px;
 	}
 
+	#quick-links ul {
+		list-style: none;
+		margin-bottom: 0;
+	}
+
+	#quick-links li {
+		display: inline;
+		padding-left: 28px;
+	}
+
 	#quick-links a {
 		border: none;
 		font: bold 1.05rem "Jaldi", sans-serif;
@@ -88,16 +98,6 @@
 	#quick-links a:hover {
 		text-decoration: underline;
 		color: #a2762b;
-	}
-
-	#quick-links ul {
-		list-style: none;
-		margin-bottom: 0;
-	}
-
-	#quick-links li {
-		display: inline;
-		padding-left: 28px;
 	}
 
 	#search-bar {
