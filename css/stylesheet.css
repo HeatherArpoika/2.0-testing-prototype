@@ -293,8 +293,8 @@
 
 	.off-canvas {
 		background: #002855;
-		color: white;
-		font-size: 19px;
+		
+		color: #fff;
 		height: 100%;
 	}
 
@@ -319,31 +319,32 @@
 		}
 
 	.oc-nav {
-		font-size: 1.2rem;
+		font: 1.1rem/1.2rem "Jaldi", sans-serif;
 	}
 
 	.oc-nav a {
-		color: white;
+		color: #fff;
 		border-bottom: none;
 	}
 
 	.oc-nav > li > .menu.nested {
-		border-left: 2px #CC8A00 solid;
+		border-left: 2px #CC8a00 solid;
 		margin-left: 30px; 
 	}
 
 	.oc-nav > li > ul > li:first-child > a{
-		color: #CC8A00;
+		color: #CC8a00;
 		text-transform: uppercase;
 		font-weight: 700;
-		font-size: 1.1rem;
+		font-size: 0.9rem;
+		padding: 20px 0 0 0;
 	}
 
 	.oc-nav > li > ul > li > a {
-		border-bottom: 1px solid #051444;
 		padding-left: 0;
 		margin-left: 15px;
 		margin-right: 50px;
+		color: #5bc2e7;
 	}
 
 	#oc-masthead {
