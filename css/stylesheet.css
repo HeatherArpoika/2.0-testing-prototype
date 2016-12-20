@@ -70,6 +70,15 @@
 	}
 
 
+/* ELEMENTS
+-------------------------------------------------------------- */
+	.button {
+		border-radius: 10px;
+		font-size: 1.1rem;
+		padding: 15px;
+	}
+
+
 /* MASTHEAD
 -------------------------------------------------------------- */
 
@@ -281,6 +290,7 @@
 	    margin-left: -13px; /* Also adjust. */
 	}
 
+
 /* OFF-CANVAS
 -------------------------------------------------------------- */
 
@@ -384,6 +394,7 @@
 		text-align: center;
 	}
 
+
 /* CONTENT AREAS
 -------------------------------------------------------------- */
 
@@ -423,10 +434,123 @@
 	}
 
 	#content-main {
-		padding: 50px 50px 150px 68px;
+		padding: 50px 50px 10px 68px;
 	}
 
 	#content-rows {
+	}
+
+
+/* CONNECT WITH AREA
+-------------------------------------------------------------- */
+
+	#connect-with-chevron {
+		background: white;
+	}
+
+	#connect-with-columns {
+		background: white;
+	}
+
+	#contact-chevron {
+		z-index: 999;
+		height: 127px;
+		width: 100%;
+		position: relative;
+		top: 127px;
+		background-color: #cc8a00;
+		-webkit-clip-path: polygon(50% 90%, 100% 0, 100% 0, 50% 100%, 0 0, 0 0);
+		clip-path: polygon(50% 90%, 100% 0, 100% 0, 50% 100%, 0 0, 0 0);
+	}
+
+	/* Small only */
+	@media screen and (max-width: 39.9375em) {
+		#contact-us {
+			padding-left: 15px;
+		}
+	}
+
+	/* Medium and up screens */
+	@media screen and (min-width: 40em) {
+		#connect-with-heading {
+			position: relative;
+			top: 127px;
+		}
+		#contact-us, #contact-right-1, #contact-right-2, #contact-right-3 {
+			height: 650px;
+			padding: 150px 45px 45px 45px;
+			background-color: #f7f7f7;
+		}
+		#contact-us {
+			-webkit-clip-path: polygon(100% 13%, 100% 100%, 0 100%, 0 0);
+			clip-path: polygon(100% 13%, 100% 100%, 0 100%, 0 0);
+		}
+		#contact-right-1 {
+			-webkit-clip-path: polygon(25% 19%, 100% 0, 100% 100%, 0 100%, 0 13%);
+			clip-path: polygon(25% 19%, 100% 0, 100% 100%, 0 100%, 0 13%);
+		}
+		#contact-right-2 {
+			background: url("https://placeholdit.imgix.net/~text?txtsize=33&txt=Large Image & Links&w=400&h=650");
+			-webkit-clip-path: polygon(50% 19%, 100% 13%, 100% 100%, 0 100%, 0 13%);
+			clip-path: polygon(50% 19%, 100% 13%, 100% 100%, 0 100%, 0 13%);
+		}
+		#contact-right-3 {
+			-webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 13%);
+			clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 13%);
+		}
+	}
+
+	#contact-us a, #contact-right-1 a, #contact-right-2 a, #contact-right-3 a {
+		color: #082542;
+		border-bottom: none;
+	}
+
+	#contact-us h3 {
+		color: #000;
+		font-size: 1.2rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		padding-bottom: 5px;
+	}
+
+	#contact-us p {
+		color: #000;
+		font-size: 1.2rem;
+		line-height: 25px;
+	}
+
+	#contact-us button {
+		background-color: #ac7400;
+	}
+
+	#contact-right-1 h3, #contact-right-2 h3, #contact-right-3 h3 {
+		color: #cc8a00;
+		font-size: 1.2rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		padding-bottom: 19.5px;
+		text-align: center;
+	}
+
+	#contact-right-1 p, #contact-right-2 p, #contact-right-3 p {
+		padding-top: 32.5px;
+		padding-bottom: 32.5px;
+	}
+
+	#contact-us {
+		background: #fed16d;
+		color: #000;
+	}
+
+	.event-date {
+		width: 85px;
+		height: 50px;
+		float: left;
+		background: #cc8a00;
+		color: white;
+		vertical-align: middle;
+		text-align: center;
+		line-height: 50px;
 	}
 
 
