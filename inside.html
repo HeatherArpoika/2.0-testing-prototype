@@ -221,7 +221,10 @@
 	<!-- MASTHEAD START -->
 		<!-- MOBIE MASTHEAD -->
 			<div class="masthead-mobile" class="row show-for-small-only">
-				<span class="show-for-small-only" data-toggle="offCanvas"><i class="fa fa-bars" aria-hidden="true"></i> Menu</span>
+				<div id="mobi-masthead" class="show-for-small-only">
+					<img src="images/logo-schoolcraft-college-masthead-mobile.png" alt="Schoolcraft College" />
+					<span class="show-for-small-only float-right text-right" data-toggle="offCanvas"><i class="fa fa-bars" aria-hidden="true"></i> Menu</span>
+				</div>
 			</div>
 		<!-- TABLET/DESKTOP MASTHEAD -->
 			<div id="masthead" class="row hide-for-small-only">
@@ -565,19 +568,41 @@
 	<!-- CONTENT START -->
 		<div id="content-wrapper" class="row">
 
-			<div id="content-sub" class="column medium-3 small-12">
+			<div id="content-sub" class="column medium-3 small-12 column">
 				<img src="https://placeholdit.imgix.net/~text?w=366&h=245&txt=placeholder&txtsize=50">
-				<ul class="sidenav">
+
+
+				<ul class="vertical menu row show-for-small-only" data-accordion-menu>
+				  <li>
+				    <a href="#">Page Title Menu <i class="fa fa-plus" aria-hidden="true"></i></a>
+				    <ul class="menu vertical nested">
+					    <ul class="sidenav">
+							<li><a href="">Link 1</a></li>
+							<li><a href="">Link 2</a></li>
+							<li><a href="">Link 3</a></li>
+						</ul>
+						<ul class="sidenav">
+							<li class="sidenav-title"><a href="">List Title</a></li>
+							<li><a href="">Link 1</a></li>
+							<li><a href="">Link 2</a></li>
+							<li><a href="">Link 3</a></li>
+						</ul>
+				    </ul>
+				  </li>
+				</ul>
+
+				<ul class="sidenav hide-for-small-only">
 					<li><a href="">Link 1</a></li>
 					<li><a href="">Link 2</a></li>
 					<li><a href="">Link 3</a></li>
 				</ul>
-				<ul class="sidenav">
+				<ul class="sidenav hide-for-small-only">
 					<li class="sidenav-title"><a href="">List Title</a></li>
 					<li><a href="">Link 1</a></li>
 					<li><a href="">Link 2</a></li>
 					<li><a href="">Link 3</a></li>
 				</ul>
+
 			</div>
 
 			<div id="content-main" class="column medium-9 small-12">

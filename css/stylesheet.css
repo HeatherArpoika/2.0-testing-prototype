@@ -1,5 +1,9 @@
 /* Main Stylesheet */
 
+.element {
+  order: 1 !important;
+}
+
 
 /* TYPOGRAPHY SETTINGS
 -------------------------------------------------------------- */
@@ -124,6 +128,17 @@
 		text-align: center;
 		display: inline-block;
 		padding: 8px;
+	}
+
+	/*Masthead Mobile Phone View*/
+	#mobi-masthead {
+		vertical-align: middle;
+		height: 56px;
+		border-bottom: 6px solid #cc8a00;
+		background: #002855;
+		line-height: 50px;
+		color: #fdd26e;
+		padding: 0 10px;
 	}
 
 
