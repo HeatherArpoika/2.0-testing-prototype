@@ -276,6 +276,26 @@
 	    margin-left: -13px; /* Also adjust. */
 	}
 
+	/* Start "Cant Find It" Button Row*/
+	#megamenu .btn-cant-find-it {
+		text-align: right;
+		padding: 15px 5% 15px 0;
+	}
+
+	#megamenu .btn-cant-find-it button {
+		border-radius: 8px; -webkit-border-radius: 8px; -moz-border-radius: 8px;
+		background: #ac7600;
+		font: bold 0.9rem/2em "Jaldi", sans-serif;
+		letter-spacing: .08em;
+		text-transform: uppercase;
+	}
+
+	#megamenu .btn-cant-find-it .fa-question-circle {
+		font: 2em;
+		color: #fed16d;
+	}
+
+	/* Start MegaMenu Footer Message Row*/
 	#megamenu .megamenu-message {
 		background: #ac7600;
 		text-align: left;
