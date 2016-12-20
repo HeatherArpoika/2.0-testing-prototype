@@ -276,6 +276,13 @@
 	    margin-left: -13px; /* Also adjust. */
 	}
 
+	#megamenu .megamenu-message {
+		background: #ac7600;
+		font: 1.4rem "Jaldi", sans-serif;
+		color: #fed16d;
+		padding: 20px; 
+	}
+
 /* OFF-CANVAS
 -------------------------------------------------------------- */
 
