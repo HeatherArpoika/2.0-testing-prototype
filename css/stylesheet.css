@@ -278,10 +278,30 @@
 
 	#megamenu .megamenu-message {
 		background: #ac7600;
-		font: 1.4rem "Jaldi", sans-serif;
-		color: #fed16d;
-		padding: 20px; 
+		text-align: left;
+		padding: 25px 28% 50px 28%; 
 	}
+
+	#megamenu .megamenu-message img {
+		float: left;
+		padding: 10px 25px 0 0;
+	}
+
+	#megamenu .megamenu-message h4 {
+		font: bold 1.65rem/0.9rem "Jaldi", sans-serif !important;
+		color: #fed16d;
+	}
+
+	#megamenu .megamenu-message h5 a {
+		font: bold 1.3rem "Jaldi", sans-serif !important;
+		color: #000;
+	}
+
+	#megamenu .megamenu-message h5 a:hover {
+		color: #fed16d;
+		text-decoration: underline;
+	}
+
 
 /* OFF-CANVAS
 -------------------------------------------------------------- */
