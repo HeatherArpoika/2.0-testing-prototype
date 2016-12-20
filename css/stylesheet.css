@@ -295,6 +295,11 @@
 		color: #fed16d;
 	}
 
+	#megamenu .btn-cant-find-it button:hover {
+		background: #fdd26e;
+		color: #022040;
+	}
+
 	/* Start MegaMenu Footer Message Row*/
 	#megamenu .megamenu-message {
 		background: #ac7600;
