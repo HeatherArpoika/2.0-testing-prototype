@@ -67,6 +67,7 @@
 		color: #545454;
 		line-height: normal; /* Important! Stops page from having two scrollbars. Overrides foundation. */
 		text-rendering: optimizeLegibility;
+    	-webkit-font-smoothing: antialiased;
 	}
 
 
@@ -664,9 +665,40 @@
 		color: #fff;
 	}
 
-	img.footer-img-position {
+	#footer-img-div {
 		position: relative;
-		top: 61px;
+		height: 320px;
+	}
+
+	img.footer-img-position {
+		position: absolute;
+		bottom: 6px;
+	}
+
+	.footer-links-title {
+		font-size: 1.3rem;
+		font-weight: 700;
+		color: #cc8a00;
+		text-transform: uppercase;
+	}
+
+	#footer-links ul {
+		margin-top: 60px;
+		list-style: none;
+	}
+
+	#footer-links li {
+		padding: 5px 0 5px 0;
+		line-height: 20px;
+	}
+
+	#footer-links li a {
+		color: white;
+		border-bottom: none;
+	}
+
+	#footer-links li a:hover {
+		text-decoration: underline;
 	}
 
 	#footer-contact {
