@@ -477,6 +477,27 @@
 		padding-bottom: 5px;
 	}
 
+	/* Start Accordian Subavigation Menu */
+	#mobi-submenu {
+		background: #fdd26e; 
+		padding: 0; 
+		margin: 0;
+	}
+
+	#mobi-submenu a {
+		font: 1.33rem "Jaldi", sans-serif;
+		color: #002855;
+	}
+
+	#mobi-submenu > li > ul {
+		padding: 0px 1.20rem 3rem 0 !important;
+	}
+
+	#mobi-submenu > li > ul > ul > li {
+		border-color: #cc8a00;
+	}
+
+
 
 /* CONTENT AREA CONTAINERS
 -------------------------------------------------------------- */
