@@ -10,6 +10,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+</head>  
 <body>
 
 	
@@ -595,7 +597,7 @@
 				<ul class="sidenav hide-for-small-only">
 					<li><a href="">Link 1</a></li>
 					<li><a href="">Link 2</a></li>
-					<li><a href="">Link 3</a></li>
+					<li><a href="#contact">Contact Us</a></li>
 				</ul>
 				<ul class="sidenav hide-for-small-only">
 					<li class="sidenav-title"><a href="">List Title</a></li>
@@ -623,24 +625,120 @@
 				<p>Morbi in enim lacus. Maecenas sit amet mauris sit amet tortor malesuada suscipit at a orci. Nullam risus nibh, ultricies tempus rhoncus viverra, egestas ac nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis venenatis imperdiet. Ut nec lectus sit amet est sagittis suscipit. Vivamus et lorem vel velit tincidunt ultrices vitae sed augue. Etiam posuere dictum blandit. Quisque at quam convallis, pharetra lectus eget, laoreet metus. Mauris ornare diam ipsum. Aliquam ut pellentesque sem. Duis interdum est facilisis aliquam mattis. Mauris facilisis euismod nulla eu blandit. Maecenas ornare varius libero at pellentesque. Curabitur mattis lectus facilisis lectus consectetur, in varius sem finibus. Ut sodales eros nunc, in ornare nunc tincidunt vehicula.</p>
 			</div>
 
-			<div id="content-rows" class="column small-12">#content-rows</div>
-
 		</div><!--/#content-wrapper-->
 
+	<!--CONNECT WITH AREA-->
+		<div class="row" id="connect-with-chevron">
+			<div class="column small-12 text-center" id="connect-with-heading">
+				<a name="contact"></a>
+				<h2>Connect with This Department</h2>
+				<div class="social-media-links">
+					<a href=""><i class="fa fa-trello" aria-hidden="true"></i></a>
+					<a href=""><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+					<a href=""><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+				</div>
+			</div>
+			<div class="column small-12 hide-for-small-only" id="contact-chevron"></div>
+		</div>
+		<div class="row" id="connect-with-columns">
+			<div class="column small-12 medium-4" id="contact-us">
+				<h3>Contact Us</h3>
+				<p>Department Name<br>
+				Building<br>
+				Campus (map)</p>
+				<br>
+				<p><i class="fa fa-phone-square" aria-hidden="true"></i> 734-462-5555<br>
+				<i class="fa fa-envelope-square" aria-hidden="true"></i> email@schoolcraft.edu</p>
+				<br>
+				<button type="button" class="button"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;&nbsp;View Hours&nbsp;&nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+				<br><br>
+				<p><strong>Have a FAQ?</strong><br>
+				View the Knowledge Base <i class="fa fa-angle-double-right" aria-hidden="true"></i></p>
+			</div>
+			<div class="column small-12 medium-4" id="contact-right-2">
+				<h3>News & Announcements</h3>
+				<div class="news">
+					<div class="news-icon"><i class="fa fa-newspaper-o" aria-hidden="true"></i></div>
+					<div class="news-title">
+						<a href="">Pellentesque gravida nulla a mi laoreet ultricies.</a>
+					</div>
+				</div>
+				<div class="news">
+					<div class="news-icon"><i class="fa fa-bell" aria-hidden="true"></i></div>
+					<div class="news-title">
+						<a href="">Quisque varius id mauris et lacinia.</a>
+					</div>
+				</div>
+			</div>
+			<div class="column small-12 medium-4" id="contact-right-3">
+				<h3>Schedule & Events</h3>
+				<div class="event">
+					<div class="event-date">Jan 21</div>
+					<div class="event-title">
+						<a href="">Pellentesque gravida nulla a mi laoreet ultricies.</a>
+					</div>
+				</div>
+				<div class="event">
+					<div class="event-date">Jan 21</div>
+					<div class="event-title">
+						<a href="">Quisque varius id mauris et lacinia.</a>
+					</div>
+				</div>
+			</div>
+		</div>
 
 	<!-- FOOTER START -->
 		<div id="footer-wrapper" class="row column">
 
 			<div id="footer-links" class="row">
-				<div class="column small-12 medium-3"><img class="footer-img-position" src="images/footer-brand-pillars.png" alt="Pride, Challenge, Achievement." /></div>
-				<div class="column small-12 medium-3">test 1</div>
-				<div class="column small-12 medium-3">test 2</div>
-				<div class="column small-12 medium-3">test 3</div>
+				<div class="column small-12 medium-4">
+					<div id="footer-img-div">
+						<img class="footer-img-position" src="images/footer-brand-pillars.png" alt="Pride, Challenge, Achievement.">
+					</div>
+				</div>
+				<div class="column small-12 medium-8">
+					<div class="row">
+						<div class="column small-12 medium-4">
+							<ul>
+								<li class="footer-links-title">I am a...</li>
+								<li><a href="">Future Student</a></li>
+								<li><a href="">Parent or Guardian</a></li>
+								<li><a href="">Current Student</a></li>
+								<li><a href="">Faculty & Staff Member</a></li>
+								<li><a href="">Community Member</a></li>
+								<li><a href="">Alumni</a></li>
+							</ul>
+						</div>
+						<div class="column small-12 medium-4">
+							<ul>
+								<li class="footer-links-title">Quick Search</li>
+								<li><a href="">A-Z Index</a></li>
+								<li><a href="">Careers</a></li>
+								<li><a href="">Contact Directory</a></li>
+								<li><a href="">Locations & Maps</a></li>
+								<li><a href="">Social Media Directory</a></li>
+							</ul>
+						</div>
+						<div class="column small-12 medium-4">
+							<ul>
+								<li class="footer-links-title">Consumer Info</li>
+								<li><a href="">Accessibility</a></li>
+								<li><a href="">Board of Trustees</a></li>
+								<li><a href="">Privacy and Policies</a></li>
+								<li><a href="">Public Safety</a></li>
+								<li><a href="">SC aware</a></li>
+								<li><a href="">Security Report</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<div id="footer-contact" class="row">
-				<div class="column small-12">
-					#footer-contact
+				<div class="column small-12 text-center">
+					<h1>Welcome to Schoolcraft. Welcome to college.</h1>
+					<h2>Schoolcraft College - 18600 Haggerty Road - Livonia, MI 48152 - P: 734-462-4400</h2>
+					<button id="ac-button"><i class="fa fa-question-circle" aria-hidden="true"></i> Answer Center: 734-462-4426</button>
 				</div>
 			</div>
 
