@@ -39,17 +39,20 @@
 	}
 
 	a {
-		display: inline-block;
-		position: relative;
-		border-bottom: 1px solid #a2762b;
-		line-height: 100%;
-		color: #a2762b;
-		text-decoration: none;
-		padding-bottom: 1px;
+		color: #9f6d00;
 	}
 
 	a:hover {
-		color: #ac7600;
+		color: #9f6d00;
+	}
+
+	p a {
+		display: inline-block;
+		position: relative;
+		border-bottom: 1px solid #9f6d00;
+		line-height: 100%;
+		text-decoration: none;
+		padding-bottom: 1px;
 	}
 
 
@@ -101,10 +104,6 @@
 		font-weight: 700;
 		white-space:nowrap;
 		border-bottom: none;
-	}
-
-	#quick-links a:hover {
-		border-bottom: 1px solid #002855;
 	}
 
 	#quick-links ul {
@@ -495,7 +494,7 @@
 	}
 
 	.sidenav li a {
-		font: 1.33rem "Jaldi", sans-serif;
+		font: 1.1rem "Jaldi", sans-serif;
 		color: #002855;
 		border-bottom: none;
 	}
@@ -746,6 +745,7 @@
 
 	.news-icon {
 		width: 75px;
+		position: relative;
 		height: 75px;
 		float: left;
 		background: #cc8a00;
