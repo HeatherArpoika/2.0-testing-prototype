@@ -81,6 +81,10 @@
 		padding: 15px;
 	}
 
+	button:hover {
+		opacity: .8;
+	}
+
 
 /* MASTHEAD
 -------------------------------------------------------------- */
@@ -655,6 +659,7 @@
 	#contact-us a, #contact-right-1 a, #contact-right-2 a, #contact-right-3 a {
 		color: #082542;
 		border-bottom: none;
+		font-size: 1rem;
 	}
 
 	#contact-us h3 {
@@ -714,6 +719,12 @@
 		margin-right: 15px;
 	}
 
+	.event-date:hover {
+		opacity: .8;
+		transition: background-color 0.7s ease;
+		transition: border-color 0.7s ease;
+	}
+
 	.event-title {
 		height: 50px;
 		
@@ -745,11 +756,21 @@
 		font-size: 35px;
 		margin-right: 15px;
 		border-radius: 100%;
+		transition: background-color 0.7s ease;
+		transition: color 0.7s ease;
+		z-index: 500;
+	}
+
+	.news-icon:hover {
+		background: #fdd263;
+		color: #cc8a00;
+		transition: background-color 0.7s ease;
+		transition: color 0.7s ease;
 	}
 
 	.news-title {
 		height: 75px;
-		
+		z-index: 400;
 	}
 
 	.news-title a {
@@ -787,7 +808,7 @@
 	}
 
 	.footer-links-title {
-		font-size: 1.3rem;
+		font-size: 1rem;
 		font-weight: 700;
 		color: #cc8a00;
 		text-transform: uppercase;
@@ -806,6 +827,7 @@
 	#footer-links li a {
 		color: white;
 		border-bottom: none;
+		font-size: 1rem;
 	}
 
 	#footer-links li a:hover {
@@ -841,7 +863,7 @@
 		color: #022040;
 		border-radius: 10px;
 		font-weight: 700;
-		font-size: 1.2rem;
+		font-size: 1.1rem;
 	}
 
 	#footer-logos {
