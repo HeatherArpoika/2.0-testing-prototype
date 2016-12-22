@@ -4,45 +4,47 @@
 /* TYPOGRAPHY SETTINGS
 -------------------------------------------------------------- */
 	h1 {
-		font-size: 2.3rem;
-		color: #002855;
+		font: 2.57rem "Jaldi", sans-serif;
+		color: #002855; 
 	}
 
-	#content-main h1 {
-		color: #ac7600;
-		text-transform: uppercase;
-		font-weight: 700;
-		font-size: 1.3rem;
+	#content-main > h1 {
 		border-bottom: 2px solid #e5e5e5;
-		margin-bottom: 40px;
+		font: bold 1.71rem "Jaldi", sans-serif;
+		color: #a2762b;
+		text-transform: uppercase;
+		margin-bottom: 35px;
 	}
 
 	h2 {
-		font-size: 2rem;
+		font: 2.57rem "Jaldi", sans-serif;
 		color: #002855;
 	}
 
 	h3 {
-		font-size: 1.7rem;
+		font: 2rem "Jaldi", sans-serif;
 		color: #002855;
+		margin-top: 35px;
 	}
 
 	h4 {
-		font-size: 1.5rem;
+		font: 1.65rem "Jaldi", sans-serif;
 		color: #002855;
+		margin-top: 35px;
 	}
 
-	p{
-		color: #545454;
+	p {
+		font: 1.20rem/1.73rem "Jaldi", sans-serif;
+		color: #1a1a1a;
 	}
 
 	a {
 		display: inline-block;
-		color: #ac7600;
 		position: relative;
-		text-decoration: none;
-		border-bottom: 1px solid #ac7600;
+		border-bottom: 1px solid #a2762b;
 		line-height: 100%;
+		color: #a2762b;
+		text-decoration: none;
 		padding-bottom: 1px;
 	}
 
@@ -55,14 +57,14 @@
 -------------------------------------------------------------- */
 
 	html {
-		font-family: 'Jaldi', sans-serif;
+		font: "Jaldi", sans-serif;
 		color: #545454;
 		text-rendering: optimizeLegibility;
 	}
 
 	body {
 		background: url("../images/bg-strip-body.png") repeat-x #f0f0f0;
-		font-family: 'Jaldi', sans-serif;
+		font: "Jaldi", sans-serif;
 		font-size: 19px;
 		color: #545454;
 		line-height: normal; /* Important! Stops page from having two scrollbars. Overrides foundation. */
@@ -88,7 +90,7 @@
 		margin-top: 65px;
 	}
 
-	#important-links, #important-links a {
+	#quick-links, #quick-links a {
 		background: none;
 		color: #002855;
 		font-size: 15px;
@@ -97,23 +99,35 @@
 		border-bottom: none;
 	}
 
-	#important-links a:hover {
+	#quick-links a:hover {
 		border-bottom: 1px solid #002855;
 	}
 
-	#important-links ul {
+	#quick-links ul {
 		list-style: none;
 		margin-bottom: 0;
 	}
 
-	#important-links li {
+	#quick-links li {
 		display: inline;
-		padding-left: 32.5px;
+		padding-left: 28px;
+	}
+
+	#quick-links a {
+		border: none;
+		font: bold 1.05rem "Jaldi", sans-serif;
+		color: #002855;
+		white-space:nowrap;
+	}
+
+	#quick-links a:hover {
+		text-decoration: underline;
+		color: #a2762b;
 	}
 
 	#search-bar {
-		background: none;
 		float: right;
+		background: none;
 	}
 
 	#search-bar input[type=search] {
@@ -122,18 +136,29 @@
 	}
 
 	#search-bar input[type=submit] {
-		background-color: #bbb;
+		background: #bbb;
 	}
 
 	#search-button {
-		color: #9b9b9b;
-		background: #c9c9c9;
-		height: 40px;
 		width: 40px;
-		padding: 8px;
+		height: 40px;
 		border: 1px solid #c9c9c9;
-		display: inline-block;
+		background: #c9c9c9;
+		color: #9b9b9b;
 		text-align: center;
+		display: inline-block;
+		padding: 8px;
+	}
+
+	/*Masthead Mobile Phone View*/
+	#mobi-masthead {
+		vertical-align: middle;
+		height: 56px;
+		border-bottom: 6px solid #cc8a00;
+		background: #002855;
+		line-height: 50px;
+		color: #fdd26e;
+		padding: 0 10px;
 	}
 
 	#search-button .fa-lg {
@@ -151,7 +176,6 @@
 		height: 55px;
 		border-bottom: 6px solid #cc8a00;
 		background: #002855;
-		color: #fff;
 		z-index: 500;
 	}
 
@@ -180,8 +204,7 @@
 		float: left;
 		width: 16.66%;
 		text-align: center;
-		padding-left: 0;
-		padding-right: 0;
+		padding: 0;
 		margin: 0;	
 	}
 
@@ -189,22 +212,23 @@
 		position: relative;
 		display: block;
 		height: 54px;
-		color: white;
+		border-bottom: none;
+		font: 1.15rem/54px "Jaldi", sans-serif;
+	 	color: #fff;
 		text-shadow: 0 0 1px rgba(0,0,0,.35);
 		padding: 0 20px;
-		line-height: 54px;
 		z-index: 510;
-		border-bottom: none;
 	 
-		-webkit-transition: all .3s ease;
+		/*-webkit-transition: all .3s ease;
 		-moz-transition: all .3s ease;
 		-o-transition: all .3s ease;
 		-ms-transition: all .3s ease;
-		transition: all .3s ease;
+		transition: all .3s ease;*/
 	}
 
 	.nav > li:hover > a {
 		color: #cc8a00;
+		font-weight: bold;
 	}
 	 
 	.nav > li:first-child > a {
@@ -225,11 +249,11 @@
 	 
 		border-radius: 0 0 3px 3px;
 	 
-		-webkit-transition: all .3s ease .15s;
+		/*-webkit-transition: all .3s ease .15s;
 		-moz-transition: all .3s ease .15s;
 		-o-transition: all .3s ease .15s;
 		-ms-transition: all .3s ease .15s;
-		transition: all .3s ease .15s;
+		transition: all .3s ease .15s;*/
 	}
 
 	.nav > li:hover > div {
@@ -248,23 +272,23 @@
 	}
 	 
 	.nav .nav-column h3 {
-		font-size: 1rem;
+		font: bold 1.15rem "Jaldi", sans-serif;
 		color: #cc8a00;
-		font-weight: 700;
 		text-transform: uppercase;
-		margin: 20px 0 10px 0;
+		margin: 5px 0 5px 0;
 	}
 	 
 	.nav .nav-column li a {
 		display: block;
 	 	border: none;
-		font-size: 1.2rem;
+		font: 1.1rem/1.3rem "Jaldi", sans-serif;
 		padding: 5px 0 5px 0;
 		color: #5bc2e7;
 	}
 	 
 	.nav .nav-column li a:hover {
-		color: white;
+		color: #fff;
+		text-decoration: underline;
 	}
 
 	#megamenu {
@@ -273,7 +297,7 @@
 
 	.dropdown-container {
 		/* Provides background color for shorter columms.*/
-		background-color: #002544;
+		background: #002544;
 	}
 
 	/* Creates the arrow effect on hover.
@@ -286,9 +310,60 @@
 	    border: 13px solid transparent; /* Adjust for larger or smaller arrow. */
 	    border-bottom-color: #cc8a00;
 	    position: absolute;
-	    bottom: 0px;
+	    bottom: 4px;
 	    left: 50%;
 	    margin-left: -13px; /* Also adjust. */
+	}
+
+	/* Start "Cant Find It" Button Row*/
+	#megamenu .btn-cant-find-it {
+		text-align: right;
+		padding: 15px 5% 15px 0;
+	}
+
+	#megamenu .btn-cant-find-it button {
+		border-radius: 8px; -webkit-border-radius: 8px; -moz-border-radius: 8px;
+		background: #ac7600;
+		font: bold 0.9rem/2em "Jaldi", sans-serif;
+		letter-spacing: .08em;
+		text-transform: uppercase;
+	}
+
+	#megamenu .btn-cant-find-it .fa-question-circle {
+		font: 2em;
+		color: #fed16d;
+	}
+
+	#megamenu .btn-cant-find-it button:hover {
+		background: #fdd26e;
+		color: #022040;
+	}
+
+	/* Start MegaMenu Footer Message Row*/
+	#megamenu .megamenu-message {
+		background: #ac7600;
+		text-align: left;
+		padding: 15px 28% 40px 28%; 
+	}
+
+	#megamenu .megamenu-message img {
+		float: left;
+		padding: 10px 25px 0 0;
+	}
+
+	#megamenu .megamenu-message h4 {
+		font: bold 1.65rem/0.9rem "Jaldi", sans-serif !important;
+		color: #fed16d;
+	}
+
+	#megamenu .megamenu-message h5 a {
+		font: bold 1.3rem "Jaldi", sans-serif !important;
+		color: #000;
+	}
+
+	#megamenu .megamenu-message h5 a:hover {
+		color: #fed16d;
+		text-decoration: underline;
 	}
 
 
@@ -308,10 +383,9 @@
 	}*/
 
 	.off-canvas {
-		background: #002855;
-		color: white;
-		font-size: 19px;
 		height: 100%;
+		background: #002855;
+		color: #fff;
 	}
 
 	/* Makes the off-canvas menu full width. */
@@ -326,50 +400,15 @@
 		transform: translateX(100%);
 	}
 
-	.main-nav-mobile {
-		color: white;
-	}
-
-	.is-accordion-submenu-parent>a:after {
-			border-color: transparent transparent transparent;
-		}
-
-	.oc-nav {
-		font-size: 1.2rem;
-	}
-
-	.oc-nav a {
-		color: white;
-		border-bottom: none;
-	}
-
-	.oc-nav > li > .menu.nested {
-		border-left: 2px #CC8A00 solid;
-		margin-left: 30px; 
-	}
-
-	.oc-nav > li > ul > li:first-child > a{
-		color: #CC8A00;
-		text-transform: uppercase;
-		font-weight: 700;
-		font-size: 1.1rem;
-	}
-
-	.oc-nav > li > ul > li > a {
-		border-bottom: 1px solid #051444;
-		padding-left: 0;
-		margin-left: 15px;
-		margin-right: 50px;
-	}
-
 	#oc-masthead {
-		color: #fdd26e;
 		height: 56px;
-		line-height: 50px;
-		vertical-align: middle;
 		border-bottom: 6px solid #cc8a00;
+		line-height: 50px;
+		color: #fdd26e;
+		vertical-align: middle;
 	}
 
+	/* Start the Off-Canvas Search Bar */
 	#oc-search {
 		background: none;
 		padding: 15px 10px 15px 10px;
@@ -377,26 +416,122 @@
 
 	#oc-search input[type=search] {
 		border: 1px solid #c9c9c9;
-		max-width: 300px;
+		max-width: 250px;
 	}
 
 	#oc-search input[type=submit] {
-		background-color: #bbb;
+		background: #bbb;
 	}
 
 	#search-button {
-		color: #9b9b9b;
-		background: #c9c9c9;
+		display: inline-block;
 		height: 40px;
 		width: 40px;
-		padding: 8px;
 		border: 1px solid #c9c9c9;
-		display: inline-block;
+		background: #c9c9c9;
+		color: #9b9b9b;
 		text-align: center;
+		padding: 8px;
 	}
 
 
 /* CONTENT AREAS
+-------------------------------------------------------------- */
+
+	/* Start the Off-Canvas Navigation Menu */
+	.main-nav-mobile {
+		color: #fff;
+	}
+
+	.is-accordion-submenu-parent>a:after {
+		border-color: transparent transparent transparent;
+	}
+
+	.oc-nav {
+		font: 1.1rem/1.2rem "Jaldi", sans-serif;
+	}
+
+	.oc-nav a {
+		border-bottom: none;
+		color: #fff;
+	}
+
+	.oc-nav > li > .menu.nested {
+		border-left: 2px #CC8a00 solid;
+		margin-left: 30px; 
+	}
+
+	.oc-nav > li > ul > li:first-child > a {
+		color: #CC8a00;
+		font-size: 0.9rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		padding: 20px 0 0 0;
+	}
+
+	.oc-nav > li > ul > li > a {
+		padding-left: 0;
+		margin: 0 50px 0 15px;
+		color: #5bc2e7;
+	}
+
+
+/* SIDE NAVIGATION
+-------------------------------------------------------------- */
+
+	.sidenav {
+			list-style: none;
+			margin-top: 25px;
+		}
+
+	.sidenav li {
+		border-bottom: 1px #cacaca solid;
+		padding: 2px 0 2px 0;
+		margin: 0 15px 0 0;
+	}
+
+	.sidenav li a {
+		font: 1.33rem "Jaldi", sans-serif;
+		color: #002855;
+		border-bottom: none;
+	}
+
+	li.sidenav-title {
+		border-bottom: none;
+		margin: 50px 0 0 0;
+	}
+
+	li.sidenav-title a {
+		color: #a2762b;
+		font-size: 1.5rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		padding-bottom: 5px;
+	}
+
+	/* Start Accordian Subavigation Menu */
+	#mobi-submenu {
+		background: #fdd26e; 
+		padding: 0; 
+		margin: 0;
+	}
+
+	#mobi-submenu a {
+		font: 1.33rem "Jaldi", sans-serif;
+		color: #002855;
+	}
+
+	#mobi-submenu > li > ul {
+		padding: 0px 1.20rem 3rem 0 !important;
+	}
+
+	#mobi-submenu > li > ul > ul > li {
+		border-color: #cc8a00;
+	}
+
+
+
+/* CONTENT AREA CONTAINERS
 -------------------------------------------------------------- */
 
 	#content-wrapper {
@@ -405,37 +540,13 @@
 
 	#content-sub {
 		padding: 0px;
-	}
-
-	.sidenav {
-		list-style: none;
-		margin-top: 40px;
-	}
-
-	.sidenav li {
-		border-bottom: 1px #d9d9d9 solid;
-		padding: 7px 0 7px 0;
-	}
-
-	.sidenav li a {
-		color: #002855;
-		border-bottom: none;
-	}
-
-	li.sidenav-title {
-		border-bottom: none;
-	}
-
-	li.sidenav-title a {
-		color: #ac7600;
-		font-size: 1.5rem;
-		font-weight: 700;
-		text-transform: uppercase;
-		padding-bottom: 5px;
+		margin-top: -2px;
 	}
 
 	#content-main {
 		padding: 50px 50px 10px 68px;
+		font: 1.20rem/1.73rem "Jaldi", sans-serif;
+		color: #1a1a1a;
 	}
 
 	#content-rows {
