@@ -155,7 +155,8 @@ Author: Schoolcraft College
 	}
 
 	#quick-links a:hover {
-		border-bottom: 1px solid #002855;
+		text-decoration: underline;
+		color: #a2762b;
 	}
 
 	#quick-links ul {
@@ -173,11 +174,6 @@ Author: Schoolcraft College
 		font: bold 1.05rem "Jaldi", sans-serif;
 		color: #002855;
 		white-space:nowrap;
-	}
-
-	#quick-links a:hover {
-		text-decoration: underline;
-		color: #a2762b;
 	}
 /* --------------------------------------------------------------
 ## SEARCH BAR
