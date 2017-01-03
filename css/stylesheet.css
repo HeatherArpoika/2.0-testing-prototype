@@ -608,9 +608,12 @@
 		width: 100%;
 		position: relative;
 		top: 125px;
+		padding: 0;
+		/*
 		background-color: #cc8a00;
 		-webkit-clip-path: polygon(50% 90%, 100% 0, 100% 0, 50% 100%, 0 0, 0 0);
 		clip-path: polygon(50% 90%, 100% 0, 100% 0, 50% 100%, 0 0, 0 0);
+		*/
 	}
 
 	/* Small only */
@@ -632,26 +635,41 @@
 			background-color: #f7f7f7;
 		}
 		#contact-us {
+			background: url(../svg/contact-us-column.svg);
+			background-size: 100% 680px;
+			/*
 			-webkit-clip-path: polygon(100% 12%, 100% 100%, 0 100%, 0 0);
 			-moz-clip-path: polygon(100% 12%, 100% 100%, 0 100%, 0 0);
 			clip-path: polygon(100% 12%, 100% 100%, 0 100%, 0 0);
+			*/
 		}
 		#contact-right-1 {
+			background: url(../svg/contact-1-column.svg);
+			background-size: 100% 680px;
+			/*
 			-webkit-clip-path: polygon(25% 18%, 100% 0, 100% 100%, 0 100%, 0 12%);
 			-moz-clip-path: polygon(25% 18%, 100% 0, 100% 100%, 0 100%, 0 12%);
 			clip-path: polygon(25% 18%, 100% 0, 100% 100%, 0 100%, 0 12%);
+			*/
 		}
 		#contact-right-2 {
-			background: /*url("https://placeholdit.imgix.net/~text?txtsize=33&txt=Large Image & Links&w=400&h=650")*/;
+			background: url(../svg/contact-2-column.svg);
+			background-size: 100% 680px;
+			/*
+			background: /*url("https://placeholdit.imgix.net/~text?txtsize=33&txt=Large Image & Links&w=400&h=650");
 			-webkit-clip-path: polygon(50% 18%, 100% 12%, 100% 100%, 0 100%, 0 12%);
 			-moz-clip-path: polygon(50% 18%, 100% 12%, 100% 100%, 0 100%, 0 12%);
 			clip-path: polygon(50% 18%, 100% 12%, 100% 100%, 0 100%, 0 12%);
+			*/
 		}
 		#contact-right-3 {
+			background: url(../svg/contact-3-column.svg);
+			background-size: 100% 680px;
+			/*
 			-webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 12%);
 			-moz-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 12%);
 			clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 12%);
-
+			*/
 		}
 	}
 
@@ -694,7 +712,7 @@
 	}
 
 	#contact-us {
-		background: #fed16d;
+		/*background: #fed16d;*/
 		color: #000;
 	}
 
