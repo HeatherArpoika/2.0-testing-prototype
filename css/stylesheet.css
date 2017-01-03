@@ -574,7 +574,15 @@
 	    margin: auto;
 	}
 
+	.social-media-links a .fa {
+		border-bottom: none;
+		font-size: 30px;
+		line-height: 55px;
+		vertical-align: middle;
+	}
+
 	.social-media-links a {
+		display: inline-block;
 		width: 57px;
 		height: 57px;
 		background: #002855;
@@ -593,13 +601,6 @@
 		padding-bottom: 0;
 		transition: background-color 0.7s ease;
 		transition: border-color 0.7s ease;
-	}
-
-	.social-media-links a .fa {
-		border-bottom: none;
-		font-size: 30px;
-		line-height: 55px;
-		vertical-align: middle;
 	}
 
 	#contact-chevron {
