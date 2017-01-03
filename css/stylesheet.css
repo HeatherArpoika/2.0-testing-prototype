@@ -1,7 +1,63 @@
-/* Main Stylesheet */
+/* 
+Purpose: Main Stylesheet
+Author: Schoolcraft College
+*/
+
+/* --------------------------------------------------------------
+>>>>> TABLE OF CONTENTS
+-----------------------------------------------------------------
+
+# HTML AND BODY
+# TYPOGRAPHY
+# ELEMENTS
+# MASTHEAD
+	## QUICKLINKS
+	## SEARCH BAR
+# MAIN NAVIGATION
+	## MEGAMENU CANT FIND IT ROW
+	## MEGAMENU MESSAGE ROW
+# OFF-CANVAS
+	## OC SEARCH
+	## OC NAVIGATION
+# SIDE NAVIGATION
+	## MOBILE ACCORDIAN
+# CONTENT AREA CONTAINERS
+# CONNECT WITH CONTENT AREA
+	## SOCIAL MEDIA ICONS
+	## CHEVRON
+	## COLUMN BASE STYLES
+	## COLUMN EVENTS
+	## COLUMN NEWS
+# FOOTER
+	## FOOTER LINKS ROW
+	## FOOTER CONTACT ROW
+	## FOOTER LOGOS ROW
+
+---------------------------------------------------------------*/
 
 
-/* TYPOGRAPHY SETTINGS
+/* --------------------------------------------------------------
+# HTML AND BODY
+-------------------------------------------------------------- */
+	html {
+		font: "Jaldi", sans-serif;
+		color: #545454;
+		text-rendering: optimizeLegibility;
+	}
+
+	body {
+		background: url("../images/bg-strip-body.png") repeat-x #f0f0f0;
+		font: "Jaldi", sans-serif;
+		font-size: 19px;
+		color: #545454;
+		line-height: normal; /* Important! Stops page from having two scrollbars. Overrides foundation. */
+		text-rendering: optimizeLegibility;
+    	-webkit-font-smoothing: antialiased;
+	}
+
+
+/* --------------------------------------------------------------
+# TYPOGRAPHY
 -------------------------------------------------------------- */
 	h1 {
 		font: 2.57rem "Jaldi", sans-serif;
@@ -53,27 +109,8 @@
 	}
 
 
-/* BODY AND CONTAINER
--------------------------------------------------------------- */
-
-	html {
-		font: "Jaldi", sans-serif;
-		color: #545454;
-		text-rendering: optimizeLegibility;
-	}
-
-	body {
-		background: url("../images/bg-strip-body.png") repeat-x #f0f0f0;
-		font: "Jaldi", sans-serif;
-		font-size: 19px;
-		color: #545454;
-		line-height: normal; /* Important! Stops page from having two scrollbars. Overrides foundation. */
-		text-rendering: optimizeLegibility;
-    	-webkit-font-smoothing: antialiased;
-	}
-
-
-/* ELEMENTS
+/* --------------------------------------------------------------
+# ELEMENTS
 -------------------------------------------------------------- */
 	.button {
 		border-radius: 10px;
@@ -86,14 +123,28 @@
 	}
 
 
-/* MASTHEAD
+/* --------------------------------------------------------------
+# MASTHEAD
 -------------------------------------------------------------- */
-
 	#masthead {
 		height: 85px;
 		margin-top: 65px;
 	}
 
+	/*Masthead Mobile Phone View*/
+	#mobi-masthead {
+		vertical-align: middle;
+		height: 56px;
+		border-bottom: 6px solid #cc8a00;
+		background: #002855;
+		line-height: 50px;
+		color: #fdd26e;
+		padding: 0 10px;
+	}
+
+/* --------------------------------------------------------------
+## QUICKLINKS
+-------------------------------------------------------------- */
 	#quick-links, #quick-links a {
 		background: none;
 		color: #002855;
@@ -128,7 +179,9 @@
 		text-decoration: underline;
 		color: #a2762b;
 	}
-
+/* --------------------------------------------------------------
+## SEARCH BAR
+-------------------------------------------------------------- */
 	#search-bar {
 		float: right;
 		background: none;
@@ -154,25 +207,15 @@
 		padding: 8px;
 	}
 
-	/*Masthead Mobile Phone View*/
-	#mobi-masthead {
-		vertical-align: middle;
-		height: 56px;
-		border-bottom: 6px solid #cc8a00;
-		background: #002855;
-		line-height: 50px;
-		color: #fdd26e;
-		padding: 0 10px;
-	}
-
+	/*Search Phone View*/
 	#search-button .fa-lg {
 		vertical-align: 10%;
 	}
 
 
-/* MAIN NAVIGATION
+/* --------------------------------------------------------------
+# MAIN NAVIGATION
 -------------------------------------------------------------- */
-
 	/*This affects the main horizontal links location.*/
 	nav#main {
 		position: relative;
@@ -222,7 +265,7 @@
 		text-shadow: 0 0 1px rgba(0,0,0,.35);
 		padding: 0 20px;
 		z-index: 510;
-	 
+
 		/*-webkit-transition: all .3s ease;
 		-moz-transition: all .3s ease;
 		-o-transition: all .3s ease;
@@ -270,7 +313,7 @@
 		float: left;
 		width: 25%;
 		border-top: 6px solid #cc8a00;
-		background-color: #002544;
+		background: #002544;
 		text-align: left;
 		padding: 2.5%;
 	}
@@ -286,8 +329,8 @@
 		display: block;
 	 	border: none;
 		font: 1.1rem/1.3rem "Jaldi", sans-serif;
-		padding: 5px 0 5px 0;
 		color: #5bc2e7;
+		padding: 5px 0 5px 0;
 	}
 	 
 	.nav .nav-column li a:hover {
@@ -318,8 +361,9 @@
 	    left: 50%;
 	    margin-left: -13px; /* Also adjust. */
 	}
-
-	/* Start "Cant Find It" Button Row*/
+/* --------------------------------------------------------------
+## MEGAMENU CANT FIND IT ROW
+-------------------------------------------------------------- */
 	#megamenu .btn-cant-find-it {
 		text-align: right;
 		padding: 15px 5% 15px 0;
@@ -342,8 +386,9 @@
 		background: #fdd26e;
 		color: #022040;
 	}
-
-	/* Start MegaMenu Footer Message Row*/
+/* --------------------------------------------------------------
+## MEGAMENU MESSAGE ROW
+-------------------------------------------------------------- */
 	#megamenu .megamenu-message {
 		background: #ac7600;
 		text-align: left;
@@ -371,9 +416,9 @@
 	}
 
 
-/* OFF-CANVAS
+/* --------------------------------------------------------------
+# OFF-CANVAS
 -------------------------------------------------------------- */
-
 	.off-canvas-content {
 		background: none;
 		box-shadow: none !important;
@@ -411,8 +456,9 @@
 		color: #fdd26e;
 		vertical-align: middle;
 	}
-
-	/* Start the Off-Canvas Search Bar */
+/* --------------------------------------------------------------
+## OC SEARCH
+-------------------------------------------------------------- */
 	#oc-search {
 		background: none;
 		padding: 15px 10px 15px 10px;
@@ -437,12 +483,9 @@
 		text-align: center;
 		padding: 8px;
 	}
-
-
-/* CONTENT AREAS
+/* --------------------------------------------------------------
+## OC NAVIGATION
 -------------------------------------------------------------- */
-
-	/* Start the Off-Canvas Navigation Menu */
 	.main-nav-mobile {
 		color: #fff;
 	}
@@ -480,9 +523,9 @@
 	}
 
 
-/* SIDE NAVIGATION
+/* --------------------------------------------------------------
+# SIDE NAVIGATION
 -------------------------------------------------------------- */
-
 	.sidenav {
 			list-style: none;
 			margin-top: 25px;
@@ -517,8 +560,9 @@
 		text-transform: uppercase;
 		padding-bottom: 5px;
 	}
-
-	/* Start Accordian Subavigation Menu */
+/* --------------------------------------------------------------
+## MOBILE ACCORDIAN
+-------------------------------------------------------------- */
 	#mobi-submenu {
 		background: #fdd26e; 
 		padding: 0; 
@@ -539,10 +583,9 @@
 	}
 
 
-
-/* CONTENT AREA CONTAINERS
+/* --------------------------------------------------------------
+# CONTENT AREA CONTAINERS
 -------------------------------------------------------------- */
-
 	#content-wrapper {
 		background: #fff;
 	}
@@ -553,31 +596,33 @@
 	}
 
 	#content-main {
-		padding: 50px 50px 10px 68px;
 		font: 1.20rem/1.73rem "Jaldi", sans-serif;
 		color: #1a1a1a;
+		padding: 50px 50px 10px 68px;
 	}
 
 	#content-rows {
 	}
 
 
-/* CONNECT WITH AREA
+/* --------------------------------------------------------------
+# CONNECT WITH CONTENT AREA
 -------------------------------------------------------------- */
-
 	#connect-with-chevron {
-		background: white;
+		background: #fff;
 	}
 
 	#connect-with-columns {
-		background: white;
+		background: #fff;
 	}
-
+/* --------------------------------------------------------------
+## SOCIAL MEDIA ICONS
+-------------------------------------------------------------- */
 	.social-media-links {
-		z-index: 1000;
 		position: absolute;
 	    width: 100%;
 	    margin: auto;
+	    z-index: 1000;
 	}
 
 	.social-media-links a {
@@ -607,7 +652,9 @@
 		line-height: 55px;
 		vertical-align: middle;
 	}
-
+/* --------------------------------------------------------------
+## CHEVRON
+-------------------------------------------------------------- */
 	#contact-chevron {
 		z-index: 999;
 		height: 125px;
@@ -660,7 +707,9 @@
 
 		}
 	}
-
+/* --------------------------------------------------------------
+## COLUMN BASE STYLES
+-------------------------------------------------------------- */
 	#contact-us a, #contact-right-1 a, #contact-right-2 a, #contact-right-3 a {
 		color: #082542;
 		border-bottom: none;
@@ -703,11 +752,9 @@
 		background: #fed16d;
 		color: #000;
 	}
-
-
-/* NEWS & EVENTS ITEMS
+/* --------------------------------------------------------------
+## COLUMN EVENTS
 -------------------------------------------------------------- */
-
 	.event {
 		margin-bottom: 65px;
 	}
@@ -744,7 +791,9 @@
 	.event-title a:hover {
 		text-decoration: underline;
 	}
-
+/* --------------------------------------------------------------
+## COLUMN NEWS
+-------------------------------------------------------------- */
 	.news {
 		margin-bottom: 35px;
 	}
@@ -790,12 +839,14 @@
 	}
 
 
-/* FOOTERS
+/* --------------------------------------------------------------
+# FOOTERS
 -------------------------------------------------------------- */
-
 	#footer-wrapper {
 	}
-
+/* --------------------------------------------------------------
+## FOOTER LINKS ROW
+-------------------------------------------------------------- */
 	#footer-links {
 		height: 320px;
 		border-bottom: 6px solid #cc8a00;
@@ -840,7 +891,9 @@
 	#footer-links li a:hover {
 		border-bottom: 1px solid #fff;
 	}
-
+/* --------------------------------------------------------------
+## FOOTER CONTACT ROW
+-------------------------------------------------------------- */
 	#footer-contact {
 		min-height: 200px;
 		background: #002855;
@@ -874,7 +927,9 @@
 	#ac-button:hover {
 		text-decoration: underline;
 	}
-
+/* --------------------------------------------------------------
+## FOOTER LOGOS ROW
+-------------------------------------------------------------- */
 	#footer-logos {
 		background: url("../images/bg-strip-malt.jpg") repeat;
 	}
