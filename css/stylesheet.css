@@ -8,6 +8,7 @@ Author: Schoolcraft College
 -----------------------------------------------------------------
 
 # HTML AND BODY
+# SKIP TO CONTENT
 # TYPOGRAPHY
 # ELEMENTS
 # MASTHEAD
@@ -54,6 +55,35 @@ Author: Schoolcraft College
 		text-rendering: optimizeLegibility;
     	-webkit-font-smoothing: antialiased;
 	}
+
+
+/* --------------------------------------------------------------
+# SKIP TO CONTENT - ACCESSIBILITY
+-------------------------------------------------------------- */
+#skip-to-content a {
+	position: absolute;
+	top: -55px;
+	left: 0px;
+	color: #fff;
+	border-right: 4px solid #cc8a00;
+	border-bottom: 4px solid #cc8a00;
+	border-bottom-right-radius: 8px;
+	background: transparent;
+	-webkit-transition: top .7s ease-out, background 1s linear;
+    transition: top .7s ease-out, background 1s linear;
+    padding: 15px;
+    z-index: 100;
+}
+
+#skip-to-content a:focus {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background: #002855;
+	outline: 0;	
+	-webkit-transition: top .7s ease-in, background .5s linear;
+    transition: top .7s ease-in, background .5s linear;
+}
 
 
 /* --------------------------------------------------------------
