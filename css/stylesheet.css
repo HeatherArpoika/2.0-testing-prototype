@@ -340,7 +340,7 @@ Author: Schoolcraft College
 
 	.nav .nav-column {
 		float: left;
-		width: 20%; /* This was originally 25% but set to 20% for FF fix */
+		width: 25%;
 		border-top: 6px solid #cc8a00;
 		background: #002544;
 		text-align: left;
