@@ -125,17 +125,20 @@ Author: Schoolcraft College
 	}
 
 	a {
-		display: inline-block;
-		position: relative;
-		border-bottom: 1px solid #a2762b;
-		line-height: 100%;
-		color: #a2762b;
-		text-decoration: none;
-		padding-bottom: 1px;
+		color: #9f6d00;
 	}
 
 	a:hover {
-		color: #ac7600;
+		color: #9f6d00;
+	}
+
+	p a {
+		display: inline-block;
+		position: relative;
+		border-bottom: 1px solid #9f6d00;
+		line-height: 100%;
+		text-decoration: none;
+		padding-bottom: 1px;
 	}
 
 
@@ -184,11 +187,6 @@ Author: Schoolcraft College
 		border-bottom: none;
 	}
 
-	#quick-links a:hover {
-		text-decoration: underline;
-		color: #a2762b;
-	}
-
 	#quick-links ul {
 		list-style: none;
 		margin-bottom: 0;
@@ -203,7 +201,12 @@ Author: Schoolcraft College
 		border: none;
 		font: bold 1.05rem "Jaldi", sans-serif;
 		color: #002855;
-		white-space:nowrap;
+		white-space: nowrap;
+	}
+
+  #quick-links a:hover {
+		text-decoration: underline;
+		color: #a2762b;
 	}
 /* --------------------------------------------------------------
 ## SEARCH BAR
@@ -564,7 +567,7 @@ Author: Schoolcraft College
 	}
 
 	.sidenav li a {
-		font: 1.33rem "Jaldi", sans-serif;
+		font: 1.1rem "Jaldi", sans-serif;
 		color: #002855;
 		border-bottom: none;
 	}
@@ -634,7 +637,7 @@ Author: Schoolcraft College
 /* --------------------------------------------------------------
 # CONNECT WITH CONTENT AREA
 -------------------------------------------------------------- */
-	#connect-with-chevron {
+	#connect-with-area {
 		background: #fff;
 	}
 
@@ -651,7 +654,15 @@ Author: Schoolcraft College
 	    z-index: 1000;
 	}
 
+	.social-media-links a .fa {
+		border-bottom: none;
+		font-size: 30px;
+		line-height: 55px;
+		vertical-align: middle;
+	}
+
 	.social-media-links a {
+		display: inline-block;
 		width: 57px;
 		height: 57px;
 		background: #002855;
@@ -671,13 +682,6 @@ Author: Schoolcraft College
 		transition: background-color 0.7s ease;
 		transition: border-color 0.7s ease;
 	}
-
-	.social-media-links a .fa {
-		border-bottom: none;
-		font-size: 30px;
-		line-height: 55px;
-		vertical-align: middle;
-	}
 /* --------------------------------------------------------------
 ## CHEVRON
 -------------------------------------------------------------- */
@@ -687,9 +691,12 @@ Author: Schoolcraft College
 		width: 100%;
 		position: relative;
 		top: 125px;
+		padding: 0;
+		/*
 		background-color: #cc8a00;
 		-webkit-clip-path: polygon(50% 90%, 100% 0, 100% 0, 50% 100%, 0 0, 0 0);
 		clip-path: polygon(50% 90%, 100% 0, 100% 0, 50% 100%, 0 0, 0 0);
+		*/
 	}
 
 	/* Small only */
@@ -711,26 +718,41 @@ Author: Schoolcraft College
 			background-color: #f7f7f7;
 		}
 		#contact-us {
+			background: url(../svg/contact-us-column.svg);
+			background-size: 100% 680px;
+			/*
 			-webkit-clip-path: polygon(100% 12%, 100% 100%, 0 100%, 0 0);
 			-moz-clip-path: polygon(100% 12%, 100% 100%, 0 100%, 0 0);
 			clip-path: polygon(100% 12%, 100% 100%, 0 100%, 0 0);
+			*/
 		}
 		#contact-right-1 {
+			background: url(../svg/contact-1-column.svg);
+			background-size: 100% 680px;
+			/*
 			-webkit-clip-path: polygon(25% 18%, 100% 0, 100% 100%, 0 100%, 0 12%);
 			-moz-clip-path: polygon(25% 18%, 100% 0, 100% 100%, 0 100%, 0 12%);
 			clip-path: polygon(25% 18%, 100% 0, 100% 100%, 0 100%, 0 12%);
+			*/
 		}
 		#contact-right-2 {
-			background: /*url("https://placeholdit.imgix.net/~text?txtsize=33&txt=Large Image & Links&w=400&h=650")*/;
+			background: url(../svg/contact-2-column.svg);
+			background-size: 100% 680px;
+			/*
+			background: /*url("https://placeholdit.imgix.net/~text?txtsize=33&txt=Large Image & Links&w=400&h=650");
 			-webkit-clip-path: polygon(50% 18%, 100% 12%, 100% 100%, 0 100%, 0 12%);
 			-moz-clip-path: polygon(50% 18%, 100% 12%, 100% 100%, 0 100%, 0 12%);
 			clip-path: polygon(50% 18%, 100% 12%, 100% 100%, 0 100%, 0 12%);
+			*/
 		}
 		#contact-right-3 {
+			background: url(../svg/contact-3-column.svg);
+			background-size: 100% 680px;
+			/*
 			-webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 12%);
 			-moz-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 12%);
 			clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 12%);
-
+			*/
 		}
 	}
 /* --------------------------------------------------------------
@@ -775,7 +797,7 @@ Author: Schoolcraft College
 	}
 
 	#contact-us {
-		background: #fed16d;
+		/*background: #fed16d;*/
 		color: #000;
 	}
 /* --------------------------------------------------------------
@@ -827,6 +849,7 @@ Author: Schoolcraft College
 	.news-icon {
 		position: relative;
 		width: 75px;
+		position: relative;
 		height: 75px;
 		float: left;
 		background: #cc8a00;
