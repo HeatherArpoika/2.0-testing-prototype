@@ -630,6 +630,10 @@ Author: Schoolcraft College
 		padding: 50px 50px 10px 68px;
 	}
 
+	#content-main a:hover {
+		font-weight: bold;
+	}
+
 	#content-rows {
 	}
 
@@ -766,7 +770,7 @@ Author: Schoolcraft College
 
 	#contact-us h3 {
 		color: #000;
-		font-size: 1.2rem;
+		font-size: 1.5rem;
 		font-weight: 700;
 		text-transform: uppercase;
 		padding-bottom: 5px;
@@ -784,7 +788,7 @@ Author: Schoolcraft College
 
 	#contact-right-1 h3, #contact-right-2 h3, #contact-right-3 h3 {
 		color: #cc8a00;
-		font-size: 1.2rem;
+		font-size: 1.5rem;
 		font-weight: 700;
 		text-transform: uppercase;
 		padding-bottom: 50px;
@@ -933,7 +937,7 @@ Author: Schoolcraft College
 
 	#footer-links li a {
 		border-bottom: none;
-		font-size: 1rem;
+		font-size: 1.1rem;
 		color: #fff;
 	}
 
