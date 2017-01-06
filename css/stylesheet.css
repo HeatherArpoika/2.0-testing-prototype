@@ -762,12 +762,6 @@ Author: Schoolcraft College
 /* --------------------------------------------------------------
 ## COLUMN BASE STYLES
 -------------------------------------------------------------- */
-	#contact-us a, #contact-right-1 a, #contact-right-2 a, #contact-right-3 a {
-		color: #082542;
-		border-bottom: none;
-		font-size: 1rem;
-	}
-
 	#contact-us h3 {
 		color: #000;
 		font-size: 1.5rem;
@@ -780,6 +774,18 @@ Author: Schoolcraft College
 		color: #000;
 		font-size: 1.2rem;
 		line-height: 25px;
+	}
+
+	#contact-us a, #contact-right-1 a {
+		color: #082542;
+		border-bottom: none !important;
+		font-size: 1.2rem;
+	}
+
+	#contact-right-2 a, #contact-right-3 a {
+		color: #082542;
+		border-bottom: none;
+		font-size: 1rem;
 	}
 
 	#contact-us button {
