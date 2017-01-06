@@ -149,6 +149,7 @@ Author: Schoolcraft College
 		border-radius: 10px;
 		font-size: 1.1rem;
 		padding: 15px;
+		border: none;
 	}
 
 	button:hover {
@@ -768,6 +769,20 @@ Author: Schoolcraft College
 /* --------------------------------------------------------------
 ## COLUMN BASE STYLES
 -------------------------------------------------------------- */
+	#contact-us {
+		/*background: #fed16d;*/
+		color: #000;
+	}
+
+	#contact-us a {
+		color: #000;
+		border: none;
+	}
+
+	#contact-us a:hover {
+		text-decoration: underline;
+	}
+
 	#contact-us h3 {
 		color: #000;
 		font-size: 1.5rem;
@@ -782,24 +797,18 @@ Author: Schoolcraft College
 		line-height: 25px;
 	}
 
-	#contact-us a, #contact-right-1 a {
-		color: #082542;
-		border-bottom: none !important;
-		font-size: 1.2rem;
+	#contact-us button {
+		background-color: #a07400;
 	}
 
-	#contact-right-2 a, #contact-right-3 a {
+	#contact-right-1 a, #contact-right-2 a, #contact-right-3 a {
 		color: #082542;
 		border-bottom: none;
 		font-size: 1rem;
 	}
 
-	#contact-us button {
-		background-color: #9c6d00;
-	}
-
 	#contact-right-1 h3, #contact-right-2 h3, #contact-right-3 h3 {
-		color: #a2762b;
+		color: #cc8a00;
 		font-size: 1.5rem;
 		font-weight: 700;
 		text-transform: uppercase;
@@ -812,10 +821,7 @@ Author: Schoolcraft College
 		padding-bottom: 32.5px;
 	}
 
-	#contact-us {
-		/*background: #fed16d;*/
-		color: #000;
-	}
+	
 /* --------------------------------------------------------------
 ## COLUMN EVENTS
 -------------------------------------------------------------- */
@@ -949,12 +955,12 @@ Author: Schoolcraft College
 
 	#footer-links li a {
 		border-bottom: none;
-		font-size: 1.1rem;
+		font-size: 1.2rem;
 		color: #fff;
 	}
 
 	#footer-links li a:hover {
-		border-bottom: 1px solid #fff;
+		text-decoration: underline;
 	}
 /* --------------------------------------------------------------
 ## FOOTER CONTACT ROW
@@ -972,11 +978,11 @@ Author: Schoolcraft College
 	}
 
 	#footer-contact h1 {
-		font-size: 1.4rem;
+		font-size: 1.7rem;
 	}
 
 	#footer-contact h2 {
-		font-size: 1rem;
+		font-size: 1.2rem;
 		margin-bottom: 25px;
 	}
 
