@@ -400,30 +400,40 @@ Author: Schoolcraft College
 	}
 
 	#megamenu .btn-cant-find-it button {
-		border-radius: 8px; -webkit-border-radius: 8px; -moz-border-radius: 8px;
-		background: #ac7600;
-		font: bold 1rem/2em "Jaldi", sans-serif;
-		letter-spacing: .08em;
-		text-transform: uppercase;
+		border: 1px solid #555;
+		background: #001a2f;
+		font: bold 1.1rem "Jaldi", sans-serif;
+		font-weight: normal;
+	}
+
+	#megamenu .btn-cant-find-it .fa-question-circle {
+		font: 4em;
+		color: #fed16d;
 	}
 
 	#megamenu .btn-cant-find-it button:hover {
-		background: #FDD26E;
-    	color: #002544;
-    	opacity: 1;
+		border: 1px solid #fed16d;
+		color: #fed16d;
 	}
 /* --------------------------------------------------------------
 ## MEGAMENU MESSAGE ROW
 -------------------------------------------------------------- */
 	#megamenu .megamenu-message {
-		background: #ac7600;
+		border-top: 1px solid #555;
+		background: #001a2f;
 		text-align: left;
 		padding: 15px 28% 40px 28%; 
 	}
 
+	#megamenu .megamenu-message img.round-image {
+		width: 100px; height: 100px;
+		border-radius: 50%;
+		border: 2px solid #fed16d;
+		margin: 10px 25px 0 0;
+	}
+
 	#megamenu .megamenu-message img {
 		float: left;
-		padding: 10px 25px 0 0;
 	}
 
 	#megamenu .megamenu-message h4 {
@@ -433,7 +443,7 @@ Author: Schoolcraft College
 
 	#megamenu .megamenu-message h5 a {
 		font: bold 1.3rem "Jaldi", sans-serif !important;
-		color: #000;
+		color: #eee;
 	}
 
 	#megamenu .megamenu-message h5 a:hover {
@@ -788,7 +798,7 @@ Author: Schoolcraft College
 	}
 
 	#contact-us button {
-		background-color: #ac7400;
+		background-color: #a07400;
 	}
 
 	#contact-right-1 a, #contact-right-2 a, #contact-right-3 a {
