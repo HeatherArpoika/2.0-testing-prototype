@@ -637,6 +637,13 @@ Author: Schoolcraft College
 		padding: 50px 50px 10px 68px;
 	}
 
+	/* Small only */
+	@media screen and (max-width: 39.9375em) {
+		#content-main {
+			padding: 15px;
+		}
+	}
+
 	#content-main a:hover {
 		font-weight: bold;
 	}
