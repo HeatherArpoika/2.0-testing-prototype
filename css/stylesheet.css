@@ -42,7 +42,7 @@ Author: Schoolcraft College
 -------------------------------------------------------------- */
 	html {
 		font: "Jaldi", sans-serif;
-		color: #545454;
+		color: #555;
 		text-rendering: optimizeLegibility;
 	}
 
@@ -50,7 +50,7 @@ Author: Schoolcraft College
 		background: url("../images/bg-strip-body.png") repeat-x #f0f0f0;
 		font: "Jaldi", sans-serif;
 		font-size: 19px;
-		color: #545454;
+		color: #555;
 		line-height: normal; /* Important! Stops page from having two scrollbars. Overrides foundation. */
 		text-rendering: optimizeLegibility;
     	-webkit-font-smoothing: antialiased;
@@ -95,9 +95,9 @@ Author: Schoolcraft College
 	}
 
 	#content-main > h1 {
-		border-bottom: 2px solid #e5e5e5;
+		border-bottom: 2px solid #EEE;
 		font: bold 1.71rem "Jaldi", sans-serif;
-		color: #a2762b;
+		color: #A07400;
 		text-transform: uppercase;
 		margin-bottom: 35px;
 	}
@@ -121,21 +121,21 @@ Author: Schoolcraft College
 
 	p {
 		font: 1.20rem/1.73rem "Jaldi", sans-serif;
-		color: #1a1a1a;
+		color: #555;
 	}
 
 	a {
-		color: #9f6d00;
+		color: #A07400;
 	}
 
 	a:hover {
-		color: #9f6d00;
+		color: #A07400;
 	}
 
 	p a {
 		display: inline-block;
 		position: relative;
-		border-bottom: 1px solid #9f6d00;
+		border-bottom: 1px solid #A07400;
 		line-height: 100%;
 		text-decoration: none;
 		padding-bottom: 1px;
@@ -207,7 +207,7 @@ Author: Schoolcraft College
 
   #quick-links a:hover {
 		text-decoration: underline;
-		color: #a2762b;
+		color: #A07400;
 	}
 /* --------------------------------------------------------------
 ## SEARCH BAR
@@ -219,7 +219,7 @@ Author: Schoolcraft College
 
 	#search-bar input[type=search] {
 		width: 300px;
-		border: 1px solid #c9c9c9;
+		border: 1px solid #ccc;
 	}
 
 	#search-bar input[type=submit] {
@@ -229,9 +229,9 @@ Author: Schoolcraft College
 	#search-button {
 		width: 40px;
 		height: 40px;
-		border: 1px solid #c9c9c9;
-		background: #c9c9c9;
-		color: #9b9b9b;
+		border: 1px solid #ccc;
+		background: #ccc;
+		color: #999;
 		text-align: center;
 		display: inline-block;
 		padding: 8px;
@@ -343,7 +343,7 @@ Author: Schoolcraft College
 		float: left;
 		width: 25%;
 		border-top: 6px solid #cc8a00;
-		background: #002544;
+		background: #002855;
 		text-align: left;
 		padding: 2.5%;
 	}
@@ -374,7 +374,7 @@ Author: Schoolcraft College
 
 	.dropdown-container {
 		/* Provides background color for shorter columms.*/
-		background: #002544;
+		background: #002855;
 	}
 
 	/* Creates the arrow effect on hover.
@@ -408,12 +408,12 @@ Author: Schoolcraft College
 
 	#megamenu .btn-cant-find-it .fa-question-circle {
 		font: 4em;
-		color: #fed16d;
+		color: #fdd26e;
 	}
 
 	#megamenu .btn-cant-find-it button:hover {
-		border: 1px solid #fed16d;
-		color: #fed16d;
+		border: 1px solid #fdd26e;
+		color: #fdd26e;
 	}
 /* --------------------------------------------------------------
 ## MEGAMENU MESSAGE ROW
@@ -428,7 +428,7 @@ Author: Schoolcraft College
 	#megamenu .megamenu-message img.round-image {
 		width: 100px; height: 100px;
 		border-radius: 50%;
-		border: 2px solid #fed16d;
+		border: 2px solid #fdd26e;
 		margin: 10px 25px 0 0;
 	}
 
@@ -438,7 +438,7 @@ Author: Schoolcraft College
 
 	#megamenu .megamenu-message h4 {
 		font: bold 1.65rem/0.9rem "Jaldi", sans-serif !important;
-		color: #fed16d;
+		color: #fdd26e;
 	}
 
 	#megamenu .megamenu-message h5 a {
@@ -447,7 +447,7 @@ Author: Schoolcraft College
 	}
 
 	#megamenu .megamenu-message h5 a:hover {
-		color: #fed16d;
+		color: #fdd26e;
 		text-decoration: underline;
 	}
 
@@ -501,7 +501,7 @@ Author: Schoolcraft College
 	}
 
 	#oc-search input[type=search] {
-		border: 1px solid #c9c9c9;
+		border: 1px solid #ccc;
 		max-width: 250px;
 	}
 
@@ -513,9 +513,9 @@ Author: Schoolcraft College
 		display: inline-block;
 		height: 40px;
 		width: 40px;
-		border: 1px solid #c9c9c9;
-		background: #c9c9c9;
-		color: #9b9b9b;
+		border: 1px solid #ccc;
+		background: #ccc;
+		color: #999;
 		text-align: center;
 		padding: 8px;
 	}
@@ -568,7 +568,7 @@ Author: Schoolcraft College
 		}
 
 	.sidenav li {
-		border-bottom: 1px #cacaca solid;
+		border-bottom: 1px #eee solid;
 		padding: 2px 0 2px 0;
 		margin: 0 15px 0 0;
 	}
@@ -580,7 +580,7 @@ Author: Schoolcraft College
 	}
 
 	.sidenav li a:hover {
-		color: #a2762b;
+		color: #A07400;
 		text-decoration: underline;
 	}
 
@@ -590,7 +590,7 @@ Author: Schoolcraft College
 	}
 
 	li.sidenav-title a {
-		color: #a2762b;
+		color: #A07400;
 		font-size: 1.5rem;
 		font-weight: 700;
 		text-transform: uppercase;
@@ -633,7 +633,7 @@ Author: Schoolcraft College
 
 	#content-main {
 		font: 1.20rem/1.73rem "Jaldi", sans-serif;
-		color: #1a1a1a;
+		color: #555;
 		padding: 50px 50px 10px 68px;
 	}
 
@@ -802,7 +802,7 @@ Author: Schoolcraft College
 	}
 
 	#contact-right-1 a, #contact-right-2 a, #contact-right-3 a {
-		color: #082542;
+		color: #002855;
 		border-bottom: none;
 		font-size: 1rem;
 	}
@@ -848,8 +848,7 @@ Author: Schoolcraft College
 	}
 
 	.event-title {
-		height: 50px;
-		
+		height: 50px;	
 	}
 
 	.event-title a {
@@ -888,7 +887,7 @@ Author: Schoolcraft College
 	}
 
 	.news-icon:hover {
-		background: #fdd263;
+		background: #fdd26e;
 		color: #cc8a00;
 		transition: background-color 0.7s ease;
 		transition: color 0.7s ease;
