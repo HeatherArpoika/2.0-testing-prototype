@@ -595,18 +595,21 @@
 				</ul>
 				<!-- end accordian for mobile display of submenu -->
 
-				<ul class="sidenav hide-for-small-only" role="navigation">
-					<li><a href="">Link 1</a></li>
-					<li><a href="">Link 2</a></li>
-					<li><a href="#connect-with-area">Contact Us</a></li>
-				</ul>
-				<ul class="sidenav hide-for-small-only" role="navigation">
-					<li class="sidenav-title"><a href="">List Title</a></li>
-					<li><a href="">Link 1</a></li>
-					<li><a href="">Link 2</a></li>
-					<li><a href="">Link 3</a></li>
-				</ul>
-
+				<div class="side-nav-cont" data-sticky-container>
+					<div class="side-nav-cont" data-sticky data-top-anchor="content-main:top" data-btm-anchor="content-main:bottom">
+						<ul class="sidenav hide-for-small-only" role="navigation">
+							<li><a href="">Link 1</a></li>
+							<li><a href="">Link 2</a></li>
+							<li><a href="#connect-with-area">Contact Us</a></li>
+						</ul>
+						<ul class="sidenav hide-for-small-only" role="navigation">
+							<li class="sidenav-title"><a href="">List Title</a></li>
+							<li><a href="">Link 1</a></li>
+							<li><a href="">Link 2</a></li>
+							<li><a href="">Link 3</a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 
 			<div id="content-main" class="column medium-9 small-12" role="main">
@@ -624,6 +627,7 @@
 				<h4>This is heading 4</h4>
 
 				<p>Morbi in enim lacus. Maecenas sit amet mauris sit amet tortor malesuada suscipit at a orci. Nullam risus nibh, ultricies tempus rhoncus viverra, egestas ac nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis venenatis imperdiet. Ut nec lectus sit amet est sagittis suscipit. Vivamus et lorem vel velit tincidunt ultrices vitae sed augue. Etiam posuere dictum blandit. Quisque at quam convallis, pharetra lectus eget, laoreet metus. Mauris ornare diam ipsum. Aliquam ut pellentesque sem. Duis interdum est facilisis aliquam mattis. Mauris facilisis euismod nulla eu blandit. Maecenas ornare varius libero at pellentesque. Curabitur mattis lectus facilisis lectus consectetur, in varius sem finibus. Ut sodales eros nunc, in ornare nunc tincidunt vehicula.</p>
+				<div id="content-end"></div>
 			</div>
 
 		</div><!--/#content-wrapper-->
@@ -755,7 +759,12 @@
 
 			<div id="footer-contact" class="row">
 				<div class="column small-12 text-center">
-					<h1>Welcome to Schoolcraft. Welcome to college.</h1>
+					<h1>
+						Welcome&nbsp;to&nbsp;Schoolcraft.
+						<span class="hide-for-small-only"> </span>
+						<span class="show-for-small-only"><br></span>
+						Welcome&nbsp;to&nbsp;college.
+					</h1>
 					<h2>
 						Schoolcraft College
 						<span class="hide-for-small-only"> - </span>
