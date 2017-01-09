@@ -569,7 +569,8 @@
 
 	
 	<!-- CONTENT START -->
-		<div id="content-wrapper" class="row">
+		<di
+        v id="content-wrapper" class="row">
 
 			<aside id="content-sub" class="column medium-3 small-12 column" role="complementary">
 				<img class="hide-for-small-only" src="https://placeholdit.imgix.net/~text?w=366&h=245&txt=placeholder&txtsize=50">
@@ -595,18 +596,21 @@
 				</ul>
 				<!-- end accordian for mobile display of submenu -->
 
-				<ul class="sidenav hide-for-small-only">
-					<li><a href="">Link 1</a></li>
-					<li><a href="">Link 2</a></li>
-					<li><a href="#connect-with-area">Contact Us</a></li>
-				</ul>
-				<ul class="sidenav hide-for-small-only">
-					<li class="sidenav-title"><a href="">List Title</a></li>
-					<li><a href="">Link 1</a></li>
-					<li><a href="">Link 2</a></li>
-					<li><a href="">Link 3</a></li>
-				</ul>
-
+				<div class="side-nav-cont hide-for-small-only" data-sticky-container>
+					<div class="side-nav-cont" data-sticky data-top-anchor="content-main:top" data-btm-anchor="content-main:bottom">
+						<ul class="sidenav hide-for-small-only" role="navigation">
+							<li><a href="">Link 1</a></li>
+							<li><a href="">Link 2</a></li>
+							<li><a href="#connect-with-area">Contact Us</a></li>
+						</ul>
+						<ul class="sidenav hide-for-small-only" role="navigation">
+							<li class="sidenav-title"><a href="">List Title</a></li>
+							<li><a href="">Link 1</a></li>
+							<li><a href="">Link 2</a></li>
+							<li><a href="">Link 3</a></li>
+						</ul>
+					</div>
+        </div>
 			</aside>
 
 			<div id="content-main" class="column medium-9 small-12" role="main">
@@ -624,6 +628,7 @@
 				<h4>This is heading 4</h4>
 
 				<p>Morbi in enim lacus. Maecenas sit amet mauris sit amet tortor malesuada suscipit at a orci. Nullam risus nibh, ultricies tempus rhoncus viverra, egestas ac nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis venenatis imperdiet. Ut nec lectus sit amet est sagittis suscipit. Vivamus et lorem vel velit tincidunt ultrices vitae sed augue. Etiam posuere dictum blandit. Quisque at quam convallis, pharetra lectus eget, laoreet metus. Mauris ornare diam ipsum. Aliquam ut pellentesque sem. Duis interdum est facilisis aliquam mattis. Mauris facilisis euismod nulla eu blandit. Maecenas ornare varius libero at pellentesque. Curabitur mattis lectus facilisis lectus consectetur, in varius sem finibus. Ut sodales eros nunc, in ornare nunc tincidunt vehicula.</p>
+				<div id="content-end"></div>
 			</div>
 
 		</div><!--/#content-wrapper-->
@@ -631,7 +636,7 @@
 	<!--CONNECT WITH AREA-->
 		<div class="row" id="connect-with-area">
 			<div class="column small-12 text-center" id="connect-with-heading">
-				<h2>Connect with This Department</h2>
+				<h2>Connect&nbsp;with This&nbsp;Department</h2>
 				<div class="social-media-links">
 					<a href=""><i class="fa fa-trello" aria-hidden="true"></i></a>
 					<a href=""><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
@@ -715,7 +720,7 @@
 						<img class="footer-img-position" src="images/footer-brand-pillars.png" alt="Pride, Challenge, Achievement.">
 					</div>
 				</div>
-				<div class="column small-12 medium-8">
+				<div class="column small-12 medium-8 hide-for-small-only" role="navigation">
 					<div class="row">
 						<div class="column small-12 medium-4">
 							<ul>
@@ -755,8 +760,24 @@
 
 			<div id="footer-contact" class="row">
 				<div class="column small-12 text-center">
-					<h1>Welcome to Schoolcraft. Welcome to college.</h1>
-					<h2>Schoolcraft College - 18600 Haggerty Road - Livonia, MI 48152 - P: 734-462-4400</h2>
+					<h1>
+						Welcome&nbsp;to&nbsp;Schoolcraft.
+						<span class="hide-for-small-only"> </span>
+						<span class="show-for-small-only"><br></span>
+						Welcome&nbsp;to&nbsp;college.
+					</h1>
+					<h2>
+						Schoolcraft College
+						<span class="hide-for-small-only"> - </span>
+						<span class="show-for-small-only"><br></span>
+						18600 Haggerty Road
+						<span class="hide-for-small-only"> - </span>
+						<span class="show-for-small-only"><br></span>
+						Livonia, MI 48152
+						<span class="hide-for-small-only"> - </span>
+						<span class="show-for-small-only"><br></span>
+						P: 734-462-4400
+					</h2>
 					<button id="ac-button"><i class="fa fa-question-circle" aria-hidden="true"></i> Answer Center: 734-462-4426</button>
 				</div>
 			</div>
