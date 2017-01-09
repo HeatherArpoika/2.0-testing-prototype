@@ -150,10 +150,14 @@ Author: Schoolcraft College
 		font-size: 1.1rem;
 		padding: 15px;
 		border: none;
+
+		transition: all 0.3s ease;
 	}
 
 	button:hover {
 		opacity: .8;
+
+		transition: all 0.3s ease;
 	}
 
 
@@ -295,12 +299,6 @@ Author: Schoolcraft College
 		text-shadow: 0 0 1px rgba(0,0,0,.35);
 		padding: 0 20px;
 		z-index: 510;
-
-		/*-webkit-transition: all .3s ease;
-		-moz-transition: all .3s ease;
-		-o-transition: all .3s ease;
-		-ms-transition: all .3s ease;
-		transition: all .3s ease;*/
 	}
 
 	.nav > li:hover > a {
@@ -404,6 +402,7 @@ Author: Schoolcraft College
 		background: #001a2f;
 		font: bold 1.1rem "Jaldi", sans-serif;
 		font-weight: normal;
+		transition: all .3s ease;
 	}
 
 	#megamenu .btn-cant-find-it .fa-question-circle {
@@ -414,6 +413,8 @@ Author: Schoolcraft College
 	#megamenu .btn-cant-find-it button:hover {
 		border: 1px solid #fdd26e;
 		color: #fdd26e;
+		opacity: 1;
+		transition: all .3s ease;
 	}
 /* --------------------------------------------------------------
 ## MEGAMENU MESSAGE ROW
@@ -676,22 +677,37 @@ Author: Schoolcraft College
 		display: inline-block;
 		width: 57px;
 		height: 57px;
-		background: #002855;
-		border: 2px solid white;
-		color: white;
+		
 		border-radius: 100%;
 		margin: 0 10px 0 10px;
+
+		background: #002855;
+		color: #fff;
+
+		transition: all 0.5s ease;
+
+		/* background: #002855;
+		border: 2px solid white;
+		color: white;
+
 		transition: background-color 0.7s ease;
-		transition: border-color 0.7s ease; 
+		transition: border-color 0.7s ease; */
 	}
 
 	.social-media-links a:hover {
-		background: white;
+		padding-bottom: 0;
+
+		background: #002855;
+		color: #FDD26E;
+
+		transition: all 0.5s ease;
+
+		/*background: white;
 		border: 2px solid #002855;
 		color: #002855;
-		padding-bottom: 0;
+		
 		transition: background-color 0.7s ease;
-		transition: border-color 0.7s ease;
+		transition: border-color 0.7s ease;*/
 	}
 /* --------------------------------------------------------------
 ## CHEVRON
