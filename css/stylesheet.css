@@ -232,6 +232,13 @@ Author: Schoolcraft College
 		text-decoration: underline;
 		color: #A07400;
 	}
+
+	/* Medium only */
+	@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+		#quick-links li {
+			padding-left: 15px;
+		}
+	}
 /* --------------------------------------------------------------
 ## SEARCH BAR
 -------------------------------------------------------------- */
