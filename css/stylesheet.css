@@ -498,6 +498,12 @@ Author: Schoolcraft College
 		text-decoration: underline;
 	}
 
+	@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+		#megamenu .megamenu-message {
+		    padding: 15px 20px 40px 20px;
+		}
+	}
+
 
 /* --------------------------------------------------------------
 # OFF-CANVAS
