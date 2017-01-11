@@ -784,6 +784,19 @@ Author: Schoolcraft College
 		}
 	}
 
+	/* Medium only */
+	@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+		#contact-us {
+		background: #fff url(../svg/contact-us-column-medium.svg);
+		background-size: 100% 680px;
+		/*
+		-webkit-clip-path: polygon(100% 12%, 100% 100%, 0 100%, 0 0);
+		-moz-clip-path: polygon(100% 12%, 100% 100%, 0 100%, 0 0);
+		clip-path: polygon(100% 12%, 100% 100%, 0 100%, 0 0);
+		*/
+		}
+	}
+
 	/* Medium and up screens */
 	@media screen and (min-width: 40em) {
 		#connect-with-heading {
@@ -793,9 +806,9 @@ Author: Schoolcraft College
 		#contact-us, #contact-right-1, #contact-right-2, #contact-right-3 {
 			height: 680px;
 			padding: 180px 45px 45px 45px;
-			background-color: #f7f7f7;
+			/*background-color: #f7f7f7;*/
 		}
-		#contact-us {
+		/*#contact-us {
 			background: url(../svg/contact-us-column.svg);
 			background-size: 100% 680px;
 			/*
@@ -803,7 +816,7 @@ Author: Schoolcraft College
 			-moz-clip-path: polygon(100% 12%, 100% 100%, 0 100%, 0 0);
 			clip-path: polygon(100% 12%, 100% 100%, 0 100%, 0 0);
 			*/
-		}
+		/*}*/
 		#contact-right-1 {
 			background: url(../svg/contact-1-column.svg);
 			background-size: 100% 680px;
@@ -858,11 +871,25 @@ Author: Schoolcraft College
 		padding-bottom: 5px;
 	}
 
+		/* Medium only */
+		@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+			#contact-us h3 {
+				font-size: 1.41rem !important;
+			}
+		}
+
 	#contact-us p {
 		color: #000;
 		font-size: 1.2rem;
 		line-height: 25px;
 	}
+
+		/* Medium only */
+		@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+			#contact-us p {
+				font-size: 1.10rem;
+			}
+		}
 
 	#contact-us button {
 		background-color: #a07400;
@@ -883,12 +910,16 @@ Author: Schoolcraft College
 		text-align: center;
 	}
 
+		@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+			#contact-right-1 h3, #contact-right-2 h3, #contact-right-3 h3 {
+				font-size: 1.41rem !important;
+			}
+		}
+
 	#contact-right-1 p, #contact-right-2 p, #contact-right-3 p {
 		padding-top: 32.5px;
 		padding-bottom: 32.5px;
 	}
-
-	
 /* --------------------------------------------------------------
 ## COLUMN EVENTS
 -------------------------------------------------------------- */
@@ -923,6 +954,13 @@ Author: Schoolcraft College
 		line-height: 25px;
 		vertical-align: middle;
 	}
+
+		/* Medium only */
+		@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+			.news-title a {
+				font-size: 1.10rem;
+			}
+		}
 
 	.event-title a:hover {
 		text-decoration: underline;
@@ -970,6 +1008,13 @@ Author: Schoolcraft College
 		line-height: 25px;
 		vertical-align: middle;
 	}
+
+		/* Medium only */
+		@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+			.event-title a {
+				font-size: 1.10rem;
+			}
+		}
 
 	.news-title a:hover {
 		text-decoration: underline;
