@@ -792,7 +792,10 @@ Author: Schoolcraft College
 		}
 
 		#contact-right-2, #contact-right-3 {
+			height: auto !important;
 			background: none;
+			padding: 25px !important;
+			margin: 0px;
 		}
 	}
 
@@ -802,10 +805,10 @@ Author: Schoolcraft College
 			position: relative;
 			top: 127px;
 		}
-		#contact-us, #contact-right-1, #contact-right-2, #contact-right-3 {
+		/*#contact-us, #contact-right-1, #contact-right-2, #contact-right-3 {
 			height: 680px;
 			padding: 180px 45px 45px 45px;
-		}
+		}*/
 		/*#contact-us {
 			background: url(../svg/contact-us-column.svg);
 			background-size: 100% 680px;
@@ -834,10 +837,10 @@ Author: Schoolcraft College
 			clip-path: polygon(50% 18%, 100% 12%, 100% 100%, 0 100%, 0 12%);
 			*/
 		}
-		#contact-right-3 {
+		/*#contact-right-3 {
 			background: url(../svg/contact-3-column.svg);
 			background-size: 100% 680px;
-			/*
+			
 			-webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 12%);
 			-moz-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 12%);
 			clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 12%);
