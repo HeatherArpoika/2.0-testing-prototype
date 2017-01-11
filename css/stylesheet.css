@@ -787,13 +787,12 @@ Author: Schoolcraft College
 	/* Medium only */
 	@media only screen and (min-width: 40.063em) and (max-width: 64em) {
 		#contact-us {
-		background: #fff url(../svg/contact-us-column-medium.svg);
-		background-size: 100% 680px;
-		/*
-		-webkit-clip-path: polygon(100% 12%, 100% 100%, 0 100%, 0 0);
-		-moz-clip-path: polygon(100% 12%, 100% 100%, 0 100%, 0 0);
-		clip-path: polygon(100% 12%, 100% 100%, 0 100%, 0 0);
-		*/
+			background: #fff url(../svg/contact-us-column-medium.svg);
+			background-size: 100% 680px;
+		}
+
+		#contact-right-2, #contact-right-3 {
+			background: none;
 		}
 	}
 
@@ -806,7 +805,6 @@ Author: Schoolcraft College
 		#contact-us, #contact-right-1, #contact-right-2, #contact-right-3 {
 			height: 680px;
 			padding: 180px 45px 45px 45px;
-			/*background-color: #f7f7f7;*/
 		}
 		/*#contact-us {
 			background: url(../svg/contact-us-column.svg);
@@ -817,19 +815,19 @@ Author: Schoolcraft College
 			clip-path: polygon(100% 12%, 100% 100%, 0 100%, 0 0);
 			*/
 		/*}*/
-		#contact-right-1 {
+		/*#contact-right-1 {
 			background: url(../svg/contact-1-column.svg);
 			background-size: 100% 680px;
-			/*
+			
 			-webkit-clip-path: polygon(25% 18%, 100% 0, 100% 100%, 0 100%, 0 12%);
 			-moz-clip-path: polygon(25% 18%, 100% 0, 100% 100%, 0 100%, 0 12%);
 			clip-path: polygon(25% 18%, 100% 0, 100% 100%, 0 100%, 0 12%);
 			*/
 		}
-		#contact-right-2 {
+		/*#contact-right-2 {
 			background: url(../svg/contact-2-column.svg);
 			background-size: 100% 680px;
-			/*
+			
 			background: /*url("https://placeholdit.imgix.net/~text?txtsize=33&txt=Large Image & Links&w=400&h=650");
 			-webkit-clip-path: polygon(50% 18%, 100% 12%, 100% 100%, 0 100%, 0 12%);
 			-moz-clip-path: polygon(50% 18%, 100% 12%, 100% 100%, 0 100%, 0 12%);
