@@ -815,6 +815,14 @@ Author: Schoolcraft College
 		*/
 	}
 
+	/* Medium only */
+	@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+ 		#contact-us {
+ 			background: #fff url(../svg/contact-us-column-medium.svg);
+ 			background-size: 100% 680px;
+ 		}
+ 	}
+
 	/* Small only */
 	@media only screen and (max-width: 39.9375em) {
 		#connect-with-heading {
@@ -848,39 +856,18 @@ Author: Schoolcraft College
 		#contact-us {
 			background: #FDD26E;
 			background-size: 100% 680px;
-			/*
-			-webkit-clip-path: polygon(100% 12%, 100% 100%, 0 100%, 0 0);
-			-moz-clip-path: polygon(100% 12%, 100% 100%, 0 100%, 0 0);
-			clip-path: polygon(100% 12%, 100% 100%, 0 100%, 0 0);
-			*/
 		}
 		#contact-right-1 {
 			background: url(https://images.pexels.com/photos/262140/pexels-photo-262140.jpeg);
 			background-size: 100% 680px;
-			/*
-			-webkit-clip-path: polygon(25% 18%, 100% 0, 100% 100%, 0 100%, 0 12%);
-			-moz-clip-path: polygon(25% 18%, 100% 0, 100% 100%, 0 100%, 0 12%);
-			clip-path: polygon(25% 18%, 100% 0, 100% 100%, 0 100%, 0 12%);
-			*/
 		}
 		#contact-right-2 {
 			background: #f7f7f7;
 			background-size: 100% 680px;
-			/*
-			background: /*url("https://placeholdit.imgix.net/~text?txtsize=33&txt=Large Image & Links&w=400&h=650");
-			-webkit-clip-path: polygon(50% 18%, 100% 12%, 100% 100%, 0 100%, 0 12%);
-			-moz-clip-path: polygon(50% 18%, 100% 12%, 100% 100%, 0 100%, 0 12%);
-			clip-path: polygon(50% 18%, 100% 12%, 100% 100%, 0 100%, 0 12%);
-			*/
 		}
 		#contact-right-3 {
 			background: #f7f7f7;
 			background-size: 100% 680px;
-			/*
-			-webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 12%);
-			-moz-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 12%);
-			clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 12%);
-			*/
 		}
 	}
 /* --------------------------------------------------------------
