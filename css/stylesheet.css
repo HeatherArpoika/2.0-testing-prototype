@@ -815,11 +815,6 @@ Author: Schoolcraft College
 		*/
 	}
 
-	/* Medium only */
-	/*@media only screen and (min-width: 40.063em) and (max-width: 64em) {
- 		
- 	}*/
-
 	/* Small only */
 	@media only screen and (max-width: 39.9375em) {
 		#connect-with-heading {
@@ -897,7 +892,7 @@ Author: Schoolcraft College
 
 	/* Medium only */
 	@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-		#contact-us h3 {
+		#contact-us h3, #contact-right-1 h3, #contact-right-2 h3, #contact-right-3 h3 {
 			font-size: 1.41rem !important;
 		}
 
