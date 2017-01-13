@@ -89,17 +89,17 @@ Author: Schoolcraft College
 /* --------------------------------------------------------------
 # TYPOGRAPHY
 -------------------------------------------------------------- */
-	h1 {
-		font: 2.57rem "Jaldi", sans-serif;
-		color: #002855; 
-	}
-
 	#content-main > h1 {
 		border-bottom: 2px solid #EEE;
 		font: bold 1.71rem "Jaldi", sans-serif;
 		color: #A07400;
 		text-transform: uppercase;
 		margin-bottom: 35px;
+	}
+
+	h1 {
+		font: 2.57rem "Jaldi", sans-serif;
+		color: #002855; 
 	}
 
 	h2 {
@@ -141,7 +141,28 @@ Author: Schoolcraft College
 		padding-bottom: 1px;
 	}
 
-	@media screen and (max-width: 39.9375em) { /* FOR SMALL ONLY */
+	/* Medium only */
+ 	@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+ 		#content-main > h1 {
+ 			font-size: 1.41rem;
+			margin-bottom: 25px;
+ 		}
+ 		h2 {
+ 			font-size: 2.0rem;
+ 		}
+ 		h3 {
+ 			font-size: 1.70rem;
+ 		}
+ 		h4 {
+ 			font-size: 1.45rem;
+ 		}		
+ 		p {
+ 			font: 1.10rem/1.63rem "Jaldi", sans-serif;
+ 		}
+ 	} 
+
+	/* Small only */
+	@media only screen and (max-width: 39.9375em) { 
 		h2 {
 			font: 2rem "Jaldi", sans-serif;
 		}
@@ -181,7 +202,7 @@ Author: Schoolcraft College
 		margin-top: 65px;
 	}
 
-	/*Masthead Mobile Phone View*/
+	/* Masthead Mobile Phone View */
 	#mobi-masthead {
 		vertical-align: middle;
 		height: 56px;
@@ -192,6 +213,12 @@ Author: Schoolcraft College
 		padding: 0 10px;
 	}
 
+	/* Medium only */
+ 	@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+ 		#masthead img {
+ 			max-width: 70%;
+ 		}
+ 	}
 /* --------------------------------------------------------------
 ## QUICKLINKS
 -------------------------------------------------------------- */
@@ -214,6 +241,13 @@ Author: Schoolcraft College
 		padding-left: 28px;
 	}
 
+	/* Medium only */
+ 	@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+ 		#quick-links li {
+ 			padding-left: 15px;
+ 		}
+ 	}
+
 	#quick-links a {
 		border: none;
 		font: bold 1.05rem "Jaldi", sans-serif;
@@ -221,7 +255,7 @@ Author: Schoolcraft College
 		white-space: nowrap;
 	}
 
-  #quick-links a:hover {
+  	#quick-links a:hover {
 		text-decoration: underline;
 		color: #A07400;
 	}
@@ -253,7 +287,7 @@ Author: Schoolcraft College
 		padding: 8px;
 	}
 
-	/*Search Phone View*/
+	/* Search Phone View */
 	#search-button .fa-lg {
 		vertical-align: 10%;
 	}
@@ -383,7 +417,7 @@ Author: Schoolcraft College
 	}
 
 	.dropdown-container {
-		/* Provides background color for shorter columms.*/
+		/* Provides background color for shorter columms. */
 		background: #002855;
 	}
 
@@ -401,6 +435,16 @@ Author: Schoolcraft College
 	    left: 50%;
 	    margin-left: -13px; /* Also adjust. */
 	}
+
+	/* Medium only */
+ 	@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+ 		.nav .nav-column h3 {
+ 			font-size: 0.95rem;
+ 		}
+ 		.nav .nav-column li a {
+ 			font: 0.99rem/1.6rem "Jaldi", sans-serif;
+ 		}
+ 	}
 /* --------------------------------------------------------------
 ## MEGAMENU CANT FIND IT ROW
 -------------------------------------------------------------- */
@@ -463,6 +507,13 @@ Author: Schoolcraft College
 		color: #fdd26e;
 		text-decoration: underline;
 	}
+
+	/* Medium only */
+ 	@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+ 		#megamenu .megamenu-message {
+ 			padding: 15px 20px 40px 20px;
+ 		}
+ 	}
 
 
 /* --------------------------------------------------------------
@@ -654,7 +705,15 @@ Author: Schoolcraft College
 		padding: 50px 50px 10px 68px;
 	}
 
-	@media screen and (max-width: 39.9375em) {
+	/* Medium only */
+ 	@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+ 		#content-main {
+ 			padding: 25px;
+ 		}
+ 	} 
+
+	/* Small only */
+	@media only screen and (max-width: 39.9375em) {
 		#content-main {
 			padding: 25px;
 		}
@@ -689,7 +748,8 @@ Author: Schoolcraft College
 	    left: 0;
 	}
 
-	@media screen and (max-width: 39.9375em) {
+	/* Small only */
+	@media only screen and (max-width: 39.9375em) {
 		.social-media-links {
 			position: relative;
 		}
@@ -756,7 +816,7 @@ Author: Schoolcraft College
 	}
 
 	/* Small only */
-	@media screen and (max-width: 39.9375em) {
+	@media only screen and (max-width: 39.9375em) {
 		#connect-with-heading {
 			margin: auto;
 		}
@@ -775,7 +835,7 @@ Author: Schoolcraft College
 	}
 
 	/* Medium and up screens */
-	@media screen and (min-width: 40em) {
+	@media only screen and (min-width: 40em) {
 		#connect-with-heading {
 			position: relative;
 			top: 127px;
@@ -873,7 +933,8 @@ Author: Schoolcraft College
 		text-align: center;
 	}
 
-	@media screen and (max-width: 39.9375em) {
+	/* Small only */
+	@media only screen and (max-width: 39.9375em) {
 		#contact-right-1 h3, #contact-right-2 h3, #contact-right-3 h3 {
 			padding-bottom: 15px;
 		}
@@ -999,7 +1060,8 @@ Author: Schoolcraft College
 			left: 25px;
 	}
 
-	@media screen and (max-width: 39.9375em) {
+	/* Small only */
+	@media only screen and (max-width: 39.9375em) {
 		img.footer-img-position {
 			position: absolute;
 				bottom: 6px;
@@ -1056,7 +1118,8 @@ Author: Schoolcraft College
 		margin-bottom: 25px;
 	}
 
-	@media screen and (max-width: 39.9375em) {
+	/* Small only */
+	@media only screen and (max-width: 39.9375em) {
 		#footer-contact h1 {
 			font-size: 1.6rem;
 		}
