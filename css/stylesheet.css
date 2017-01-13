@@ -235,6 +235,13 @@ Author: Schoolcraft College
 		padding-left: 28px;
 	}
 
+	/* Medium only */
+ 	@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+ 		#quick-links li {
+ 			padding-left: 15px;
+ 		}
+ 	}
+
 	#quick-links a {
 		border: none;
 		font: bold 1.05rem "Jaldi", sans-serif;
