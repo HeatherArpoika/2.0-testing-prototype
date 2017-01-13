@@ -911,6 +911,10 @@ Author: Schoolcraft College
 
 	/* Medium only */
 	@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+		#contact-us {
+			height: auto;
+			padding: 120px 25px 25px 0;
+		}
 		#contact-us h3, #contact-right-1 h3, #contact-right-2 h3, #contact-right-3 h3 {
 			font-size: 1.41rem !important;
 		}
@@ -923,6 +927,15 @@ Author: Schoolcraft College
 			height: auto !important;
 			padding: 25px !important;
 			margin: 0px;
+		}
+		.contact-us-col-2-medium {
+			padding: 0 0 0 75px;
+		}
+		.contact-us-col-3-medium {
+			margin: 12px 0 0 0;
+		}
+		.contact-us-col-2-medium h3 {
+			margin: 11px 0 0 0;
 		}
 	}
 
