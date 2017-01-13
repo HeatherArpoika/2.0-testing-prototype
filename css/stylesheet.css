@@ -890,17 +890,6 @@ Author: Schoolcraft College
 		line-height: 25px;
 	}
 
-	/* Medium only */
-	@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-		#contact-us h3, #contact-right-1 h3, #contact-right-2 h3, #contact-right-3 h3 {
-			font-size: 1.41rem !important;
-		}
-
-		#contact-us p {
-			font-size: 1.10rem;
-		}
-	}
-
 	#contact-us button {
 		background-color: #a07400;
 	}
@@ -918,6 +907,23 @@ Author: Schoolcraft College
 		text-transform: uppercase;
 		padding-bottom: 50px;
 		text-align: center;
+	}
+
+	/* Medium only */
+	@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+		#contact-us h3, #contact-right-1 h3, #contact-right-2 h3, #contact-right-3 h3 {
+			font-size: 1.41rem !important;
+		}
+
+		#contact-us p {
+			font-size: 1.10rem;
+		}
+
+		#contact-right-2, #contact-right-3 {
+			height: auto !important;
+			padding: 25px !important;
+			margin: 0px;
+		}
 	}
 
 	/* Small only */
