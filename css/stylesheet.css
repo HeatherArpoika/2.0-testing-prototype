@@ -202,7 +202,7 @@ Author: Schoolcraft College
 		margin-top: 65px;
 	}
 
-	/*Masthead Mobile Phone View*/
+	/* Masthead Mobile Phone View */
 	#mobi-masthead {
 		vertical-align: middle;
 		height: 56px;
@@ -213,6 +213,12 @@ Author: Schoolcraft College
 		padding: 0 10px;
 	}
 
+	/* Medium only */
+ 	@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+ 		#masthead img {
+ 			max-width: 70%;
+ 		}
+ 	}
 /* --------------------------------------------------------------
 ## QUICKLINKS
 -------------------------------------------------------------- */
