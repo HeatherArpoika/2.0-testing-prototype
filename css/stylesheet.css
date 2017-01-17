@@ -1188,9 +1188,23 @@ Author: Schoolcraft College
 	.footer-logo-block {
 		display: inline-block;
 		margin: auto;
-		width: 150px;
-		height: 150px;
 		background: #FFFFFF;
 		border-radius: 10px;
+	}
+
+	/* medium only */
+	@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+		.footer-logo-block {
+			width: 125px;
+			height: 125px;
+		}
+	}
+
+	/* Large and up */
+	@media screen and (min-width: 64em) {
+		.footer-logo-block {
+			width: 150px;
+			height: 150px;
+		}
 	}
 
