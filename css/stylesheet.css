@@ -960,6 +960,11 @@ Author: Schoolcraft College
 			padding: 75px 25px 25px 25px;
 		}
 
+		#contact-right-1, #contact-right-2, #contact-right-3 {
+			height: auto;
+			padding: 25px 25px 25px 25px;
+		}
+
 		#contact-right-1 h3, #contact-right-2 h3, #contact-right-3 h3 {
 			padding-bottom: 15px;
 		}
