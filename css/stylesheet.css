@@ -259,6 +259,24 @@ Author: Schoolcraft College
 		text-decoration: underline;
 		color: #A07400;
 	}
+
+	/* Fix for links disappearing off the right edge */
+	@media only screen and (max-width: 759px) {
+		#quick-links li {
+			padding-left: 13px;
+		}
+		#quick-links li:first-child {
+			padding-left: 0px;
+		}
+		#quick-links ul {
+			margin-left: 0px;
+		}
+		#masthead .column.medium-6.text-right {
+			padding-left: 0px;
+		}
+	}
+
+
 /* --------------------------------------------------------------
 ## SEARCH BAR
 -------------------------------------------------------------- */
