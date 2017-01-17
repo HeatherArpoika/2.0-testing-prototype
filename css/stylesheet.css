@@ -927,7 +927,7 @@ Author: Schoolcraft College
 	@media only screen and (min-width: 40.063em) and (max-width: 64em) {
 		#contact-us {
 			height: auto;
-			padding: 120px 25px 25px 0;
+			padding: 120px 25px 25px 25px;
 		}
 		#contact-us h3, #contact-right-1 h3, #contact-right-2 h3, #contact-right-3 h3 {
 			font-size: 1.41rem !important;
@@ -1178,5 +1178,19 @@ Author: Schoolcraft College
 -------------------------------------------------------------- */
 	#footer-logos {
 		background: url("../images/bg-strip-malt.jpg") repeat;
+		padding: 25px 0 25px 0;
+		display: -webkit-flex; /* Safari */
+	    -webkit-align-items: center; /* Safari 7.0+ */
+	    display: flex;
+	    align-items: center;
+	}
+
+	.footer-logo-block {
+		display: inline-block;
+		margin: auto;
+		width: 150px;
+		height: 150px;
+		background: #FFFFFF;
+		border-radius: 10px;
 	}
 
