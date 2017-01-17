@@ -571,8 +571,8 @@
 	<!-- CONTENT START -->
 		<div id="content-wrapper" class="row">
 
-			<aside id="content-sub" class="column medium-3 small-12 column" role="complementary">
-				<img class="hide-for-small-only" src="https://placeholdit.imgix.net/~text?w=366&h=245&txt=placeholder&txtsize=50">
+			<aside id="content-sub" class="column small-12 medium-3 column" role="complementary">
+				<img class="hide-for-small-only" id="aside-image" src="https://placeholdit.imgix.net/~text?w=366&h=245&txt=placeholder&txtsize=50">
 
 				<!--start accordian for mobile display of submenu -->
 				<ul id="mobi-submenu" class="vertical menu row show-for-small-only" data-accordion-menu>
@@ -596,11 +596,11 @@
 				<!-- end accordian for mobile display of submenu -->
 
 				<div class="side-nav-cont hide-for-small-only" data-sticky-container>
-					<div class="side-nav-cont" data-sticky data-top-anchor="content-main:top" data-btm-anchor="content-main:bottom">
+					<div class="side-nav-cont" data-sticky data-top-anchor="aside-image:bottom" data-btm-anchor="content-main:bottom">
 						<ul class="sidenav hide-for-small-only" role="navigation">
 							<li><a href="">Link 1</a></li>
 							<li><a href="">Link 2</a></li>
-							<li><a href="#connect-with-area">Contact Us</a></li>
+							<li><a href="#connect-with-heading">Contact Us</a></li>
 						</ul>
 						<ul class="sidenav hide-for-small-only" role="navigation">
 							<li class="sidenav-title"><a href="">List Title</a></li>
@@ -612,7 +612,7 @@
         		</div>
 			</aside>
 
-			<div id="content-main" class="column medium-9 small-12" role="main">
+			<div id="content-main" class="column small-12 medium-9" role="main">
 				<h1>Page title</h1>
 				<h2>This is heading 2</h2>
 
@@ -674,7 +674,7 @@
 
 			<!-- contact-us yellow column -->
 			<div class="column small-12 medium-12 large-4" id="contact-us">
-				<div class="column medium-6 large-12 contact-us-col-1-medium">
+				<div class="column small-12 medium-6 large-12 contact-us-col-1-medium">
 					<h3>Contact Us</h3>
 					<p>
 						<a href="#">Department Name</a><br>
@@ -688,7 +688,7 @@
 					</p>
 				</div>
 				<br>
-				<div class="column medium-6 large-12 contact-us-col-2-medium">
+				<div class="column small-12 medium-6 large-12 contact-us-col-2-medium">
 					<h3>Hours &amp; FAQ</h3>
 					<button type="button" class="button"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;&nbsp;View Hours&nbsp;&nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
 					<br><br>
@@ -749,7 +749,7 @@
 		<div id="footer-wrapper" class="row column">
 
 			<div id="footer-links" class="row">
-				<div class="column small-12 medium-4 hide-for-medium-only">
+				<div class="column small-12 large-4 hide-for-medium-only">
 					<div id="footer-img-div">
 						<img class="footer-img-position" src="images/footer-brand-pillars.png" alt="Pride, Challenge, Achievement.">
 					</div>
@@ -816,8 +816,20 @@
 				</div>
 			</div>
 
-			<div id="footer-logos" class="row">
-				<div class="column small-12">
+			<div id="footer-logos" class="row hide-for-small-only">	
+				<div class="footer-logo-block">
+					#footer-logos
+				</div>
+				<div class="footer-logo-block">
+					#footer-logos
+				</div>
+				<div class="footer-logo-block">
+					#footer-logos
+				</div>
+				<div class="footer-logo-block">
+					#footer-logos
+				</div>
+				<div class="footer-logo-block">
 					#footer-logos
 				</div>
 			</div>
