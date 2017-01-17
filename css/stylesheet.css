@@ -815,6 +815,20 @@ Author: Schoolcraft College
 		*/
 	}
 
+	#contact-chevron-small {
+		z-index: 999;
+		height: 125px;
+		width: 100%;
+		position: relative;
+		top: 150px;
+		padding: 0;
+		/*
+		background-color: #cc8a00;
+		-webkit-clip-path: polygon(50% 90%, 100% 0, 100% 0, 50% 100%, 0 0, 0 0);
+		clip-path: polygon(50% 90%, 100% 0, 100% 0, 50% 100%, 0 0, 0 0);
+		*/
+	}
+
 	/* Small only */
 	@media only screen and (max-width: 39.9375em) {
 		#connect-with-heading {
@@ -941,6 +955,16 @@ Author: Schoolcraft College
 
 	/* Small only */
 	@media only screen and (max-width: 39.9375em) {
+		#contact-us {
+			height: auto;
+			padding: 75px 25px 25px 25px;
+		}
+
+		#contact-right-1, #contact-right-2, #contact-right-3 {
+			height: auto;
+			padding: 25px 25px 25px 25px;
+		}
+
 		#contact-right-1 h3, #contact-right-2 h3, #contact-right-3 h3 {
 			padding-bottom: 15px;
 		}
