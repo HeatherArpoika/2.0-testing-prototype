@@ -143,6 +143,9 @@ Author: Schoolcraft College
 
 	/* Medium only */
  	@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+ 		#content-main {
+ 			font: 1.10rem/1.63rem "Jaldi", sans-serif;
+ 		}
  		#content-main > h1 {
  			font-size: 1.41rem;
 			margin-bottom: 25px;
@@ -259,6 +262,24 @@ Author: Schoolcraft College
 		text-decoration: underline;
 		color: #A07400;
 	}
+
+	/* Fix for quicklinks disappearing off the right edge */
+	@media only screen and (max-width: 759px) {
+		#quick-links li {
+			padding-left: 13px;
+		}
+		#quick-links li:first-child {
+			padding-left: 0px;
+		}
+		#quick-links ul {
+			margin-left: 0px;
+		}
+		#masthead .column.medium-6.text-right {
+			padding-left: 0px;
+		}
+	}
+
+
 /* --------------------------------------------------------------
 ## SEARCH BAR
 -------------------------------------------------------------- */
@@ -708,6 +729,7 @@ Author: Schoolcraft College
 	/* Medium only */
  	@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
  		#content-main {
+ 			font: 1.10rem/1.63rem "Jaldi", sans-serif;
  			padding: 25px;
  		}
  	} 
