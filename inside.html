@@ -571,8 +571,8 @@
 	<!-- CONTENT START -->
 		<div id="content-wrapper" class="row">
 
-			<aside id="content-sub" class="column medium-3 small-12 column" role="complementary">
-				<img class="hide-for-small-only" src="https://placeholdit.imgix.net/~text?w=366&h=245&txt=placeholder&txtsize=50">
+			<aside id="content-sub" class="column small-12 medium-3 column" role="complementary">
+				<img class="hide-for-small-only" id="aside-image" src="https://placeholdit.imgix.net/~text?w=366&h=245&txt=placeholder&txtsize=50">
 
 				<!--start accordian for mobile display of submenu -->
 				<ul id="mobi-submenu" class="vertical menu row show-for-small-only" data-accordion-menu>
@@ -596,11 +596,11 @@
 				<!-- end accordian for mobile display of submenu -->
 
 				<div class="side-nav-cont hide-for-small-only" data-sticky-container>
-					<div class="side-nav-cont" data-sticky data-top-anchor="content-main:top" data-btm-anchor="content-main:bottom">
+					<div class="side-nav-cont" data-sticky data-top-anchor="aside-image:bottom" data-btm-anchor="content-main:bottom">
 						<ul class="sidenav hide-for-small-only" role="navigation">
 							<li><a href="">Link 1</a></li>
 							<li><a href="">Link 2</a></li>
-							<li><a href="#connect-with-area">Contact Us</a></li>
+							<li><a href="#connect-with-heading">Contact Us</a></li>
 						</ul>
 						<ul class="sidenav hide-for-small-only" role="navigation">
 							<li class="sidenav-title"><a href="">List Title</a></li>
@@ -612,7 +612,7 @@
         		</div>
 			</aside>
 
-			<div id="content-main" class="column medium-9 small-12" role="main">
+			<div id="content-main" class="column small-12 medium-9" role="main">
 				<h1>Page title</h1>
 				<h2>This is heading 2</h2>
 
@@ -633,6 +633,8 @@
 		</div><!--/#content-wrapper-->
 
 	<!--CONNECT WITH AREA-->
+
+		<!-- start social media icons and chevron -->
 		<div class="row" id="connect-with-area">
 			<div class="column small-12 text-center" id="connect-with-heading">
 				<h2>Connect&nbsp;with This&nbsp;Department</h2>
@@ -642,6 +644,7 @@
 					<a href=""><i class="fa fa-github-alt" aria-hidden="true"></i></a>
 				</div>
 			</div>
+			<!-- chevron for medium and up -->
 			<div class="column small-12 hide-for-small-only" id="contact-chevron">
 				<svg width='100%' height='125px' viewBox="0 0 100 100" preserveAspectRatio="none" style='fill:#CC8A00;'>
 					<style type="text/css">
@@ -652,31 +655,56 @@
         			<polygon id="connect-with-chevron" points="50 90, 100 0, 100 0, 50 100, 0 0, 0 0" />
     			</svg>
 			</div>
+			<!-- chevron for small only -->
+			<div class="column small-12 show-for-small-only" id="contact-chevron-small">
+				<svg width='100%' height='75px' viewBox="0 0 100 100" preserveAspectRatio="none" style='fill:#CC8A00;'>
+					<style type="text/css">
+						#connect-with-antichevron {fill:#FFFFFF;}
+						#connect-with-chevron {fill:#CC8A00;}
+					</style>
+        			<polygon id="connect-with-antichevron" points="100 0, 100 0, 50 95, 0 0, 0 0" />
+        			<polygon id="connect-with-chevron" points="50 90, 100 0, 100 0, 50 100, 0 0, 0 0" />
+    			</svg>
+			</div>
 		</div>
+		<!-- /end social media icons and chevron -->
+
+		<!-- start the three connect-with-area columns -->
 		<div class="row" id="connect-with-columns">
-			<div class="column small-12 medium-4" id="contact-us">
-				<h3>Contact Us</h3>
-				<p>
-					<a href="#">Department Name</a><br>
-					Building<br>
-					Campus (<a href="#">map</a>)<br>
-				</p>
-				<p>
-					<a href="tel:"><i class="fa fa-phone-square" aria-hidden="true"></i> 734-462-5555</a>
-					<br>
-					<a href="#"><i class="fa fa-envelope-square" aria-hidden="true"></i> email@schoolcraft.edu</a>
-				</p>
+
+			<!-- contact-us yellow column -->
+			<div class="column small-12 medium-12 large-4" id="contact-us">
+				<div class="column small-12 medium-6 large-12 contact-us-col-1-medium">
+					<h3>Contact Us</h3>
+					<p>
+						<a href="#">Department Name</a><br>
+						Building<br>
+						Campus (<a href="#">map</a>)<br>
+					</p>
+					<p>
+						<a href="tel:"><i class="fa fa-phone-square" aria-hidden="true"></i> 734-462-5555</a>
+						<br>
+						<a href="#"><i class="fa fa-envelope-square" aria-hidden="true"></i> email@schoolcraft.edu</a>
+					</p>
+				</div>
 				<br>
-				<button type="button" class="button"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;&nbsp;View Hours&nbsp;&nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
-				<br><br>
-				<p><strong>Have a FAQ?</strong><br>
-				<a href="#">View the Knowledge Base <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></p>
+				<div class="column small-12 medium-6 large-12 contact-us-col-2-medium">
+					<h3>Hours &amp; FAQ</h3>
+					<button type="button" class="button"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;&nbsp;View Hours&nbsp;&nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+					<br><br>
+					<p><strong>Have a FAQ?</strong><br>
+					<a href="#">View the Knowledge Base <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></p>
+				</div>
 			</div>
-			<div class="column small-12 medium-8" id="contact-right-1">
+
+			<!-- 2-column image span-->
+			<!--
+			<div class="column small-12 medium-8" id="contact-right-1"></div>
+			-->
 			
-			</div>
-			<!--div class="column small-12 medium-4" id="contact-right-2">
-				<h3>News & Announcements</h3>
+			<!-- news and event listing columns -->
+			<div class="column small-12 medium-6 large-4" id="contact-right-2">
+				<h3>News &amp; Announcements</h3>
 				<div class="news">
 					<div class="news-title">
 						<a href="">
@@ -694,8 +722,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="column small-12 medium-4" id="contact-right-3">
-				<h3>Schedule & Events</h3>
+			<div class="column small-12 medium-6 large-4" id="contact-right-3">
+				<h3>Schedule &amp; Events</h3>
 				<div class="event">
 					<div class="event-title">
 						<a href="">
@@ -712,19 +740,21 @@
 						</a>
 					</div>
 				</div>
-			</div-->
-		</div>
+			</div>
+
+		</div><!--/#connect-with-columns row -->
+		<!-- /end the three connect-with-area columns -->
 
 	<!-- FOOTER START -->
 		<div id="footer-wrapper" class="row column">
 
 			<div id="footer-links" class="row">
-				<div class="column small-12 medium-4">
+				<div class="column small-12 large-4 hide-for-medium-only">
 					<div id="footer-img-div">
 						<img class="footer-img-position" src="images/footer-brand-pillars.png" alt="Pride, Challenge, Achievement.">
 					</div>
 				</div>
-				<div class="column small-12 medium-8 hide-for-small-only" role="navigation">
+				<div class="column small-12 medium-12 large-8  hide-for-small-only">
 					<div class="row">
 						<div class="column small-12 medium-4">
 							<ul>
@@ -786,8 +816,20 @@
 				</div>
 			</div>
 
-			<div id="footer-logos" class="row">
-				<div class="column small-12">
+			<div id="footer-logos" class="row hide-for-small-only">	
+				<div class="footer-logo-block">
+					#footer-logos
+				</div>
+				<div class="footer-logo-block">
+					#footer-logos
+				</div>
+				<div class="footer-logo-block">
+					#footer-logos
+				</div>
+				<div class="footer-logo-block">
+					#footer-logos
+				</div>
+				<div class="footer-logo-block">
 					#footer-logos
 				</div>
 			</div>
