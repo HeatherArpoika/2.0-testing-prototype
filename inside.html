@@ -254,10 +254,10 @@
 			<nav id="main" class="row show-for-medium">
 				<div class="column medium-centered medium-12" id="megamenu">
 					<ul class="nav">
-						<li>
-							<a href="">About Us</a>
+						<li onClick="menuClick(this.id)" id="NavLink1">
+							<button>About Us</button>
 							<!-- BEGIN DROPDOWN -->
-							<div class="row dropdown-container" data-equalizer data-equalize-on="small">
+							<div class="row dropdown-container nav-hide" data-equalizer data-equalize-on="small">
 								<div class="nav-column">
 									<h3>Welcome</h3>
 									<ul>
@@ -302,10 +302,10 @@
 							</div>
 							<!-- END DROPDOWN -->
 						</li>
-						<li>
-							<a href="">Academics</a>
+						<li onClick="menuClick(this.id)" id="NavLink2">
+							<button>Academics</button>
 							<!-- BEGIN DROPDOWN -->
-							<div class="row dropdown-container" data-equalizer data-equalize-on="small">
+							<div class="row dropdown-container nav-hide" data-equalizer data-equalize-on="small">
 								<div class="nav-column">
 									<h3>Offerings</h3>
 									<ul>
@@ -351,10 +351,10 @@
 							</div>
 							<!-- END DROPDOWN -->
 						</li>
-						<li>
-							<a href="">Admissions</a>
+						<li onClick="menuClick(this.id)" id="NavLink3">
+							<button>Admissions</button>
 							<!-- BEGIN DROPDOWN -->
-							<div class="row dropdown-container" data-equalizer data-equalize-on="small">
+							<div class="row dropdown-container nav-hide" data-equalizer data-equalize-on="small">
 								<div class="nav-column">
 									<h3>Become a Student</h3>
 									<ul>
@@ -405,10 +405,10 @@
 							</div>
 							<!-- END DROPDOWN -->
 						</li>
-						<li>
-							<a href="">Campus&nbsp;Life</a>
+						<li onClick="menuClick(this.id)" id="NavLink4">
+							<button>Campus&nbsp;Life</button>
 							<!-- BEGIN DROPDOWN -->
-							<div class="row dropdown-container" data-equalizer data-equalize-on="small">
+							<div class="row dropdown-container nav-hide" data-equalizer data-equalize-on="small">
 								<div class="nav-column">
 									<h3>News</h3>
 									<ul>
@@ -455,9 +455,9 @@
 							</div>
 							<!-- END DROPDOWN -->
 						</li>
-						<li>
-							<a href="">Resources</a>
-							<div class="row dropdown-container" data-equalizer data-equalize-on="small">
+						<li onClick="menuClick(this.id)" id="NavLink5">
+							<button>Resources</button>
+							<div class="row dropdown-container nav-hide" data-equalizer data-equalize-on="small">
 								<div class="nav-column">
 									<h3>I Am a...</h3>
 									<ul>
@@ -511,10 +511,10 @@
 							</div>
 							<!-- END DROPDOWN -->
 						</li>
-						<li>
-							<a href="">Contact</a>
+						<li onClick="menuClick(this.id)" id="NavLink6">
+							<button>Contact</button>
 							<!-- BEGIN DROPDOWN -->
-							<div class="row dropdown-container" data-equalizer data-equalize-on="small">
+							<div class="row dropdown-container nav-hide" data-equalizer data-equalize-on="small">
 								<div class="nav-column">
 									<h3>Come Visit</h3>
 									<ul>
@@ -845,6 +845,47 @@
 		$(document).foundation();
 		$('span.off-canvas-open').on('click', function(){});
 		$('div.off-canvas-close').on('click', function(){});
+
+		//Array for main navigation;
+		var nav = [false, false, false, false, false, false];
+
+		//Function for providing onClick access to megamenu;
+		function menuClick(theID) {
+			var num = theID.substring(7,8)-1; console.log("Num: "+num);
+			var queryID = "#"+theID+" > div"; console.log(" queryID: "+queryID);
+			//close all first
+			for (i = 0; i < nav.length; i++) { 
+					if (i != num) {
+						nav[i] = false;
+						var closeID = "#NavLink"+(i+1)+" > div";
+						$(document.querySelector(closeID)).addClass('nav-hide');
+						$(document.querySelector(closeID)).removeClass('nav-show');
+					}
+			}
+		  if (nav[num]) { //if open, close it
+				$(document.querySelector(queryID)).addClass('nav-hide');
+				$(document.querySelector(queryID)).removeClass('nav-show');
+				nav[num]=false;
+		  }
+		  else { //if closed, open it
+				$(document.querySelector(queryID)).addClass('nav-show');
+				$(document.querySelector(queryID)).removeClass('nav-hide');
+				nav[num]=true;
+		  }
+		}
+
+		//Closes megamenu when user clicks anywhere except the menu;
+		$(document).on('click', function(event) {
+		  if (!$(event.target).closest('#main').length) {
+		    // Hide the menus.
+				for (i = 0; i < nav.length; i++) { 
+						nav[i] = false;
+						var closeID = "#NavLink"+(i+1)+" > div";
+						$(document.querySelector(closeID)).addClass('nav-hide');
+						$(document.querySelector(closeID)).removeClass('nav-show');
+		  	}
+			}
+		});
 	</script>
 
 </body>
