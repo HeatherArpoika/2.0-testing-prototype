@@ -391,11 +391,11 @@ Author: Schoolcraft College
 		border-radius: 0 0 3px 3px;
 	}
 
-.nav-hide {
-	opacity: 0;
-		visibility: hidden;
-		overflow: hidden;
-}
+	.nav-hide {
+		opacity: 0;
+			visibility: hidden;
+			overflow: hidden;
+	}
 
 	/*.nav > li:hover > div, */.nav-show {
 		opacity: 1;
@@ -712,7 +712,6 @@ Author: Schoolcraft College
 
 	#content-sub {
 		padding: 0px;
-		margin-top: -2px;
 	}
 
 	#content-sub img {
