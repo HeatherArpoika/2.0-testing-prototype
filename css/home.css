@@ -1,0 +1,104 @@
+/* 
+Purpose: Home Page Stylesheet
+Author: Schoolcraft College
+*/
+
+/* --------------------------------------------------------------
+>>>>> TABLE OF CONTENTS
+-----------------------------------------------------------------
+
+# HOME HEADER
+# ROWS
+	## WELCOME
+	## CALENDARS
+
+---------------------------------------------------------------*/
+
+	#home-content-wrapper {
+		background: #fff;
+		padding: 0;
+	}
+
+/* --------------------------------------------------------------
+# HOME HEADER
+-------------------------------------------------------------- */
+
+	#home-hero {
+		padding: 0;
+		margin-bottom: 25px;
+	}
+
+	#home-hero-left {
+		position: relative;
+		padding: 0;
+		height: 680px;
+		background: url("../images/chef.jpeg") center center;
+		background-size: cover;
+	}
+
+	#home-hero-right {
+		position: relative;
+		padding: 0;
+		height: 680px;
+		background: #002855;
+	}
+
+	.home-hero-chevron {
+		padding: 0;
+		position: absolute;
+		/* WHY DOES THIS NOT LINE UP */
+		bottom: -5px;
+	}
+
+	.home-hero-chevron {fill:#CC8A00;}
+	.home-hero-antichevron {fill:#FFFFFF;}
+
+
+/* --------------------------------------------------------------
+# ROW -- WELCOME
+-------------------------------------------------------------- */
+
+	.section-title {
+		margin-top: 25px;
+		margin-bottom: 25px;
+		text-align: center;
+	}
+
+/* --------------------------------------------------------------
+# ROW -- CALENDARS
+-------------------------------------------------------------- */
+
+	#calendar-left {
+		display: inline-block;
+		background-color: #EEEEEE;
+		width: 40%;
+		margin: 25px auto 25px 8%;
+		padding: 35px;
+	}
+
+	#calendar-right {
+		display: inline-block;
+		background-color: #EEEEEE;
+		width: 40%;
+		margin: 25px 8% 25px auto;
+		padding: 35px;
+		float: right;
+	}
+
+	#calendar-left h3, #calendar-right h3 {
+		text-align: center;
+		color: #CC8A00;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-top: 8px;
+		margin-bottom: 45px;
+	}
+
+	.event {
+		margin-bottom: 40px;
+	}
+
+	.event a {
+		color: #002855;
+		font-size: 1rem;
+	}

@@ -7,14 +7,18 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/foundation.css" />
 	<link rel="stylesheet" href="css/stylesheet.css">
+	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="css/stats-row.css">
 	<link href="https://fonts.googleapis.com/css?family=Jaldi:400,700&amp;subset=latin-ext" rel="stylesheet" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 	<script src="js/main.js"></script>
-</head>  
+</head>
+
 <body>
+
 	<div id="skip-to-content"><a href="#content-sub">Skip to main content</a></div>
 	
 	<!-- MAIN NAVIGATION START -->
@@ -226,27 +230,21 @@
 		<!-- MOBIE MASTHEAD -->
 			<div class="masthead-mobile row show-for-small-only" role="banner">
 				<div id="mobi-masthead" class="show-for-small-only">
-					<a href="home.html">
-						<img src="images/logo-schoolcraft-college-masthead-mobile.png" alt="Schoolcraft College" />
-					</a>
+					<img src="images/logo-schoolcraft-college-masthead-mobile.png" alt="Schoolcraft College" />
 					<span class="show-for-small-only float-right text-right off-canvas-open" data-toggle="offCanvas"><i class="fa fa-bars" aria-hidden="true"></i> Menu</span>
 				</div>
 			</div>
 		<!-- TABLET/DESKTOP MASTHEAD -->
 			<div id="masthead" class="row hide-for-small-only" role="banner">
 				<div class="column medium-6">
-					<a href="home.html">
-						<img src="images/logo-schoolcraft-college-masthead.png" alt="Schoolcraft College" />
-					</a>
+					<img src="images/logo-schoolcraft-college-masthead.png" alt="Schoolcraft College" />
 				</div>
 				<div class="column medium-6 text-right">
 					<!-- IMPORTANT LINKS -->
 						<div class="row column" id="quick-links">
 							<ul>
-								<li><a href="#">Blackboard</a></li>
-								<li><a href="#">WebAdvisor</a></li>
-								<li><a href="#">SC&nbsp;mail</a></li>
-								<li><a href="#">A-Z&nbsp;Index</a></li>
+								<li><a href="#">Schedules: Fall - Winter</a></li>
+								<li><a href="#">Register Now</a></li>
 							</ul>
 						</div>
 					<!-- SEARCH -->
@@ -572,183 +570,171 @@
 			</nav>
 		<!-- NAVIGATION END -->
 
-	
 	<!-- CONTENT START -->
-		<div id="content-wrapper" class="row">
+		<div id="home-content-wrapper" class="row">
 
-			<aside id="content-sub" class="column small-12 medium-3 column" role="complementary">
-				<img class="hide-for-small-only" id="aside-image" src="https://placeholdit.imgix.net/~text?w=366&h=245&txt=placeholder&txtsize=50">
-
-				<!--start accordian for mobile display of submenu -->
-				<ul id="mobi-submenu" class="vertical menu row show-for-small-only" data-accordion-menu>
-				  <li>
-				    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> Dept. Menu</a>
-				    <ul class="menu vertical nested">
-					    <ul class="sidenav">
-							<li><a href="">Link 1</a></li>
-							<li><a href="">Link 2</a></li>
-							<li><a href="">Link 3</a></li>
-						</ul>
-						<ul class="sidenav">
-							<li class="sidenav-title"><a href="">List Title</a></li>
-							<li><a href="">Link 1</a></li>
-							<li><a href="">Link 2</a></li>
-							<li><a href="">Link 3</a></li>
-						</ul>
-				    </ul>
-				  </li>
-				</ul>
-				<!-- end accordian for mobile display of submenu -->
-
-				<div class="side-nav-cont hide-for-small-only" data-sticky-container>
-					<div class="side-nav-cont" data-sticky data-top-anchor="aside-image:bottom" data-btm-anchor="content-main:bottom">
-						<ul class="sidenav hide-for-small-only" role="navigation">
-							<li><a href="">Link 1</a></li>
-							<li><a href="">Link 2</a></li>
-							<li><a href="#connect-with-heading">Contact Us</a></li>
-						</ul>
-						<ul class="sidenav hide-for-small-only" role="navigation">
-							<li class="sidenav-title"><a href="">List Title</a></li>
-							<li><a href="">Link 1</a></li>
-							<li><a href="">Link 2</a></li>
-							<li><a href="">Link 3</a></li>
-						</ul>
+			<!-- start header -->
+			<header id="home-hero" class="column small-12">
+				<div class="column small-8" id="home-hero-left">
+					<div class="column small-12 home-hero-chevron">
+						<svg width='100%' height='150px' viewBox="0 0 100 100" preserveAspectRatio="none">
+		        			<polygon class="home-hero-chevron" points="75 90, 100 60, 100 66.66, 75 100, 0 0, 0 0" />
+		        			<polygon class="home-hero-antichevron" points="75 100, 100 66.66, 100 100, 0 100, 0 0" />
+		    			</svg>
 					</div>
-        		</div>
-			</aside>
+				</div>
+				<div class="column small-4" id="home-hero-right">
+					<div class="column small-12 home-hero-chevron">
+						<svg width='100%' height='150px' viewBox="0 0 100 100" preserveAspectRatio="none">
+		        			<polygon class="home-hero-chevron" points="100 0, 0 66.66, 0 60" />
+		        			<polygon class="home-hero-antichevron" points="100 0, 100 100, 0 100, 0 66.66" />
+		    			</svg>
+					</div>
+				</div>
+			</header>
 
-			<div id="content-main" class="column small-12 medium-9" role="main">
-				<h1>Page title</h1>
-				<h2>This is heading 2</h2>
+			<div class="row column section-title">
+				<h2>Welcome to Schoolcraft. Welcome to college.</h2>
+			</div>
 
-				<p><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit. Curabitur non est non dolor sodales lobortis. Integer eget turpis urna. Ut dictum eu lorem sed <a href="#">ullamcorper</a>. In elementum odio eu diam placerat mollis. <em>Sed at massa sed enim tempus efficitur.</em> In facilisis libero sed facilisis porttitor. Duis aliquam, leo vitae suscipit varius, felis lectus tristique odio, quis tempus velit leo in dolor.</p>
+			<div class="row column" id="stats-row">
+				<div class="stat">
+					<a href="">
+						<div class="stat-circle" id="stat-1">
+							<div class="stat-num-bg">
+								<p class="stat-number">80</p>
+							</div>
+						</div>
+						<p class="text-center stat-title">
+							Rigorous Academic Programs
+						</p>
+					</a>
+				</div>
+				<div class="stat">
+					<a href="">
+						<div class="stat-circle" id="stat-2">
+							<div class="stat-num-bg">
+								<p class="stat-number">94</p>
+							</div>
+						</div>
+						<p class="text-center stat-title">
+							Student Activities & Atheletics
+						</p>
+					</a>
+				</div>
+				<div class="stat" id="stat-center">
+					<a href="">
+						<div class="stat-circle-main"></div>
+						<p class="stat-main">
+							Become an<br>Ocelot
+						</p>
+					</a>
+				</div>
+				<div class="stat">
+					<a href="">
+						<div class="stat-circle" id="stat-3">
+							<div class="stat-num-bg">
+								<p class="stat-number">98</p>
+							</div>
+						</div>
+						<p class="text-center stat-title">
+							Learning Support Services
+						</p>
+					</a>
+				</div>
+				<div class="stat">
+					<a href="">
+						<div class="stat-circle" id="stat-4">
+							<div class="stat-num-bg">
+								<p class="stat-number">11</p>
+							</div>
+						</div>
+						<p class="text-center stat-title">
+							Career Service Programs
+						</p>
+					</a>
+				</div>
+			</div>
 
-				<h3>This is heading 3</h3>
-
-				<strong>NOTE:</strong> This is not inside a paragraph tag. If this text looks good, then content stewards won't have to remember to set me to normal!<br><br>
-
-				<p>Nunc sagittis quam ac neque malesuada feugiat. Integer varius quis ante sit amet accumsan. Nullam aliquet eros accumsan pellentesque hendrerit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque placerat imperdiet mauris eu sodales. Sed et lacus eu nisl venenatis interdum vitae sit amet ipsum. In leo elit, posuere sit amet maximus sit amet, imperdiet sit amet lorem.</p>
-
-				<h4>This is heading 4</h4>
-
-				<p>Morbi in enim lacus. Maecenas sit amet mauris sit amet tortor malesuada suscipit at a orci. Nullam risus nibh, ultricies tempus rhoncus viverra, egestas ac nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis venenatis imperdiet. Ut nec lectus sit amet est sagittis suscipit. Vivamus et lorem vel velit tincidunt ultrices vitae sed augue. Etiam posuere dictum blandit. Quisque at quam convallis, pharetra lectus eget, laoreet metus. Mauris ornare diam ipsum. Aliquam ut pellentesque sem. Duis interdum est facilisis aliquam mattis. Mauris facilisis euismod nulla eu blandit. Maecenas ornare varius libero at pellentesque. Curabitur mattis lectus facilisis lectus consectetur, in varius sem finibus. Ut sodales eros nunc, in ornare nunc tincidunt vehicula.</p>
-				<div id="content-end"></div>
+			<div class="row column">
+				<div class="column small-12 section-title">
+					<h2>Calendar of Events</h2>
+				</div>
+				<div id="calendar-left">
+					<h3>College Events</h3>
+					<div class="event">
+						<div class="event-title">
+							<a href="">
+								<div class="event-date">Jan 21</div>
+								Pellentesque gravida nulla a mi laoreet ultricies.
+							</a>
+						</div>
+					</div>
+					<div class="event">
+						<div class="event-title">
+							<a href="">
+								<div class="event-date">Jan 21</div>
+								Quisque varius id mauris et lacinia.
+							</a>
+						</div>
+					</div>
+					<div class="event">
+						<div class="event-title">
+							<a href="">
+								<div class="event-date">Jan 21</div>
+								Quisque varius id mauris et lacinia.
+							</a>
+						</div>
+					</div>
+					<div class="event">
+						<div class="event-title">
+							<a href="">
+								<div class="event-date">Jan 21</div>
+								Quisque varius id mauris et lacinia.
+							</a>
+						</div>
+					</div>
+				</div>
+				<div id="calendar-right">
+					<h3>Academic Dates</h3>
+					<div class="event">
+						<div class="event-title">
+							<a href="">
+								<div class="event-date">Jan 21</div>
+								Pellentesque gravida nulla a mi laoreet ultricies.
+							</a>
+						</div>
+					</div>
+					<div class="event">
+						<div class="event-title">
+							<a href="">
+								<div class="event-date">Jan 21</div>
+								Quisque varius id mauris et lacinia.
+							</a>
+						</div>
+					</div>
+					<div class="event">
+						<div class="event-title">
+							<a href="">
+								<div class="event-date">Jan 21</div>
+								Quisque varius id mauris et lacinia.
+							</a>
+						</div>
+					</div>
+					<div class="event">
+						<div class="event-title">
+							<a href="">
+								<div class="event-date">Jan 21</div>
+								Quisque varius id mauris et lacinia.
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
 
 		</div><!--/#content-wrapper-->
 
-	<!--CONNECT WITH AREA-->
-
-		<!-- start social media icons and chevron -->
-		<div class="row" id="connect-with-area">
-			<div class="column small-12 text-center" id="connect-with-heading">
-				<h2>Connect&nbsp;with This&nbsp;Department</h2>
-				<div class="social-media-links">
-					<a href=""><i class="fa fa-trello" aria-hidden="true"></i></a>
-					<a href=""><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-					<a href=""><i class="fa fa-github-alt" aria-hidden="true"></i></a>
-				</div>
-			</div>
-			<!-- chevron for medium and up -->
-			<div class="column small-12 hide-for-small-only" id="contact-chevron">
-				<svg width='100%' height='125px' viewBox="0 0 100 100" preserveAspectRatio="none" style='fill:#CC8A00;'>
-					<style type="text/css">
-						#connect-with-antichevron {fill:#FFFFFF;}
-						#connect-with-chevron {fill:#CC8A00;}
-					</style>
-        			<polygon id="connect-with-antichevron" points="100 0, 100 0, 50 95, 0 0, 0 0" />
-        			<polygon id="connect-with-chevron" points="50 90, 100 0, 100 0, 50 100, 0 0, 0 0" />
-    			</svg>
-			</div>
-			<!-- chevron for small only -->
-			<div class="column small-12 show-for-small-only" id="contact-chevron-small">
-				<svg width='100%' height='50px' viewBox="0 0 100 100" preserveAspectRatio="none" style='fill:#CC8A00;'>
-					<style type="text/css">
-						#connect-with-antichevron {fill:#FFFFFF;}
-						#connect-with-chevron {fill:#CC8A00;}
-					</style>
-        			<polygon id="connect-with-antichevron" points="100 0, 100 0, 50 95, 0 0, 0 0" />
-        			<polygon id="connect-with-chevron" points="50 90, 100 0, 100 0, 50 100, 0 0, 0 0" />
-    			</svg>
-			</div>
-		</div>
-		<!-- /end social media icons and chevron -->
-
-		<!-- start the three connect-with-area columns -->
-		<div class="row" id="connect-with-columns">
-
-			<!-- contact-us yellow column -->
-			<div class="column small-12 medium-12 large-4" id="contact-us">
-				<div class="column small-12 medium-6 large-12 contact-us-col-1-medium">
-					<h3>Contact Us</h3>
-					<p>
-						<a href="#">Department Name</a><br>
-						Building<br>
-						Campus (<a href="#">map</a>)<br>
-					</p>
-					<p>
-						<a href="tel:"><i class="fa fa-phone-square" aria-hidden="true"></i> 734-462-5555</a>
-						<br>
-						<a href="#"><i class="fa fa-envelope-square" aria-hidden="true"></i> email@schoolcraft.edu</a>
-					</p>
-				</div>
-				<br>
-				<div class="column small-12 medium-6 large-12 contact-us-col-2-medium">
-					<h3>Hours &amp; FAQ</h3>
-					<button type="button" class="button"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;&nbsp;View Hours&nbsp;&nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
-					<br><br>
-					<p><strong>Have a FAQ?</strong><br>
-					<a href="#">View the Knowledge Base <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></p>
-				</div>
-			</div>
-
-			<!-- 2-column image span-->
-			<!--
-			<div class="column small-12 medium-8" id="contact-right-1"></div>
-			-->
-			
-			<!-- news and event listing columns -->
-			<div class="column small-12 medium-6 large-4" id="contact-right-2">
-				<h3>News &amp; Announcements</h3>
-				<div class="news">
-					<div class="news-title">
-						<a href="">
-							<div class="news-icon"><i class="fa fa-newspaper-o" aria-hidden="true"></i></div>
-							Pellentesque gravida nulla a mi laoreet ultricies.
-						</a>
-					</div>
-				</div>
-				<div class="news">
-					<div class="news-title">
-						<a href="">
-							<div class="news-icon"><i class="fa fa-bell" aria-hidden="true"></i></div>
-							Quisque varius id mauris et lacinia.
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="column small-12 medium-6 large-4" id="contact-right-3">
-				<h3>Schedule &amp; Events</h3>
-				<div class="event">
-					<div class="event-title">
-						<a href="">
-							<div class="event-date">Jan 21</div>
-							Pellentesque gravida nulla a mi laoreet ultricies.
-						</a>
-					</div>
-				</div>
-				<div class="event">
-					<div class="event-title">
-						<a href="">
-							<div class="event-date">Jan 21</div>
-							Quisque varius id mauris et lacinia.
-						</a>
-					</div>
-				</div>
-			</div>
-
-		</div><!--/#connect-with-columns row -->
-		<!-- /end the three connect-with-area columns -->
+		
 
 	<!-- FOOTER START -->
 		<div id="footer-wrapper" class="row column">
@@ -856,4 +842,5 @@
 </script>
 
 </body>
+
 </html>
