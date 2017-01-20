@@ -25,7 +25,7 @@ Author: Schoolcraft College
 		padding: 0;
 		background: 
 			linear-gradient(
-				rgba(2, 32, 64, 0), 
+				rgba(2, 32, 64, 0) 50%, 
 				rgba(2, 32, 64, 1)
 			),
 			url("../images/bg-argyle.png"),
