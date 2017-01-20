@@ -12,6 +12,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+	<script src="js/main.js"></script>
 </head>  
 <body>
 	<div id="skip-to-content"><a href="#content-sub">Skip to main content</a></div>
@@ -841,52 +842,14 @@
 				</div>
 			</div>
 
-	<script>
-		$(document).foundation();
-		$('span.off-canvas-open').on('click', function(){});
-		$('div.off-canvas-close').on('click', function(){});
+<script>
+	// Call in Foundation javascript;
+	$(document).foundation();
 
-		//Array for main navigation;
-		var nav = [false, false, false, false, false, false];
-
-		//Function for providing onClick access to megamenu;
-		function menuClick(theID) {
-			var num = theID.substring(7,8)-1; console.log("Num: "+num);
-			var queryID = "#"+theID+" > div"; console.log(" queryID: "+queryID);
-			//close all first
-			for (i = 0; i < nav.length; i++) { 
-					if (i != num) {
-						nav[i] = false;
-						var closeID = "#NavLink"+(i+1)+" > div";
-						$(document.querySelector(closeID)).addClass('nav-hide');
-						$(document.querySelector(closeID)).removeClass('nav-show');
-					}
-			}
-		  if (nav[num]) { //if open, close it
-				$(document.querySelector(queryID)).addClass('nav-hide');
-				$(document.querySelector(queryID)).removeClass('nav-show');
-				nav[num]=false;
-		  }
-		  else { //if closed, open it
-				$(document.querySelector(queryID)).addClass('nav-show');
-				$(document.querySelector(queryID)).removeClass('nav-hide');
-				nav[num]=true;
-		  }
-		}
-
-		//Closes megamenu when user clicks anywhere except the menu;
-		$(document).on('click', function(event) {
-		  if (!$(event.target).closest('#main').length) {
-		    // Hide the menus.
-				for (i = 0; i < nav.length; i++) { 
-						nav[i] = false;
-						var closeID = "#NavLink"+(i+1)+" > div";
-						$(document.querySelector(closeID)).addClass('nav-hide');
-						$(document.querySelector(closeID)).removeClass('nav-show');
-		  	}
-			}
-		});
-	</script>
+	//Fix for iOS off-canvas toggling;
+	$('span.off-canvas-open').on('click', function(){});
+	$('div.off-canvas-close').on('click', function(){});
+</script>
 
 </body>
 </html>
