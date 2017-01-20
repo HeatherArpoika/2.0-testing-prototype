@@ -1,10 +1,3 @@
-// Call in Foundation javascript;
-$(document).foundation();
-
-//Fix for iOS off-canvas toggling;
-$('span.off-canvas-open').on('click', function(){});
-$('div.off-canvas-close').on('click', function(){});
-
 // Array for main navigation;
 // False == closed; True == open;
 // Create array and set all to false on page load;

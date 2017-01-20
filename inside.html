@@ -842,7 +842,14 @@
 				</div>
 			</div>
 
+<script>
+	// Call in Foundation javascript;
+	$(document).foundation();
 
+	//Fix for iOS off-canvas toggling;
+	$('span.off-canvas-open').on('click', function(){});
+	$('div.off-canvas-close').on('click', function(){});
+</script>
 
 </body>
 </html>
