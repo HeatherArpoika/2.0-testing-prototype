@@ -19,6 +19,23 @@ Author: Schoolcraft College
 		padding: 0;
 	}
 
+	.section-title {
+		font: 2.57rem "Jaldi", sans-serif;
+    	color: #002855;
+    	text-align: center;
+    	margin-top: 25px;
+		margin-bottom: 25px;
+	}
+
+	.section-subtitle {
+		font: 2rem "Jaldi", sans-serif;
+		font-weight: bold;
+    	color: #A07400;
+    	text-transform: uppercase;
+    	text-align: center;
+		margin-bottom: 25px;
+	}
+
 /* --------------------------------------------------------------
 # HOME HEADER
 -------------------------------------------------------------- */
@@ -58,11 +75,7 @@ Author: Schoolcraft College
 # ROW -- WELCOME
 -------------------------------------------------------------- */
 
-	.section-title {
-		margin-top: 25px;
-		margin-bottom: 25px;
-		text-align: center;
-	}
+	
 
 /* --------------------------------------------------------------
 # ROW -- CALENDARS
@@ -101,4 +114,139 @@ Author: Schoolcraft College
 	.event a {
 		color: #002855;
 		font-size: 1rem;
+	}
+
+/* --------------------------------------------------------------
+# ROW -- SOCIAL MEDIA
+-------------------------------------------------------------- */
+
+	#home-social-media {
+		margin: 25px auto 25px auto;
+	}
+
+	#instagram-feed {
+		display: flex;
+		align-items: center;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+		padding: 25px;
+		margin: auto auto 25px auto;
+	}
+
+	#instagram-feed img {
+		width: 180px;
+		height: 180px;
+		margin: auto;
+	}
+
+	#home-social-links {
+		display: flex;
+		align-items: center;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+		margin: 25px auto 25px auto;
+	}
+
+	.social-link {
+		text-align: center;
+		line-height: 70px;
+		vertical-align: middle;
+		font-size: 2.3rem;
+		margin: auto;
+	}
+
+	.social-link a {
+		display: block;
+		width: 70px;
+		height: 70px;
+		color: #FFFFFF;
+		border-radius: 100%;
+	}
+
+	#facebook a {
+		background: #3b5998;
+
+		transition: all 0.5s ease;
+	}
+
+	#twitter a {
+		background: #55acee;
+
+		transition: all 0.5s ease;
+	}
+
+	#linkedin a {
+		background: #0976b4;
+
+		transition: all 0.5s ease;
+	}
+
+	#instagram a {
+		background: #3f729b;
+
+		transition: all 0.5s ease;
+	}
+
+	#youtube a {
+		background: #e52d27;
+
+		transition: all 0.5s ease;
+	}
+
+	#facebook a:hover, 
+	#twitter a:hover, 
+	#linkedin a:hover, 
+	#instagram a:hover, 
+	#youtube a:hover {
+		background: #002855;
+		color: #FDD26E;
+
+		transition: all 0.5s ease;
+	}
+
+/* --------------------------------------------------------------
+# ROW -- PRODUCT LINES
+-------------------------------------------------------------- */
+
+	#product-lines {
+		min-height: 750px;
+		background: #002855;
+	}
+
+	#product-lines-chevron {
+		padding: 0;
+	}
+
+	#product-lines-title {
+		color: #FFFFFF;
+		margin-top: 75px;
+	}
+
+	#product-lines-container {
+		display: flex;
+		align-items: center;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+
+	#product-block {
+		display: block;
+		background: #A07400;
+		width: 320px;
+		height: 160px;
+		border: #FDD26E 1px solid;
+		margin: 25px auto;
+		padding: 40px 25px 25px 25px;
+
+		font-family: 'Jaldi', sans-serif;
+		text-transform: uppercase;
+		text-align: center;
+		color: #FFFFFF;
+		font-size: 1.4rem;
+		font-weight: bold;
+	}
+
+	#product-block .fa {
+		font-size: 3rem;
+		color: #FDD26E;
 	}
