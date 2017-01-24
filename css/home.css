@@ -140,21 +140,27 @@ Author: Schoolcraft College
 # ROW -- CALENDARS
 -------------------------------------------------------------- */
 
+	#calendars {
+		display: flex;
+		align-items: center;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+
 	#calendar-left {
-		display: inline-block;
+		display: block;
 		background-color: #EEEEEE;
-		width: 40%;
-		margin: 25px auto 25px 8%;
+		width: 480px;
 		padding: 35px;
+		margin: auto;
 	}
 
 	#calendar-right {
-		display: inline-block;
+		display: block;
 		background-color: #EEEEEE;
-		width: 40%;
-		margin: 25px 8% 25px auto;
+		width: 480px;
 		padding: 35px;
-		float: right;
+		margin: auto;
 	}
 
 	#calendar-left h3, #calendar-right h3 {
@@ -305,9 +311,22 @@ Author: Schoolcraft College
 		font-weight: bold;
 	}
 
+	#product-block:hover {
+		background: #FDD26E;
+		color: #A07400;
+
+		transition: all 0.7s ease;
+	}
+
 	#product-block .fa {
 		font-size: 3rem;
 		color: #FDD26E;
+	}
+
+	#product-block:hover .fa {
+		color: #A07400;
+		
+		transition: all 0.7s ease;
 	}
 
 /* --------------------------------------------------------------
@@ -320,7 +339,15 @@ Author: Schoolcraft College
 
 	#home-steps-left {
 		height: 500px;
+		margin: auto;
 		background: url("../images/bg-strip-malt.jpg");
+	}
+
+	/* Small only */
+	@media screen and (max-width: 39.9375em) {
+		#home-steps-left {
+			height: auto;
+		}
 	}
 
 	#home-steps-right {
@@ -331,6 +358,7 @@ Author: Schoolcraft College
 
 	#home-steps ol {
 		counter-reset:li;
+		margin: auto;
 	}
 	
 	#home-steps ol > li {
