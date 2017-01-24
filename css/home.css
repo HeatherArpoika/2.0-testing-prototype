@@ -7,12 +7,20 @@ Author: Schoolcraft College
 >>>>> TABLE OF CONTENTS
 -----------------------------------------------------------------
 
+# HOME BASICS
 # HOME HEADER
 # ROWS
 	## WELCOME
 	## CALENDARS
+	## SOCIAL MEDIA
+	## PRODUCT LINES
+	## STEPS
 
 ---------------------------------------------------------------*/
+
+/* --------------------------------------------------------------
+# HOME BASICS
+-------------------------------------------------------------- */
 
 	#home-content-wrapper {
 		background: #fff;
@@ -60,6 +68,57 @@ Author: Schoolcraft College
 		background: #002855;
 	}
 
+	.hero-image-caption {
+		position: absolute;
+		bottom: 200px;
+		width: 50%;
+		padding: 25px;
+		background: rgba(0,0,0,0.7);
+	}
+	
+	.hero-image-caption p {
+		color: #FDD26E;
+		font-family: 'Jaldi', sans-serif;
+		font-size: 2.1rem;
+		line-height: 2.1rem;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	.hero-news {
+		margin: 30px 30px 5px 30px;
+	}
+
+	.hero-news-icon {
+		position: relative;
+		width: 100px;
+		height: 100px;
+		float: left;
+		background: url("../images/a-chef.jpg") center center;
+		background-size: cover;
+		margin-right: 15px;
+		border-radius: 100%;
+		transition: background-color 0.7s ease;
+		transition: color 0.7s ease;
+	}
+
+	.hero-news-title {
+		height: 100px;
+		z-index: 400;
+	}
+
+	.hero-news-title a {
+		display: block;
+		font-family: 'Jaldi', sans-serif;
+		font-size: 1.2rem;
+		vertical-align: middle;
+		color: #5BC2E7;
+	}
+
+	.hero-news-title a:hover {
+		text-decoration: underline;
+	}
+
 	.home-hero-chevron {
 		padding: 0;
 		position: absolute;
@@ -75,7 +134,7 @@ Author: Schoolcraft College
 # ROW -- WELCOME
 -------------------------------------------------------------- */
 
-	
+
 
 /* --------------------------------------------------------------
 # ROW -- CALENDARS
@@ -249,4 +308,68 @@ Author: Schoolcraft College
 	#product-block .fa {
 		font-size: 3rem;
 		color: #FDD26E;
+	}
+
+/* --------------------------------------------------------------
+# ROW -- STEPS
+-------------------------------------------------------------- */
+
+	#home-steps {
+		height: 500px;
+	}
+
+	#home-steps-left {
+		height: 500px;
+		background: url("../images/bg-strip-malt.jpg");
+	}
+
+	#home-steps-right {
+		height: 500px;
+		background: url("../images/students.jpeg") center center;
+		background-size: cover;
+	}
+
+	#home-steps ol {
+		counter-reset:li;
+	}
+	
+	#home-steps ol > li {
+		position:relative;
+		list-style:none;
+		margin: 15px;
+	}
+
+	#home-steps ol > li > a {
+		color: #002855;
+		font-family: 'Jaldi', sans-serif;
+		font-size: 2.3rem;
+		text-decoration: none;
+
+		line-height: 50px;
+		vertical-align: middle;
+	}
+
+	#home-steps ol > li:hover {
+		font-weight: bold;
+	}
+
+	#home-steps ol > li:before {
+		content:counter(li);
+		counter-increment:li;
+		
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		padding: 5px;
+		margin-right: 15px;
+		border-radius: 100%;
+		background: #5BC2E7;
+
+		color: #002855;
+		font-family: 'Jaldi', sans-serif;
+		font-size: 2.3rem;
+
+		line-height: 40px;
+		vertical-align: middle;
+		text-align: center;
 	}
