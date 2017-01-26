@@ -56,7 +56,7 @@ Author: Schoolcraft College
 	#home-hero-left {
 		position: relative;
 		padding: 0;
-		height: 680px;
+		height: 640px;
 		background: url("../images/chef.jpeg") center center;
 		background-size: cover;
 	}
@@ -64,7 +64,7 @@ Author: Schoolcraft College
 	#home-hero-right {
 		position: relative;
 		padding: 0;
-		height: 680px;
+		height: 640px;
 		background: #002855;
 	}
 
