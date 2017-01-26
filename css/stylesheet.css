@@ -982,7 +982,7 @@ Author: Schoolcraft College
 
 		#contact-right-1, #contact-right-2, #contact-right-3 {
 			height: auto;
-			padding: 25px 25px 25px 25px;
+			padding: 0 25px 0 25px;
 		}
 
 		#contact-right-1 h3, #contact-right-2 h3, #contact-right-3 h3 {
