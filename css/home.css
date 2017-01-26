@@ -68,12 +68,26 @@ Author: Schoolcraft College
 		background: #002855;
 	}
 
+	@media screen and (max-width: 63.9375em) {
+		#home-hero-right {
+			height: auto;
+			padding-bottom: 25px;
+		}
+	}
+
 	.hero-image-caption {
 		position: absolute;
 		bottom: 200px;
 		width: 50%;
 		padding: 25px;
 		background: rgba(0,0,0,0.7);
+	}
+
+	/* Up to Medium */
+	@media screen and (max-width: 63.9375em) {
+		.hero-image-caption {
+			width: 90%;
+		}
 	}
 	
 	.hero-image-caption p {
@@ -264,7 +278,6 @@ Author: Schoolcraft College
 	#instagram a:hover, 
 	#youtube a:hover {
 		background: #002855;
-		color: #FDD26E;
 
 		transition: all 0.5s ease;
 	}

@@ -580,21 +580,29 @@
 		<div id="home-content-wrapper" class="row">
 
 		<!-- start header -->
-			<header id="home-hero" class="column small-12">
-				<div class="column small-8" id="home-hero-left">
+			<header id="home-hero" class="row column large-12">
+				<div class="column small-12 large-8" id="home-hero-left">
 					<div class="hero-image-caption">
 						<p>Stop wondering what you're capable of.</p>
 						<p>Prove it.</p>
 					</div>
 					<!-- HERO LEFT SVG -->
-					<div class="column small-12 home-hero-chevron">
-						<svg width='100%' height='150px' viewBox="0 0 100 100" preserveAspectRatio="none">
-		        			<polygon class="home-hero-chevron" points="75 90, 100 60, 100 66.66, 75 100, 0 0, 0 0" />
-		        			<polygon class="home-hero-antichevron" points="75 100, 100 66.66, 100 100, 0 100, 0 0" />
-		    			</svg>
-					</div>
+						<!-- For large and up -->
+						<div class="column small-12 home-hero-chevron hide-for-small show-for-large">
+							<svg width='100%' height='150px' viewBox="0 0 100 100" preserveAspectRatio="none">
+								<polygon class="home-hero-chevron" points="75 90, 100 60, 100 66.66, 75 100, 0 0, 0 0" />
+								<polygon class="home-hero-antichevron" points="75 100, 100 66.66, 100 100, 0 100, 0 0" />
+							</svg>
+						</div>
+						<!-- For small and medium -->
+						<div class="column small-12 home-hero-chevron hide-for-large">
+							<svg width='100%' height='100px' viewBox="0 0 100 100" preserveAspectRatio="none">
+								<polygon class="home-hero-chevron" points="50 90, 100 0, 50 100, 0 0" />
+								<polygon class="home-hero-antichevron" points="50 100, 100 0, 100 100, 0 100, 0 0" style="fill:#002855;" />
+							</svg>
+						</div>
 				</div>
-				<div class="column small-4" id="home-hero-right">
+				<div class="column small-12 large-4" id="home-hero-right">
 					<div class="hero-news">
 						<div class="hero-news-title">
 							<a href="">
@@ -628,7 +636,7 @@
 						</div>
 					</div>
 					<!-- HERO RIGHT SVG -->
-					<div class="column small-12 home-hero-chevron">
+					<div class="column small-12 home-hero-chevron show-for-large">
 						<svg width='100%' height='150px' viewBox="0 0 100 100" preserveAspectRatio="none">
 		        			<polygon class="home-hero-chevron" points="100 0, 0 66.66, 0 60" />
 		        			<polygon class="home-hero-antichevron" points="100 0, 100 100, 0 100, 0 66.66" />
@@ -644,7 +652,7 @@
 
 		<!-- Start Stats Row -->
 			<div class="row column" id="stats-row">
-				<div class="stat">
+				<div class="stat show-for-medium">
 					<a href="">
 						<div class="stat-circle" id="stat-1">
 							<div class="stat-num-bg">
@@ -656,7 +664,7 @@
 						</a>
 					</a>
 				</div>
-				<div class="stat">
+				<div class="stat show-for-medium">
 					<a href="">
 						<div class="stat-circle" id="stat-2">
 							<div class="stat-num-bg">
@@ -664,7 +672,7 @@
 							</div>
 						</div>
 						<a class="text-center stat-title">
-							Student Activities & Atheletics
+							Student Activities & Athletics
 						</a>
 					</a>
 				</div>
@@ -676,7 +684,7 @@
 						</a>
 					</a>
 				</div>
-				<div class="stat">
+				<div class="stat show-for-medium">
 					<a href="">
 						<div class="stat-circle" id="stat-3">
 							<div class="stat-num-bg">
@@ -688,7 +696,7 @@
 						</a>
 					</a>
 				</div>
-				<div class="stat">
+				<div class="stat show-for-medium">
 					<a href="">
 						<div class="stat-circle" id="stat-4">
 							<div class="stat-num-bg">
@@ -854,7 +862,7 @@
 
 		<!-- Start Steps/CTA Row -->
 			<div class="row column" id="home-steps">
-				<div class="column small-12 medium-5" id="home-steps-left">
+				<div class="column small-12 medium-5 large-4" id="home-steps-left">
 					<ol>
 						<li><a href="">Inquire</a></li>
 						<li><a href="">Tour</a></li>
@@ -862,7 +870,7 @@
 						<li><a href="">Register</a></li>
 					</ol>
 				</div>
-				<div class="column small-12 medium-7" id="home-steps-right"></div>
+				<div class="column small-12 medium-7 large-8" id="home-steps-right"></div>
 			</div>
 		<!-- End Steps Row -->
 
