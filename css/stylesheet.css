@@ -143,6 +143,9 @@ Author: Schoolcraft College
 
 	/* Medium only */
  	@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+ 		#content-main {
+ 			font: 1.10rem/1.63rem "Jaldi", sans-serif;
+ 		}
  		#content-main > h1 {
  			font-size: 1.41rem;
 			margin-bottom: 25px;
@@ -259,6 +262,24 @@ Author: Schoolcraft College
 		text-decoration: underline;
 		color: #A07400;
 	}
+
+	/* Fix for quicklinks disappearing off the right edge */
+	@media only screen and (max-width: 759px) {
+		#quick-links li {
+			padding-left: 13px;
+		}
+		#quick-links li:first-child {
+			padding-left: 0px;
+		}
+		#quick-links ul {
+			margin-left: 0px;
+		}
+		#masthead .column.medium-6.text-right {
+			padding-left: 0px;
+		}
+	}
+
+
 /* --------------------------------------------------------------
 ## SEARCH BAR
 -------------------------------------------------------------- */
@@ -335,10 +356,11 @@ Author: Schoolcraft College
 		margin: 0;	
 	}
 
-	.nav > li > a {
+	.nav > li > button {
 		position: relative;
 		display: block;
 		height: 54px;
+		width: 100%;
 		border-bottom: none;
 		font: 1.15rem/54px "Jaldi", sans-serif;
 	 	color: #fff;
@@ -347,12 +369,14 @@ Author: Schoolcraft College
 		z-index: 510;
 	}
 
-	.nav > li:hover > a {
+	.nav > li > button:hover {
 		color: #cc8a00;
 		font-weight: bold;
+		opacity: 1;
+		transition: none;
 	}
 	 
-	.nav > li:first-child > a {
+	.nav > li:first-child {
 		border-radius: 3px 0 0 3px;
 		border-left: none;
 	}
@@ -363,21 +387,17 @@ Author: Schoolcraft College
 		width: 100%;
 		top: 50px;
 		left: 0;
-	 
-		opacity: 0;
-		visibility: hidden;
-		overflow: hidden;
-	 
+
 		border-radius: 0 0 3px 3px;
-	 
-		/*-webkit-transition: all .3s ease .15s;
-		-moz-transition: all .3s ease .15s;
-		-o-transition: all .3s ease .15s;
-		-ms-transition: all .3s ease .15s;
-		transition: all .3s ease .15s;*/
 	}
 
-	.nav > li:hover > div {
+	.nav-hide {
+		opacity: 0;
+			visibility: hidden;
+			overflow: hidden;
+	}
+
+	/*.nav > li:hover > div, */.nav-show {
 		opacity: 1;
 		visibility: visible;
 		overflow: visible;
@@ -425,7 +445,7 @@ Author: Schoolcraft College
 		- li:hover so the mouse can be on the dropdown and the arrow stays.
 		- Important: Selects only the a child of the li child of .nav, otherwise would select all a elements.
 	*/
-	.nav > li:hover > a:after {
+	.nav > li:hover > button:after {
 	    content: "";
 	    display: block;
 	    border: 13px solid transparent; /* Adjust for larger or smaller arrow. */
@@ -692,7 +712,6 @@ Author: Schoolcraft College
 
 	#content-sub {
 		padding: 0px;
-		margin-top: -2px;
 	}
 
 	#content-sub img {
@@ -708,6 +727,7 @@ Author: Schoolcraft College
 	/* Medium only */
  	@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
  		#content-main {
+ 			font: 1.10rem/1.63rem "Jaldi", sans-serif;
  			padding: 25px;
  		}
  	} 

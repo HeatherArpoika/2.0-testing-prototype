@@ -7,14 +7,17 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/foundation.css" />
 	<link rel="stylesheet" href="css/stylesheet.css">
+	<link rel="stylesheet" href="css/product-line.css">
 	<link href="https://fonts.googleapis.com/css?family=Jaldi:400,700&amp;subset=latin-ext" rel="stylesheet" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 	<script src="js/main.js"></script>
-</head>  
+</head>
+
 <body>
+
 	<div id="skip-to-content"><a href="#content-sub">Skip to main content</a></div>
 	
 	<!-- MAIN NAVIGATION START -->
@@ -226,27 +229,21 @@
 		<!-- MOBIE MASTHEAD -->
 			<div class="masthead-mobile row show-for-small-only" role="banner">
 				<div id="mobi-masthead" class="show-for-small-only">
-					<a href="home.html">
-						<img src="images/logo-schoolcraft-college-masthead-mobile.png" alt="Schoolcraft College" />
-					</a>
+					<img src="images/logo-schoolcraft-college-masthead-mobile.png" alt="Schoolcraft College" />
 					<span class="show-for-small-only float-right text-right off-canvas-open" data-toggle="offCanvas"><i class="fa fa-bars" aria-hidden="true"></i> Menu</span>
 				</div>
 			</div>
 		<!-- TABLET/DESKTOP MASTHEAD -->
 			<div id="masthead" class="row hide-for-small-only" role="banner">
 				<div class="column medium-6">
-					<a href="home.html">
-						<img src="images/logo-schoolcraft-college-masthead.png" alt="Schoolcraft College" />
-					</a>
+					<img src="images/logo-schoolcraft-college-masthead.png" alt="Schoolcraft College" />
 				</div>
 				<div class="column medium-6 text-right">
 					<!-- IMPORTANT LINKS -->
 						<div class="row column" id="quick-links">
 							<ul>
-								<li><a href="#">Blackboard</a></li>
-								<li><a href="#">WebAdvisor</a></li>
-								<li><a href="#">SC&nbsp;mail</a></li>
-								<li><a href="#">A-Z&nbsp;Index</a></li>
+								<li><a href="#">Schedules: Fall - Winter</a></li>
+								<li><a href="#">Register Now</a></li>
 							</ul>
 						</div>
 					<!-- SEARCH -->
@@ -255,358 +252,365 @@
 			</div>
 	<!--/#masthead-->
 
-	<!-- NAVIGATION START -->
-		<nav id="main" class="row show-for-medium">
-			<div class="column medium-centered medium-12" id="megamenu">
-				<ul class="nav">
-					<li onClick="menuClick(this.id)" id="NavLink1">
-						<button>About Us</button>
-						<!-- BEGIN DROPDOWN -->
-						<div class="row dropdown-container nav-hide" data-equalizer data-equalize-on="small">
-							<div class="nav-column">
-								<h3>Welcome</h3>
-								<ul>
-									<li><a href="#">Our History</a></li>
-									<li><a href="#">Mission &amp; Vision</a></li>
-									<li><a href="#">President's Message</a></li>
-									<li><a href="#">Quick Facts</a></li>
-								</ul>
+		<!-- NAVIGATION START -->
+			<nav id="main" class="row show-for-medium">
+				<div class="column medium-centered medium-12" id="megamenu">
+					<ul class="nav">
+						<li onClick="menuClick(this.id)" id="NavLink1">
+							<button>About Us</button>
+							<!-- BEGIN DROPDOWN -->
+							<div class="row dropdown-container nav-hide" data-equalizer data-equalize-on="small">
+								<div class="nav-column">
+									<h3>Welcome</h3>
+									<ul>
+										<li><a href="#">Our History</a></li>
+										<li><a href="#">Mission &amp; Vision</a></li>
+										<li><a href="#">President's Message</a></li>
+										<li><a href="#">Quick Facts</a></li>
+									</ul>
+								</div>
+								<div class="nav-column">
+									<h3>Leadership</h3>
+									<ul>
+										<li><a href="#">Board of Trustees</a></li>
+										<li><a href="#">Cabinet Members</a></li>
+									</ul>
+								</div>
+								<div class="nav-column">
+									<h3>Our Community</h3>
+									<ul>
+										<li><a href="#">Alumni &amp; Friends</a></li>
+										<li><a href="#">Employment</a></li>
+										<li><a href="#">Schoolcraft Foundation</a></li>
+									</ul>
+								</div>
+								<div class="nav-column">
+									<h3>Consumer Info</h3>
+									<ul>
+										<li><a href="#">Accreditation</a></li>
+										<li><a href="#">Annual Reports</a></li>
+										<li><a href="#">College Policies</a></li>
+										<li><a href="#">Legal &amp; Tax Status</a></li>
+									</ul>
+								</div>
+								<div class="column medium-centered medium-12 btn-cant-find-it">
+									<button type="button" class="button"><i class="fa fa-question-circle"></i>&nbsp; Can't find it?</button>
+								</div>
+								<div class="column medium-centered medium-12 megamenu-message">
+									<img class="round-image" src="images/megamenu-msg.png" alt="photo of a student" />
+									<h4>Register for Fall Classes by August 29</h4>
+									<h5><a href="#">View Courses Now</a></h5>
+								</div>
 							</div>
-							<div class="nav-column">
-								<h3>Leadership</h3>
-								<ul>
-									<li><a href="#">Board of Trustees</a></li>
-									<li><a href="#">Cabinet Members</a></li>
-								</ul>
+							<!-- END DROPDOWN -->
+						</li>
+						<li onClick="menuClick(this.id)" id="NavLink2">
+							<button>Academics</button>
+							<!-- BEGIN DROPDOWN -->
+							<div class="row dropdown-container nav-hide" data-equalizer data-equalize-on="small">
+								<div class="nav-column">
+									<h3>Offerings</h3>
+									<ul>
+										<li><a href="#">Course Formats</a></li>
+										<li><a href="#">Degrees &amp; Certificates</a></li>
+										<li><a href="#">SC to U: Transfer</a></li>
+									</ul>
+								</div>
+								<div class="nav-column">
+									<h3>Areas of Study</h3>
+									<ul>
+										<li><a href="#">Course Catalog</a></li>
+										<li><a href="#">Academic Pathways</a></li>
+										<li><a href="#">Majors</a></li>
+										<li><a href="#">Courses Offered</a></li>
+									</ul>
+								</div>
+								<div class="nav-column">
+									<h3>Registration</h3>
+									<ul>
+										<li><a href="#">Become a Student</a></li>
+										<li><a href="#">Course Schedules</a></li>
+										<li><a href="#">Important Dates</a></li>
+										<li><a href="#">How to Register</a></li>
+										<li><a href="#">Registration Office</a></li>
+									</ul>
+								</div>
+								<div class="nav-column">
+									<h3>Support</h3>
+									<ul>
+										<li><a href="#">Academic Advising</a></li>
+										<li><a href="#">Student Records</a></li>
+									</ul>
+								</div>
+								<div class="column medium-centered medium-12 btn-cant-find-it">
+									<button type="button" class="primary button"><i class="fa fa-question-circle"></i>&nbsp; Can't find it?</button>
+								</div>
+								<div class="column medium-centered medium-12 megamenu-message">
+									<img class="round-image" src="images/megamenu-msg.png" alt="photo of a student" />
+									<h4>Register for Fall Classes by August 29</h4>
+									<h5><a href="#">View Courses Now</a></h5>
+								</div>
 							</div>
-							<div class="nav-column">
-								<h3>Our Community</h3>
-								<ul>
-									<li><a href="#">Alumni &amp; Friends</a></li>
-									<li><a href="#">Employment</a></li>
-									<li><a href="#">Schoolcraft Foundation</a></li>
-								</ul>
+							<!-- END DROPDOWN -->
+						</li>
+						<li onClick="menuClick(this.id)" id="NavLink3">
+							<button>Admissions</button>
+							<!-- BEGIN DROPDOWN -->
+							<div class="row dropdown-container nav-hide" data-equalizer data-equalize-on="small">
+								<div class="nav-column">
+									<h3>Become a Student</h3>
+									<ul>
+										<li><a href="#">How to Start</a></li>
+										<li><a href="#">Apply Now</a></li>
+										<li><a href="#">Requestion Information</a></li>
+										<li><a href="#">Tours &amp; Orientation</a></li>
+										<li><a href="#">Register for Classes</a></li>
+									</ul>
+								</div>
+								<div class="nav-column">
+									<h3>Paying for College</h3>
+									<ul>
+										<li><a href="#">Calculators</a></li>
+										<li><a href="#">Cashier's Office</a></li>
+										<li><a href="#">Financial Aid</a></li>
+										<li><a href="#">Scholarships</a></li>
+										<li><a href="#">Tuition &amp; Fees</a></li>
+									</ul>
+								</div>
+								<div class="nav-column">
+									<h3>Support &amp; Guidance</h3>
+									<ul>
+										<li><a href="#">Academic Advising</a></li>
+										<li><a href="#">Counseling</a></li>
+										<li><a href="#">Disability Support Services</a></li>
+										<li><a href="#">International Students</a></li>
+										<li><a href="#">Veterans Resource Center</a></li>
+									</ul>
+								</div>
+								<div class="nav-column">
+									<h3>Student Info</h3>
+									<ul>
+										<li><a href="#">Graduation</a></li>
+										<li><a href="#">Important Dates</a></li>
+										<li><a href="#">Student Accounts</a></li>
+										<li><a href="#">Student Records</a></li>
+									</ul>
+								</div>
+								<div class="column medium-centered medium-12 btn-cant-find-it">
+									<button type="button" class="primary button"><i class="fa fa-question-circle"></i>&nbsp; Can't find it?</button>
+								</div>
+								<div class="column medium-centered medium-12 megamenu-message">
+									<img class="round-image" src="images/megamenu-msg.png" alt="photo of a student" />
+									<h4>Register for Fall Classes by August 29</h4>
+									<h5><a href="#">View Courses Now</a></h5>
+								</div>
 							</div>
-							<div class="nav-column">
-								<h3>Consumer Info</h3>
-								<ul>
-									<li><a href="#">Accreditation</a></li>
-									<li><a href="#">Annual Reports</a></li>
-									<li><a href="#">College Policies</a></li>
-									<li><a href="#">Legal &amp; Tax Status</a></li>
-								</ul>
+							<!-- END DROPDOWN -->
+						</li>
+						<li onClick="menuClick(this.id)" id="NavLink4">
+							<button>Campus&nbsp;Life</button>
+							<!-- BEGIN DROPDOWN -->
+							<div class="row dropdown-container nav-hide" data-equalizer data-equalize-on="small">
+								<div class="nav-column">
+									<h3>News</h3>
+									<ul>
+										<li><a href="#">Cancellations &amp; Closings</a></li>
+										<li><a href="#">College News</a></li>
+										<li><a href="#">Social Media Directory</a></li>
+										<li><a href="#">Student Newspaper</a></li>
+									</ul>
+								</div>
+								<div class="nav-column">
+									<h3>Events</h3>
+									<ul>
+										<li><a href="#">Academic Dates</a></li>
+										<li><a href="#">College Events</a></li>
+									</ul>
+								</div>
+								<div class="nav-column">
+									<h3>Activities</h3>
+									<ul>
+										<li><a href="#">Athletics</a></li>
+										<li><a href="#">Clubs &amp; Organizations</a></li>
+										<li><a href="#">Dining at Schoolcraft</a></li>
+										<li><a href="#">Fitness Center</a></li>
+										<li><a href="#">Student Employment</a></li>
+									</ul>
+								</div>
+								<div class="nav-column">
+									<h3>Support</h3>
+									<ul>
+										<li><a href="#">Bookstore</a></li>
+										<li><a href="#">Campus Alerts</a></li>
+										<li><a href="#">File a Report</a></li>
+										<li><a href="#">Police Department</a></li>
+									</ul>
+								</div>
+								<div class="column medium-centered medium-12 btn-cant-find-it">
+									<button type="button" class="primary button"><i class="fa fa-question-circle"></i>&nbsp; Can't find it?</button>
+								</div>
+								<div class="column medium-centered medium-12 megamenu-message">
+									<img class="round-image" src="images/megamenu-msg.png" alt="photo of a student" />
+									<h4>Register for Fall Classes by August 29</h4>
+									<h5><a href="#">View Courses Now</a></h5>
+								</div>
 							</div>
-							<div class="column medium-centered medium-12 btn-cant-find-it">
-								<button type="button" class="button"><i class="fa fa-question-circle"></i>&nbsp; Can't find it?</button>
+							<!-- END DROPDOWN -->
+						</li>
+						<li onClick="menuClick(this.id)" id="NavLink5">
+							<button>Resources</button>
+							<div class="row dropdown-container nav-hide" data-equalizer data-equalize-on="small">
+								<div class="nav-column">
+									<h3>I Am a...</h3>
+									<ul>
+										<li><a href="#">Alumi</a></li>
+										<li><a href="#">Business Professional</a></li>
+										<li><a href="#">Community Member</a></li>
+										<li><a href="#">Faculty or Staff</a></li>
+										<li><a href="#">K-12</a></li>
+										<li><a href="#">Parent or Guardian</a></li>
+										<li><a href="#">Student (Current)</a></li>
+										<li><a href="#">Student (Prospective)</a></li>
+									</ul>
+								</div>
+								<div class="nav-column">
+									<h3>Study Support</h3>
+									<ul>
+										<li><a href="#">Library</a></li>
+										<li><a href="#">Learning Support Services</a></li>
+										<li><a href="#">Testing Center</a></li>
+										<li><a href="#">Tutoring</a></li>
+									</ul>
+								</div>
+								<div class="nav-column">
+									<h3>Technology</h3>
+									<ul>
+										<li><a href="#">Blackboard</a></li>
+										<li><a href="#">Computer Labs</a></li>
+										<li><a href="#">Mobile App</a></li>
+										<li><a href="#">Student Email</a></li>
+										<li><a href="#">WebAdvisor</a></li>
+										<li><a href="#">Wireless (WiFi)</a></li>
+									</ul>
+								</div>
+								<div class="nav-column">
+									<h3>Support</h3>
+									<ul>
+										<li><a href="#">Bookstore</a></li>
+										<li><a href="#">Campus Alerts</a></li>
+										<li><a href="#">File a Report</a></li>
+										<li><a href="#">Police Department</a></li>
+									</ul>
+								</div>
+								<div class="column medium-centered medium-12 btn-cant-find-it">
+									<button type="button" class="primary button"><i class="fa fa-question-circle"></i>&nbsp; Can't find it?</button>
+								</div>
+								<div class="column medium-centered medium-12 megamenu-message">
+									<img class="round-image" src="images/megamenu-msg.png" alt="photo of a student" />
+									<h4>Register for Fall Classes by August 29</h4>
+									<h5><a href="#">View Courses Now</a></h5>
+								</div>
 							</div>
-							<div class="column medium-centered medium-12 megamenu-message">
-								<img class="round-image" src="images/megamenu-msg.png" alt="photo of a student" />
-								<h4>Register for Fall Classes by August 29</h4>
-								<h5><a href="#">View Courses Now</a></h5>
+							<!-- END DROPDOWN -->
+						</li>
+						<li onClick="menuClick(this.id)" id="NavLink6">
+							<button>Contact</button>
+							<!-- BEGIN DROPDOWN -->
+							<div class="row dropdown-container nav-hide" data-equalizer data-equalize-on="small">
+								<div class="nav-column">
+									<h3>Come Visit</h3>
+									<ul>
+										<li><a href="#">Livonia Location (Main Campus)</a></li>
+										<li><a href="#">Public Safety Training Complex</a></li>
+										<li><a href="#">Radcliff Center</a></li>
+										<li><a href="#">Tour Schoolcraft</a></li>
+									</ul>
+								</div>
+								<div class="nav-column">
+									<h3>Directories</h3>
+									<ul>
+										<li><a href="#">Department Directory</a></li>
+										<li><a href="#">Faculty &amp; Staff Directory</a></li>
+										<li><a href="#">Social Media Directory</a></li>
+									</ul>
+								</div>
+								<div class="nav-column">
+									<h3>More Help</h3>
+									<ul>
+										<li><a href="#">Answer Center</a></li>
+										<li><a href="#">A-Z Index (Site Map)</a></li>
+										<li><a href="#">Knowledge Center (FAQ)</a></li>
+									</ul>
+								</div>
+								<div class="nav-column">
+									<h3>@SchoolcraftNow</h3>
+									<ul>
+										<li><a href="#">Facebook</a></li>
+										<li><a href="#">LinkedIn</a></li>
+										<li><a href="#">Instagram</a></li>
+										<li><a href="#">Twitter</a></li>
+										<li><a href="#">YouTube</a></li>
+										<li><a href="#">More...</a></li>
+									</ul>
+								</div>
+								<div class="column medium-centered medium-12 btn-cant-find-it">
+									<button type="button" class="primary button"><i class="fa fa-question-circle"></i>&nbsp; Can't find it?</button>
+								</div>
+								<div class="column medium-centered medium-12 megamenu-message">
+									<img class="round-image" src="images/megamenu-msg.png" alt="photo of a student" />
+									<h4>Register for Fall Classes by August 29</h4>
+									<h5><a href="#">View Courses Now</a></h5>
+								</div>
 							</div>
-						</div>
-						<!-- END DROPDOWN -->
-					</li>
-					<li onClick="menuClick(this.id)" id="NavLink2">
-						<button>Academics</button>
-						<!-- BEGIN DROPDOWN -->
-						<div class="row dropdown-container nav-hide" data-equalizer data-equalize-on="small">
-							<div class="nav-column">
-								<h3>Offerings</h3>
-								<ul>
-									<li><a href="#">Course Formats</a></li>
-									<li><a href="#">Degrees &amp; Certificates</a></li>
-									<li><a href="#">SC to U: Transfer</a></li>
-								</ul>
-							</div>
-							<div class="nav-column">
-								<h3>Areas of Study</h3>
-								<ul>
-									<li><a href="#">Course Catalog</a></li>
-									<li><a href="#">Academic Pathways</a></li>
-									<li><a href="#">Majors</a></li>
-									<li><a href="#">Courses Offered</a></li>
-								</ul>
-							</div>
-							<div class="nav-column">
-								<h3>Registration</h3>
-								<ul>
-									<li><a href="#">Become a Student</a></li>
-									<li><a href="#">Course Schedules</a></li>
-									<li><a href="#">Important Dates</a></li>
-									<li><a href="#">How to Register</a></li>
-									<li><a href="#">Registration Office</a></li>
-								</ul>
-							</div>
-							<div class="nav-column">
-								<h3>Support</h3>
-								<ul>
-									<li><a href="#">Academic Advising</a></li>
-									<li><a href="#">Student Records</a></li>
-								</ul>
-							</div>
-							<div class="column medium-centered medium-12 btn-cant-find-it">
-								<button type="button" class="primary button"><i class="fa fa-question-circle"></i>&nbsp; Can't find it?</button>
-							</div>
-							<div class="column medium-centered medium-12 megamenu-message">
-								<img class="round-image" src="images/megamenu-msg.png" alt="photo of a student" />
-								<h4>Register for Fall Classes by August 29</h4>
-								<h5><a href="#">View Courses Now</a></h5>
-							</div>
-						</div>
-						<!-- END DROPDOWN -->
-					</li>
-					<li onClick="menuClick(this.id)" id="NavLink3">
-						<button>Admissions</button>
-						<!-- BEGIN DROPDOWN -->
-						<div class="row dropdown-container nav-hide" data-equalizer data-equalize-on="small">
-							<div class="nav-column">
-								<h3>Become a Student</h3>
-								<ul>
-									<li><a href="#">How to Start</a></li>
-									<li><a href="#">Apply Now</a></li>
-									<li><a href="#">Requestion Information</a></li>
-									<li><a href="#">Tours &amp; Orientation</a></li>
-									<li><a href="#">Register for Classes</a></li>
-								</ul>
-							</div>
-							<div class="nav-column">
-								<h3>Paying for College</h3>
-								<ul>
-									<li><a href="#">Calculators</a></li>
-									<li><a href="#">Cashier's Office</a></li>
-									<li><a href="#">Financial Aid</a></li>
-									<li><a href="#">Scholarships</a></li>
-									<li><a href="#">Tuition &amp; Fees</a></li>
-								</ul>
-							</div>
-							<div class="nav-column">
-								<h3>Support &amp; Guidance</h3>
-								<ul>
-									<li><a href="#">Academic Advising</a></li>
-									<li><a href="#">Counseling</a></li>
-									<li><a href="#">Disability Support Services</a></li>
-									<li><a href="#">International Students</a></li>
-									<li><a href="#">Veterans Resource Center</a></li>
-								</ul>
-							</div>
-							<div class="nav-column">
-								<h3>Student Info</h3>
-								<ul>
-									<li><a href="#">Graduation</a></li>
-									<li><a href="#">Important Dates</a></li>
-									<li><a href="#">Student Accounts</a></li>
-									<li><a href="#">Student Records</a></li>
-								</ul>
-							</div>
-							<div class="column medium-centered medium-12 btn-cant-find-it">
-								<button type="button" class="primary button"><i class="fa fa-question-circle"></i>&nbsp; Can't find it?</button>
-							</div>
-							<div class="column medium-centered medium-12 megamenu-message">
-								<img class="round-image" src="images/megamenu-msg.png" alt="photo of a student" />
-								<h4>Register for Fall Classes by August 29</h4>
-								<h5><a href="#">View Courses Now</a></h5>
-							</div>
-						</div>
-						<!-- END DROPDOWN -->
-					</li>
-					<li onClick="menuClick(this.id)" id="NavLink4">
-						<button>Campus&nbsp;Life</button>
-						<!-- BEGIN DROPDOWN -->
-						<div class="row dropdown-container nav-hide" data-equalizer data-equalize-on="small">
-							<div class="nav-column">
-								<h3>News</h3>
-								<ul>
-									<li><a href="#">Cancellations &amp; Closings</a></li>
-									<li><a href="#">College News</a></li>
-									<li><a href="#">Social Media Directory</a></li>
-									<li><a href="#">Student Newspaper</a></li>
-								</ul>
-							</div>
-							<div class="nav-column">
-								<h3>Events</h3>
-								<ul>
-									<li><a href="#">Academic Dates</a></li>
-									<li><a href="#">College Events</a></li>
-								</ul>
-							</div>
-							<div class="nav-column">
-								<h3>Activities</h3>
-								<ul>
-									<li><a href="#">Athletics</a></li>
-									<li><a href="#">Clubs &amp; Organizations</a></li>
-									<li><a href="#">Dining at Schoolcraft</a></li>
-									<li><a href="#">Fitness Center</a></li>
-									<li><a href="#">Student Employment</a></li>
-								</ul>
-							</div>
-							<div class="nav-column">
-								<h3>Support</h3>
-								<ul>
-									<li><a href="#">Bookstore</a></li>
-									<li><a href="#">Campus Alerts</a></li>
-									<li><a href="#">File a Report</a></li>
-									<li><a href="#">Police Department</a></li>
-								</ul>
-							</div>
-							<div class="column medium-centered medium-12 btn-cant-find-it">
-								<button type="button" class="primary button"><i class="fa fa-question-circle"></i>&nbsp; Can't find it?</button>
-							</div>
-							<div class="column medium-centered medium-12 megamenu-message">
-								<img class="round-image" src="images/megamenu-msg.png" alt="photo of a student" />
-								<h4>Register for Fall Classes by August 29</h4>
-								<h5><a href="#">View Courses Now</a></h5>
-							</div>
-						</div>
-						<!-- END DROPDOWN -->
-					</li>
-					<li onClick="menuClick(this.id)" id="NavLink5">
-						<button>Resources</button>
-						<div class="row dropdown-container nav-hide" data-equalizer data-equalize-on="small">
-							<div class="nav-column">
-								<h3>I Am a...</h3>
-								<ul>
-									<li><a href="#">Alumi</a></li>
-									<li><a href="#">Business Professional</a></li>
-									<li><a href="#">Community Member</a></li>
-									<li><a href="#">Faculty or Staff</a></li>
-									<li><a href="#">K-12</a></li>
-									<li><a href="#">Parent or Guardian</a></li>
-									<li><a href="#">Student (Current)</a></li>
-									<li><a href="#">Student (Prospective)</a></li>
-								</ul>
-							</div>
-							<div class="nav-column">
-								<h3>Study Support</h3>
-								<ul>
-									<li><a href="#">Library</a></li>
-									<li><a href="#">Learning Support Services</a></li>
-									<li><a href="#">Testing Center</a></li>
-									<li><a href="#">Tutoring</a></li>
-								</ul>
-							</div>
-							<div class="nav-column">
-								<h3>Technology</h3>
-								<ul>
-									<li><a href="#">Blackboard</a></li>
-									<li><a href="#">Computer Labs</a></li>
-									<li><a href="#">Mobile App</a></li>
-									<li><a href="#">Student Email</a></li>
-									<li><a href="#">WebAdvisor</a></li>
-									<li><a href="#">Wireless (WiFi)</a></li>
-								</ul>
-							</div>
-							<div class="nav-column">
-								<h3>Support</h3>
-								<ul>
-									<li><a href="#">Bookstore</a></li>
-									<li><a href="#">Campus Alerts</a></li>
-									<li><a href="#">File a Report</a></li>
-									<li><a href="#">Police Department</a></li>
-								</ul>
-							</div>
-							<div class="column medium-centered medium-12 btn-cant-find-it">
-								<button type="button" class="primary button"><i class="fa fa-question-circle"></i>&nbsp; Can't find it?</button>
-							</div>
-							<div class="column medium-centered medium-12 megamenu-message">
-								<img class="round-image" src="images/megamenu-msg.png" alt="photo of a student" />
-								<h4>Register for Fall Classes by August 29</h4>
-								<h5><a href="#">View Courses Now</a></h5>
-							</div>
-						</div>
-						<!-- END DROPDOWN -->
-					</li>
-					<li onClick="menuClick(this.id)" id="NavLink6">
-						<button>Contact</button>
-						<!-- BEGIN DROPDOWN -->
-						<div class="row dropdown-container nav-hide" data-equalizer data-equalize-on="small">
-							<div class="nav-column">
-								<h3>Come Visit</h3>
-								<ul>
-									<li><a href="#">Livonia Location (Main Campus)</a></li>
-									<li><a href="#">Public Safety Training Complex</a></li>
-									<li><a href="#">Radcliff Center</a></li>
-									<li><a href="#">Tour Schoolcraft</a></li>
-								</ul>
-							</div>
-							<div class="nav-column">
-								<h3>Directories</h3>
-								<ul>
-									<li><a href="#">Department Directory</a></li>
-									<li><a href="#">Faculty &amp; Staff Directory</a></li>
-									<li><a href="#">Social Media Directory</a></li>
-								</ul>
-							</div>
-							<div class="nav-column">
-								<h3>More Help</h3>
-								<ul>
-									<li><a href="#">Answer Center</a></li>
-									<li><a href="#">A-Z Index (Site Map)</a></li>
-									<li><a href="#">Knowledge Center (FAQ)</a></li>
-								</ul>
-							</div>
-							<div class="nav-column">
-								<h3>@SchoolcraftNow</h3>
-								<ul>
-									<li><a href="#">Facebook</a></li>
-									<li><a href="#">LinkedIn</a></li>
-									<li><a href="#">Instagram</a></li>
-									<li><a href="#">Twitter</a></li>
-									<li><a href="#">YouTube</a></li>
-									<li><a href="#">More...</a></li>
-								</ul>
-							</div>
-							<div class="column medium-centered medium-12 btn-cant-find-it">
-								<button type="button" class="primary button"><i class="fa fa-question-circle"></i>&nbsp; Can't find it?</button>
-							</div>
-							<div class="column medium-centered medium-12 megamenu-message">
-								<img class="round-image" src="images/megamenu-msg.png" alt="photo of a student" />
-								<h4>Register for Fall Classes by August 29</h4>
-								<h5><a href="#">View Courses Now</a></h5>
-							</div>
-						</div>
-						<!-- END DROPDOWN -->
-					</li>
-				</ul>
-			</div>
-		</nav>
-	<!-- NAVIGATION END -->
+							<!-- END DROPDOWN -->
+						</li>
+					</ul>
+				</div>
+			</nav>
+		<!-- NAVIGATION END -->
 
-	
 	<!-- CONTENT START -->
 		<div id="content-wrapper" class="row">
 
+			<!-- start header -->
+			<header id="page-hero" class="column small-12">
+				<div class="column small-12 medium-3" id="page-hero-left">
+					<div id="page-hero-title"><i class="fa fa-cutlery" aria-hidden="true"></i></div>
+					<h1>Career Training</h1>
+				</div>
+				<div class="column hide-for-small-only medium-9" id="page-hero-right">
+				</div>
+			</header>
+
 			<aside id="content-sub" class="column small-12 medium-3 column" role="complementary">
-				<img class="hide-for-small-only" id="aside-image" src="https://placeholdit.imgix.net/~text?w=366&h=245&txt=placeholder&txtsize=50">
 
 				<!--start accordian for mobile display of submenu -->
 				<ul id="mobi-submenu" class="vertical menu row show-for-small-only" data-accordion-menu>
 				  <li>
 				    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> Dept. Menu</a>
-				    <ul class="menu vertical nested">
-					    <ul class="sidenav">
-							<li><a href="">Link 1</a></li>
-							<li><a href="">Link 2</a></li>
-							<li><a href="">Link 3</a></li>
-						</ul>
-						<ul class="sidenav">
-							<li class="sidenav-title"><a href="">List Title</a></li>
-							<li><a href="">Link 1</a></li>
-							<li><a href="">Link 2</a></li>
-							<li><a href="">Link 3</a></li>
-						</ul>
+					<ul class="sidenav">
+						<li class="sidenav-title"><a href="">List Title</a></li>
+						<li><a href="">Link 1</a></li>
+						<li><a href="">Link 2</a></li>
+						<li><a href="">Link 3</a></li>
+					</ul>
 				    </ul>
 				  </li>
 				</ul>
 				<!-- end accordian for mobile display of submenu -->
 
+				<!-- chevron -->
+				<svg class="hide-for-small-only" width='100%' height='80px' viewBox="0 0 100 100" preserveAspectRatio="none" style='fill:#CC8A00;'>
+					<style type="text/css">
+						#page-hero-antichevron {fill:#002855;}
+						#page-hero--chevron {fill:#CC8A00;}
+					</style>
+        			<polygon id="page-hero-antichevron" points="100 0, 100 0, 50 95, 0 0, 0 0" />
+        			<polygon id="page-hero-chevron" points="50 90, 100 0, 100 0, 50 100, 0 0, 0 0" />
+    			</svg>
+
 				<div class="side-nav-cont hide-for-small-only" data-sticky-container>
 					<div class="side-nav-cont" data-sticky data-top-anchor="aside-image:bottom" data-btm-anchor="content-main:bottom">
-						<ul class="sidenav hide-for-small-only" role="navigation">
-							<li><a href="">Link 1</a></li>
-							<li><a href="">Link 2</a></li>
-							<li><a href="#connect-with-heading">Contact Us</a></li>
-						</ul>
 						<ul class="sidenav hide-for-small-only" role="navigation">
 							<li class="sidenav-title"><a href="">List Title</a></li>
 							<li><a href="">Link 1</a></li>
@@ -637,7 +641,7 @@
 
 		</div><!--/#content-wrapper-->
 
-	<!--CONNECT WITH AREA-->
+		<!--CONNECT WITH AREA-->
 
 		<!-- start social media icons and chevron -->
 		<div class="row" id="connect-with-area">
@@ -753,50 +757,6 @@
 	<!-- FOOTER START -->
 		<div id="footer-wrapper" class="row column">
 
-			<div id="footer-links" class="row">
-				<div class="column small-12 large-4 hide-for-medium-only">
-					<div id="footer-img-div">
-						<img class="footer-img-position" src="images/footer-brand-pillars.png" alt="Pride, Challenge, Achievement.">
-					</div>
-				</div>
-				<div class="column small-12 medium-12 large-8  hide-for-small-only">
-					<div class="row">
-						<div class="column small-12 medium-4">
-							<ul>
-								<li class="footer-links-title">I am a...</li>
-								<li><a href="">Future Student</a></li>
-								<li><a href="">Parent or Guardian</a></li>
-								<li><a href="">Current Student</a></li>
-								<li><a href="">Faculty & Staff Member</a></li>
-								<li><a href="">Community Member</a></li>
-								<li><a href="">Alumni</a></li>
-							</ul>
-						</div>
-						<div class="column small-12 medium-4">
-							<ul>
-								<li class="footer-links-title">Quick Search</li>
-								<li><a href="">A-Z Index</a></li>
-								<li><a href="">Careers</a></li>
-								<li><a href="">Contact Directory</a></li>
-								<li><a href="">Locations & Maps</a></li>
-								<li><a href="">Social Media Directory</a></li>
-							</ul>
-						</div>
-						<div class="column small-12 medium-4">
-							<ul>
-								<li class="footer-links-title">Consumer Info</li>
-								<li><a href="">Accessibility</a></li>
-								<li><a href="">Board of Trustees</a></li>
-								<li><a href="">Privacy and Policies</a></li>
-								<li><a href="">Public Safety</a></li>
-								<li><a href="">SC aware</a></li>
-								<li><a href="">Security Report</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-
 			<div id="footer-contact" class="row">
 				<div class="column small-12 text-center">
 					<h1>
@@ -821,24 +781,6 @@
 				</div>
 			</div>
 
-			<div id="footer-logos" class="row hide-for-small-only">	
-				<div class="footer-logo-block">
-					#footer-logos
-				</div>
-				<div class="footer-logo-block">
-					#footer-logos
-				</div>
-				<div class="footer-logo-block">
-					#footer-logos
-				</div>
-				<div class="footer-logo-block">
-					#footer-logos
-				</div>
-				<div class="footer-logo-block">
-					#footer-logos
-				</div>
-			</div>
-
 		</div><!--/#footer-wrapper-->
 
 		<!-- END OFF-CANVAS -->
@@ -856,4 +798,5 @@
 </script>
 
 </body>
+
 </html>
