@@ -56,15 +56,15 @@ Author: Schoolcraft College
 	#home-hero-left {
 		position: relative;
 		padding: 0;
-		height: 680px;
-		background: url("../images/chef.jpeg") center center;
+		height: 640px;
+		background: url("../images/hero-welding.jpg") center center;
 		background-size: cover;
 	}
 
 	#home-hero-right {
 		position: relative;
 		padding: 0;
-		height: 680px;
+		height: 640px;
 		background: #002855;
 	}
 
@@ -104,16 +104,12 @@ Author: Schoolcraft College
 	}
 
 	.hero-news-icon {
+		float: left;
 		position: relative;
 		width: 100px;
 		height: 100px;
-		float: left;
-		background: url("../images/a-chef.jpg") center center;
-		background-size: cover;
-		margin-right: 15px;
 		border-radius: 100%;
-		transition: background-color 0.7s ease;
-		transition: color 0.7s ease;
+		margin-right: 15px;
 	}
 
 	.hero-news-title {
@@ -123,9 +119,7 @@ Author: Schoolcraft College
 
 	.hero-news-title a {
 		display: block;
-		font-family: 'Jaldi', sans-serif;
-		font-size: 1.2rem;
-		vertical-align: middle;
+		font: 1.2rem/1.5rem 'Jaldi', sans-serif;
 		color: #5BC2E7;
 	}
 
@@ -365,7 +359,7 @@ Author: Schoolcraft College
 
 	#home-steps-right {
 		height: 500px;
-		background: url("../images/students.jpeg") center center;
+		background: url("../images/cta-anchor-students.jpg") center center;
 		background-size: cover;
 	}
 
