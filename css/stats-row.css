@@ -31,6 +31,10 @@ Author: Schoolcraft College
 	margin-bottom: 30px;
 }
 
+.stat-circle:hover {
+	box-shadow: inset 0 0 0 8px #CC8A00;
+}
+
 .stat-num-bg {
 	color: #002855;
 	position: absolute;
@@ -56,12 +60,12 @@ Author: Schoolcraft College
 	position: relative;
 	font-size: 1.5rem;
 	font-family: 'Jaldi', sans-serif;
-	color: #CC8A00;
+	color: #002855;
 	text-align: center;
 }
 
 .stat-circle-main {
-	background: url("../images/stats-row-samples/notcelot.jpeg") center center; 
+	background: url("../images/stat-ocelot.jpg") center center; 
 	border: 3px solid #CC8A00;
 	height: 175px;
 	width: 175px;
@@ -83,21 +87,21 @@ Author: Schoolcraft College
 }
 
 #stat-1 {
-	background: url("../images/stats-row-samples/group.jpg") center center;
+	background: url("../images/stat-academics.jpg") center center;
 	background-size: cover;
 }
 
 #stat-2 {
-	background: url("../images/stats-row-samples/bobsled.jpeg") center center;
+	background: url("../images/stat-activities.jpg") center center;
 	background-size: cover;
 }
 
 #stat-3 {
-	background: url("../images/stats-row-samples/study.jpeg") center center;
+	background: url("../images/stat-support.jpg") center center;
 	background-size: cover;
 }
 
 #stat-4 {
-	background: url("../images/stats-row-samples/tie.jpg") center center;
+	background: url("../images/stat-career.jpg") center center;
 	background-size: cover;
 }
