@@ -68,12 +68,26 @@ Author: Schoolcraft College
 		background: #002855;
 	}
 
+	@media screen and (max-width: 63.9375em) {
+		#home-hero-right {
+			height: auto;
+			padding-bottom: 25px;
+		}
+	}
+
 	.hero-image-caption {
 		position: absolute;
 		bottom: 200px;
 		width: 50%;
 		padding: 25px;
 		background: rgba(0,0,0,0.7);
+	}
+
+	/* Up to Medium */
+	@media screen and (max-width: 63.9375em) {
+		.hero-image-caption {
+			width: 90%;
+		}
 	}
 	
 	.hero-image-caption p {
@@ -140,21 +154,27 @@ Author: Schoolcraft College
 # ROW -- CALENDARS
 -------------------------------------------------------------- */
 
+	#calendars {
+		display: flex;
+		align-items: center;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+
 	#calendar-left {
-		display: inline-block;
+		display: block;
 		background-color: #EEEEEE;
-		width: 40%;
-		margin: 25px auto 25px 8%;
+		width: 480px;
 		padding: 35px;
+		margin: auto;
 	}
 
 	#calendar-right {
-		display: inline-block;
+		display: block;
 		background-color: #EEEEEE;
-		width: 40%;
-		margin: 25px 8% 25px auto;
+		width: 480px;
 		padding: 35px;
-		float: right;
+		margin: auto;
 	}
 
 	#calendar-left h3, #calendar-right h3 {
@@ -258,7 +278,6 @@ Author: Schoolcraft College
 	#instagram a:hover, 
 	#youtube a:hover {
 		background: #002855;
-		color: #FDD26E;
 
 		transition: all 0.5s ease;
 	}
@@ -305,9 +324,22 @@ Author: Schoolcraft College
 		font-weight: bold;
 	}
 
+	#product-block:hover {
+		background: #FDD26E;
+		color: #A07400;
+
+		transition: all 0.7s ease;
+	}
+
 	#product-block .fa {
 		font-size: 3rem;
 		color: #FDD26E;
+	}
+
+	#product-block:hover .fa {
+		color: #A07400;
+		
+		transition: all 0.7s ease;
 	}
 
 /* --------------------------------------------------------------
@@ -320,7 +352,15 @@ Author: Schoolcraft College
 
 	#home-steps-left {
 		height: 500px;
+		margin: auto;
 		background: url("../images/bg-strip-malt.jpg");
+	}
+
+	/* Small only */
+	@media screen and (max-width: 39.9375em) {
+		#home-steps-left {
+			height: auto;
+		}
 	}
 
 	#home-steps-right {
@@ -331,6 +371,7 @@ Author: Schoolcraft College
 
 	#home-steps ol {
 		counter-reset:li;
+		margin: auto;
 	}
 	
 	#home-steps ol > li {
