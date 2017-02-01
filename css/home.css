@@ -68,6 +68,8 @@ Author: Schoolcraft College
 		background: #002855;
 	}
 
+	.home-hero-chevron svg { display:block; }
+
 	@media screen and (max-width: 63.9375em) {
 		#home-hero-right {
 			height: auto;
