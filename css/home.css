@@ -366,6 +366,7 @@ Author: Schoolcraft College
 
 	#home-steps ol {
 		counter-reset:li;
+		padding: 0 0 0 80px;
 		margin: auto;
 	}
 	
