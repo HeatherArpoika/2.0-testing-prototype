@@ -346,8 +346,9 @@ Author: Schoolcraft College
 
 	#home-steps-left {
 		height: 500px;
-		margin: auto;
 		background: url("../images/bg-strip-malt.jpg");
+		padding: 50px 0 0 0;
+		margin: auto;
 	}
 
 	/* Small only */
