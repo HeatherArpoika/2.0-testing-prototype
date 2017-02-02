@@ -68,6 +68,8 @@ Author: Schoolcraft College
 		background: #002855;
 	}
 
+	.home-hero-chevron svg { display:block; }
+
 	@media screen and (max-width: 63.9375em) {
 		#home-hero-right {
 			height: auto;
@@ -346,8 +348,9 @@ Author: Schoolcraft College
 
 	#home-steps-left {
 		height: 500px;
-		margin: auto;
 		background: url("../images/bg-strip-malt.jpg");
+		padding: 50px 0 0 0;
+		margin: auto;
 	}
 
 	/* Small only */
@@ -365,6 +368,7 @@ Author: Schoolcraft College
 
 	#home-steps ol {
 		counter-reset:li;
+		padding: 0 0 0 80px;
 		margin: auto;
 	}
 	
