@@ -6,7 +6,6 @@ Author: Schoolcraft College
 /* --------------------------------------------------------------
 >>>>> TABLE OF CONTENTS
 -----------------------------------------------------------------
-
 # HTML AND BODY
 # SKIP TO CONTENT
 # TYPOGRAPHY
@@ -33,9 +32,13 @@ Author: Schoolcraft College
 	## FOOTER LINKS ROW
 	## FOOTER CONTACT ROW
 	## FOOTER LOGOS ROW
+# HOME PAGE HEADER HERO
 # MISC
 	## ALIGNMENTS
 ---------------------------------------------------------------*/
+
+
+@import url("patterns.css");
 
 
 /* --------------------------------------------------------------
@@ -876,8 +879,8 @@ Author: Schoolcraft College
 		top: 127px;
 	}
 	#contact-us, #contact-right-1, #contact-right-2, #contact-right-3 {
-		height: 680px;
-		padding: 180px 45px 45px 45px;
+		height: 660px;
+		padding: 150px 45px 45px 45px;
 		background-color: #f7f7f7;
 	}
 	#contact-us {
@@ -940,7 +943,7 @@ Author: Schoolcraft College
 		font-size: 1.5rem;
 		font-weight: 700;
 		text-transform: uppercase;
-		padding-bottom: 50px;
+		padding-bottom: 25px;
 		text-align: center;
 	}
 
@@ -1229,6 +1232,118 @@ Author: Schoolcraft College
 			height: 150px;
 		}
 	}
+
+
+/* --------------------------------------------------------------
+# HOME PAGE HEADER HERO
+-------------------------------------------------------------- */
+	#home-content-wrapper {
+		background: #fff;
+		padding: 0;
+	}
+
+	.section-title {
+		font: 2.57rem "Jaldi", sans-serif;
+    	color: #002855;
+    	text-align: center;
+    	margin-top: 25px;
+		margin-bottom: 25px;
+	}
+
+	.section-subtitle {
+		font: bold 2rem "Jaldi", sans-serif;
+    	color: #A07400;
+    	text-transform: uppercase;
+    	text-align: center;
+		margin-bottom: 25px;
+	}
+
+	#home-hero {
+		padding: 0;
+		margin-bottom: 25px;
+	}
+
+	#home-hero-left {
+		position: relative;
+		height: 640px;
+		background: url("../images/hero-welding.jpg") center center;
+		background-size: cover;
+		padding: 0;
+	}
+
+	#home-hero-right {
+		position: relative;
+		height: 640px;
+		background: #002855;
+		padding: 0;
+	}
+
+	@media screen and (max-width: 63.9375em) {
+		#home-hero-right {
+			height: auto;
+			padding-bottom: 25px;
+		}
+	}
+
+	.hero-image-caption {
+		position: absolute;
+		bottom: 200px;
+		width: 50%;
+		background: rgba(0,0,0,0.7);
+		padding: 25px;
+	}
+
+	/* Up to Medium */
+	@media screen and (max-width: 63.9375em) {
+		.hero-image-caption {
+			width: 90%;
+		}
+	}
+	
+	.hero-image-caption p {
+		font: bold 2.1rem/2.1rem 'Jaldi', sans-serif;
+		color: #FDD26E;
+		text-transform: uppercase;
+	}
+
+	.hero-news {
+		margin: 30px 30px 5px 30px;
+	}
+
+	.hero-news-icon {
+		float: left;
+		position: relative;
+		width: 100px;
+		height: 100px;
+		border-radius: 100%;
+		margin-right: 15px;
+	}
+
+	.hero-news-title {
+		height: 100px;
+		z-index: 400;
+	}
+
+	.hero-news-title a {
+		display: block;
+		font: 1.2rem/1.5rem 'Jaldi', sans-serif;
+		color: #5BC2E7;
+	}
+
+	.hero-news-title a:hover {
+		text-decoration: underline;
+	}
+
+	.home-hero-chevron {
+		position: absolute;
+		bottom: -5px; /* WHY DOES THIS NOT LINE UP */
+		padding: 0;
+	}
+
+	.home-hero-chevron { fill: #CC8A00; }
+	.home-hero-antichevron { fill: #FFFFFF; }
+	.home-hero-chevron svg { display: block; }
+
 
 /* --------------------------------------------------------------
 # MISC

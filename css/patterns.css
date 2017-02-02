@@ -1,155 +1,126 @@
 /* 
-Purpose: Home Page Stylesheet
+Purpose: Row Patterns
 Author: Schoolcraft College
 */
 
 /* --------------------------------------------------------------
 >>>>> TABLE OF CONTENTS
 -----------------------------------------------------------------
-
-# HOME BASICS
-# HOME HEADER
-# ROWS
-	## WELCOME
-	## CALENDARS
-	## SOCIAL MEDIA
-	## PRODUCT LINES
-	## STEPS
-
+# STATS
+# CALENDAR OF EVENTS BOXES
+# SOCIAL MEDIA
+# PRODUCT LINES
+# CTA STEPS
 ---------------------------------------------------------------*/
 
-/* --------------------------------------------------------------
-# HOME BASICS
--------------------------------------------------------------- */
-
-	#home-content-wrapper {
-		background: #fff;
-		padding: 0;
-	}
-
-	.section-title {
-		font: 2.57rem "Jaldi", sans-serif;
-    	color: #002855;
-    	text-align: center;
-    	margin-top: 25px;
-		margin-bottom: 25px;
-	}
-
-	.section-subtitle {
-		font: 2rem "Jaldi", sans-serif;
-		font-weight: bold;
-    	color: #A07400;
-    	text-transform: uppercase;
-    	text-align: center;
-		margin-bottom: 25px;
-	}
 
 /* --------------------------------------------------------------
-# HOME HEADER
+# STATS
 -------------------------------------------------------------- */
-
-	#home-hero {
+	#stats-row {
+		display: flex;
+		align-items: center;
 		padding: 0;
-		margin-bottom: 25px;
+		margin-top: 25px;
+		margin-bottom: 25px; 
 	}
 
-	#home-hero-left {
-		position: relative;
-		padding: 0;
-		height: 640px;
-		background: url("../images/hero-welding.jpg") center center;
-		background-size: cover;
+	.stat {
+		width: 200px;
+		margin: auto;
 	}
 
-	#home-hero-right {
+	.stat:hover {
+		opacity: 0.7;
+	}
+
+	.stat-circle {
 		position: relative;
-		padding: 0;
-		height: 640px;
+		top: 30px;
+		height: 150px;
+		width: 150px;
+		border-radius: 100%;
 		background: #002855;
+		margin: auto;
+		margin-bottom: 30px;
 	}
 
-	.home-hero-chevron svg { display:block; }
-
-	@media screen and (max-width: 63.9375em) {
-		#home-hero-right {
-			height: auto;
-			padding-bottom: 25px;
-		}
+	.stat-circle:hover {
+		box-shadow: inset 0 0 0 8px #CC8A00;
 	}
 
-	.hero-image-caption {
+	.stat-num-bg {
 		position: absolute;
-		bottom: 200px;
-		width: 50%;
-		padding: 25px;
-		background: rgba(0,0,0,0.7);
-	}
-
-	/* Up to Medium */
-	@media screen and (max-width: 63.9375em) {
-		.hero-image-caption {
-			width: 90%;
-		}
-	}
-	
-	.hero-image-caption p {
-		color: #FDD26E;
-		font-family: 'Jaldi', sans-serif;
-		font-size: 2.1rem;
-		line-height: 2.1rem;
-		font-weight: bold;
-		text-transform: uppercase;
-	}
-
-	.hero-news {
-		margin: 30px 30px 5px 30px;
-	}
-
-	.hero-news-icon {
-		float: left;
-		position: relative;
+		left: 25px;
+		top: 90px;
 		width: 100px;
 		height: 100px;
 		border-radius: 100%;
-		margin-right: 15px;
+		background: white;
+		color: #002855;
 	}
 
-	.hero-news-title {
-		height: 100px;
-		z-index: 400;
-	}
-
-	.hero-news-title a {
-		display: block;
-		font: 1.2rem/1.5rem 'Jaldi', sans-serif;
-		color: #5BC2E7;
-	}
-
-	.hero-news-title a:hover {
-		text-decoration: underline;
-	}
-
-	.home-hero-chevron {
-		padding: 0;
+	.stat-number {
 		position: absolute;
-		/* WHY DOES THIS NOT LINE UP */
-		bottom: -5px;
+		bottom: 40%;
+		width: 100px;
+		font-size: 3.5rem;
+		color: #002855;
+		text-align: center;
 	}
 
-	.home-hero-chevron {fill:#CC8A00;}
-	.home-hero-antichevron {fill:#FFFFFF;}
+	.stat-title {
+		display: block;
+		position: relative;
+		font: 1.5rem 'Jaldi', sans-serif;
+		color: #002855;
+		text-align: center;
+	}
+
+	.stat-circle-main {
+		position: relative;
+		height: 175px;
+		width: 175px;
+		background: url("../images/stat-ocelot.jpg") center center; 
+		border: 3px solid #CC8A00;
+		border-radius: 100%;
+		margin: auto;
+		margin-bottom: 10px;
+	}
+
+	.stat-main {
+		display: block;
+		width: 175px;
+		font: bold 1.7rem 'Jaldi', sans-serif;
+		color: #002855;
+		text-align: center;
+		margin: auto;
+	}
+
+	#stat-1 {
+		background: url("../images/stat-academics.jpg") center center;
+		background-size: cover;
+	}
+
+	#stat-2 {
+		background: url("../images/stat-activities.jpg") center center;
+		background-size: cover;
+	}
+
+	#stat-3 {
+		background: url("../images/stat-support.jpg") center center;
+		background-size: cover;
+	}
+
+	#stat-4 {
+		background: url("../images/stat-career.jpg") center center;
+		background-size: cover;
+	}
 
 
 /* --------------------------------------------------------------
-# ROW -- WELCOME
+# CALENDAR OF EVENTS BOXES
 -------------------------------------------------------------- */
-
-
-
-/* --------------------------------------------------------------
-# ROW -- CALENDARS
--------------------------------------------------------------- */
-
 	#calendars {
 		display: flex;
 		align-items: center;
@@ -159,24 +130,24 @@ Author: Schoolcraft College
 
 	#calendar-left {
 		display: block;
-		background-color: #EEEEEE;
 		width: 480px;
+		background-color: #EEEEEE;
 		padding: 35px;
 		margin: auto;
 	}
 
 	#calendar-right {
 		display: block;
-		background-color: #EEEEEE;
 		width: 480px;
+		background-color: #EEEEEE;
 		padding: 35px;
 		margin: auto;
 	}
 
 	#calendar-left h3, #calendar-right h3 {
-		text-align: center;
 		color: #CC8A00;
 		font-weight: bold;
+		text-align: center;
 		text-transform: uppercase;
 		margin-top: 8px;
 		margin-bottom: 45px;
@@ -191,10 +162,10 @@ Author: Schoolcraft College
 		font-size: 1rem;
 	}
 
-/* --------------------------------------------------------------
-# ROW -- SOCIAL MEDIA
--------------------------------------------------------------- */
 
+/* --------------------------------------------------------------
+# SOCIAL MEDIA
+-------------------------------------------------------------- */
 	#home-social-media {
 		margin: 25px auto 25px auto;
 	}
@@ -223,10 +194,10 @@ Author: Schoolcraft College
 	}
 
 	.social-link {
-		text-align: center;
-		line-height: 70px;
 		vertical-align: middle;
 		font-size: 2.3rem;
+		line-height: 70px;
+		text-align: center;
 		margin: auto;
 	}
 
@@ -234,37 +205,32 @@ Author: Schoolcraft College
 		display: block;
 		width: 70px;
 		height: 70px;
-		color: #FFFFFF;
 		border-radius: 100%;
+		color: #FFFFFF;
 	}
 
 	#facebook a {
 		background: #3b5998;
-
 		transition: all 0.5s ease;
 	}
 
 	#twitter a {
 		background: #55acee;
-
 		transition: all 0.5s ease;
 	}
 
 	#linkedin a {
 		background: #0976b4;
-
 		transition: all 0.5s ease;
 	}
 
 	#instagram a {
 		background: #3f729b;
-
 		transition: all 0.5s ease;
 	}
 
 	#youtube a {
 		background: #e52d27;
-
 		transition: all 0.5s ease;
 	}
 
@@ -274,14 +240,13 @@ Author: Schoolcraft College
 	#instagram a:hover, 
 	#youtube a:hover {
 		background: #002855;
-
 		transition: all 0.5s ease;
 	}
 
-/* --------------------------------------------------------------
-# ROW -- PRODUCT LINES
--------------------------------------------------------------- */
 
+/* --------------------------------------------------------------
+# PRODUCT LINES
+-------------------------------------------------------------- */
 	#product-lines {
 		min-height: 750px;
 		background: #002855;
@@ -305,25 +270,21 @@ Author: Schoolcraft College
 
 	#product-block {
 		display: block;
-		background: #A07400;
 		width: 320px;
 		height: 160px;
 		border: #FDD26E 1px solid;
-		margin: 25px auto;
-		padding: 40px 25px 25px 25px;
-
-		font-family: 'Jaldi', sans-serif;
+		background: #A07400;
+		font: bold 1.4rem 'Jaldi', sans-serif;
+		color: #FFFFFF;
 		text-transform: uppercase;
 		text-align: center;
-		color: #FFFFFF;
-		font-size: 1.4rem;
-		font-weight: bold;
+		padding: 40px 25px 25px 25px;
+		margin: 25px auto;	
 	}
 
 	#product-block:hover {
 		background: #FDD26E;
 		color: #A07400;
-
 		transition: all 0.7s ease;
 	}
 
@@ -334,14 +295,13 @@ Author: Schoolcraft College
 
 	#product-block:hover .fa {
 		color: #A07400;
-		
 		transition: all 0.7s ease;
 	}
 
-/* --------------------------------------------------------------
-# ROW -- STEPS
--------------------------------------------------------------- */
 
+/* --------------------------------------------------------------
+# CTA STEPS
+-------------------------------------------------------------- */
 	#home-steps {
 		height: 500px;
 	}
@@ -367,24 +327,21 @@ Author: Schoolcraft College
 	}
 
 	#home-steps ol {
-		counter-reset:li;
+		counter-reset: li;
 		padding: 0 0 0 80px;
 		margin: auto;
 	}
 	
 	#home-steps ol > li {
-		position:relative;
-		list-style:none;
+		position: relative;
+		list-style: none;
 		margin: 15px;
 	}
 
 	#home-steps ol > li > a {
+		font: 2.3rem/50px 'Jaldi', sans-serif;
 		color: #002855;
-		font-family: 'Jaldi', sans-serif;
-		font-size: 2.3rem;
 		text-decoration: none;
-
-		line-height: 50px;
 		vertical-align: middle;
 	}
 
@@ -393,22 +350,21 @@ Author: Schoolcraft College
 	}
 
 	#home-steps ol > li:before {
-		content:counter(li);
-		counter-increment:li;
-		
+		content: counter(li);
+		counter-increment: li;
 		display: inline-block;
+		vertical-align: middle;
 		width: 50px;
 		height: 50px;
-		padding: 5px;
-		margin-right: 15px;
 		border-radius: 100%;
 		background: #5BC2E7;
-
+		font-family: 2.3rem/40px 'Jaldi', sans-serif;
 		color: #002855;
-		font-family: 'Jaldi', sans-serif;
-		font-size: 2.3rem;
-
-		line-height: 40px;
-		vertical-align: middle;
 		text-align: center;
+		padding: 5px;
+		margin-right: 15px;
 	}
+
+
+
+
