@@ -1,0 +1,225 @@
+/* 
+Purpose: Academics Page Stylesheet
+Author: Schoolcraft College
+*/
+
+/* --------------------------------------------------------------
+>>>>> TABLE OF CONTENTS
+-----------------------------------------------------------------
+
+# HEADER
+# CONTENT
+# ACADEMICS NAVAGATION
+# AREAS OF STUDY BLOCKS
+# 
+
+---------------------------------------------------------------*/
+
+
+
+/* --------------------------------------------------------------
+# HEADER
+-------------------------------------------------------------- */
+
+	#academics-header {
+		position: relative;
+		height: 370px;
+		background: url("../images/students.jpeg") center center;
+		background-size: cover;
+	}
+
+	#academics-image-chevron {
+		position: absolute;
+		bottom: -5px;
+		width: 100%;
+	}
+
+
+/* --------------------------------------------------------------
+# CONTENT
+-------------------------------------------------------------- */
+
+	#catalog-heading {
+		margin: 50px auto 25px auto;
+		width: 100%;
+		max-width: 1000px;
+		text-align: center;
+	}
+
+	#catalog-heading h1 {
+		color: #A07400;
+		font-size: 1.6rem;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+	#catalog-heading h2 {
+
+	}
+
+	#catalog-heading hr {
+		border-style: dashed;
+	}
+
+/* --------------------------------------------------------------
+# ACADEMICS NAVAIGATION
+-------------------------------------------------------------- */
+
+	#academics-nav {
+		width: 100%;
+		max-width: 1000px;
+		margin: auto;
+	}
+
+	#academics-nav ul {
+		list-style: none;
+		background: #f2f2f2;
+		text-align: center;
+		height: 85px;
+		margin: 0;
+		padding: 0;
+	}
+
+	#academics-nav li {
+		display: block;
+		float: left;
+		width: 16.66%;
+		margin: 0;
+		padding: 0;
+
+		background: #f2f2f2;
+		border-right: 1px #ddd solid;
+		border-left: 1px #ddd solid;
+		border-bottom: 10px #ddd solid;
+	}
+
+	#academics-nav li a {
+		font-family: 'Jaldi', sans-serif;
+		color: #555;
+		text-align: center;
+		vertical-align: middle;
+		line-height: 75px;
+	}
+
+	#academics-nav li:hover {
+		border-bottom: solid #A07400 10px;
+	}
+
+	#academics-nav li:hover a {
+		color: #A07400;
+	}
+
+	#academics-nav ul li.active {
+		border-bottom: solid #A07400 10px;
+	}
+	#academics-nav ul li.active a {
+		color: #A07400;
+	}
+
+/* --------------------------------------------------------------
+# AREAS OF STUDY BLOCKS
+-------------------------------------------------------------- */
+
+	#areas-of-study {
+		width: 100%;
+		max-width: 1000px;
+		margin: auto;
+	}
+
+	#areas-of-study img {
+		margin: 0;
+		max-width: 400px;
+	}
+
+	.aos-block {
+		background: #dddddd;
+		margin-top: 50px;
+		padding: 0;
+	}
+
+	.aos-block > .pull-left {
+		display: inline-block;
+		padding: 0 25px 0 0;
+	}
+
+	.aos-block > .pull-right {
+		display: inline-block;
+		padding: 0 0 0 25px;
+	}
+
+	.aos-block h4 {
+		margin: 25px;
+		font-weight: bold;
+
+	}
+
+	.aos-block p {
+		margin: 25px;
+	}
+
+
+/* --------------------------------------------------------------
+# NEXT STEPS & ADDITIONAL LINKS
+-------------------------------------------------------------- */
+
+	ul.academics-nextsteps, ul.academics-additionallinks {
+		list-style: none;
+
+	}
+
+	ul.academics-nextsteps li, ul.academics-additionallinks li{
+		border-bottom: 1px #ddd solid;
+		padding: 5px;
+	}
+
+	#contact-right-2 ul.academics-nextsteps li > a, #contact-right-3 ul.academics-additionallinks li > a {
+		font-family: 'Jaldi', sans-serif;
+		font-size: 1.2rem;
+	}
+
+	#contact-right-2 ul.academics-nextsteps li > a:hover, #contact-right-3 ul.academics-additionallinks li > a:hover {
+		font-weight: bold;
+	}
+
+
+/* --------------------------------------------------------------
+# MAJORS
+-------------------------------------------------------------- */
+
+	#academics-list-row {
+		width: 100%;
+		max-width: 1000px;
+		margin: auto;
+	}
+
+	ul#academics-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		font-family: 'Jaldi', sans-serif;
+	}
+
+	ul#academics-list li a{
+		text-decoration: underline;
+	}
+
+	ul#academics-list li a:hover {
+		font-weight: bold;
+	}
+
+
+/* --------------------------------------------------------------
+# BASIC TABLE
+-------------------------------------------------------------- */
+
+	table {
+		font-family: 'Jaldi', sans-serif;
+	}
+
+	table.basic-table th {
+		background: #fee8b6;
+		text-transform: uppercase;
+		font-weight: bold;
+		text-align: left;
+		font-size: 1.4rem;
+	}
