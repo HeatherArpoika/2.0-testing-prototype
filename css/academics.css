@@ -93,7 +93,7 @@ Author: Schoolcraft College
 		border-bottom: 10px #ddd solid;
 	}
 
-	#academics-nav li a {
+	#academics-nav a li {
 		font-family: 'Jaldi', sans-serif;
 		color: #555;
 		text-align: center;
@@ -105,14 +105,14 @@ Author: Schoolcraft College
 		border-bottom: solid #A07400 10px;
 	}
 
-	#academics-nav li:hover a {
+	#academics-nav a li:hover {
 		color: #A07400;
 	}
 
 	#academics-nav ul li.active {
 		border-bottom: solid #A07400 10px;
 	}
-	#academics-nav ul li.active a {
+	#academics-nav ul a li.active {
 		color: #A07400;
 	}
 
@@ -128,13 +128,16 @@ Author: Schoolcraft College
 
 	#areas-of-study img {
 		margin: 0;
-		max-width: 400px;
+		height: 275px;
 	}
 
 	.aos-block {
 		background: #dddddd;
 		margin-top: 50px;
 		padding: 0;
+		height: auto;
+		height: 275px;
+		overflow: hidden;
 	}
 
 	.aos-block > .pull-left {
