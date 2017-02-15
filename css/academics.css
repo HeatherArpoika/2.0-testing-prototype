@@ -53,6 +53,12 @@ Author: Schoolcraft College
 		font-weight: bold;
 	}
 
+	#catalog-heading h1.subtitle {
+		font-size: 1rem;
+		font-weight: normal;
+		color: #999999;
+	}
+
 	#catalog-heading h2 {
 
 	}
@@ -93,7 +99,7 @@ Author: Schoolcraft College
 		border-bottom: 10px #ddd solid;
 	}
 
-	#academics-nav li a {
+	#academics-nav a li {
 		font-family: 'Jaldi', sans-serif;
 		color: #555;
 		text-align: center;
@@ -105,14 +111,69 @@ Author: Schoolcraft College
 		border-bottom: solid #A07400 10px;
 	}
 
-	#academics-nav li:hover a {
+	#academics-nav a li:hover {
 		color: #A07400;
 	}
 
 	#academics-nav ul li.active {
 		border-bottom: solid #A07400 10px;
 	}
-	#academics-nav ul li.active a {
+	#academics-nav ul a li.active {
+		color: #A07400;
+	}
+
+/* --------------------------------------------------------------
+# PROGRAM PAGES NAVAIGATION
+-------------------------------------------------------------- */
+
+	#programs-nav {
+		width: 100%;
+		max-width: 1000px;
+		margin: auto;
+	}
+
+	#programs-nav ul {
+		list-style: none;
+		background: #f2f2f2;
+		text-align: center;
+		height: 85px;
+		margin: 0;
+		padding: 0;
+	}
+
+	#programs-nav li {
+		display: block;
+		float: left;
+		width: 25%;
+		margin: 0;
+		padding: 0;
+
+		background: #f2f2f2;
+		border-right: 1px #ddd solid;
+		border-left: 1px #ddd solid;
+		border-bottom: 10px #ddd solid;
+	}
+
+	#programs-nav a li {
+		font-family: 'Jaldi', sans-serif;
+		color: #555;
+		text-align: center;
+		vertical-align: middle;
+		line-height: 75px;
+	}
+
+	#programs-nav li:hover {
+		border-bottom: solid #A07400 10px;
+	}
+
+	#programs-nav a li:hover {
+		color: #A07400;
+	}
+
+	#programs-nav ul li.active {
+		border-bottom: solid #A07400 10px;
+	}
+	#programs-nav ul a li.active {
 		color: #A07400;
 	}
 
@@ -128,13 +189,16 @@ Author: Schoolcraft College
 
 	#areas-of-study img {
 		margin: 0;
-		max-width: 400px;
+		height: 275px;
 	}
 
 	.aos-block {
 		background: #dddddd;
 		margin-top: 50px;
 		padding: 0;
+		height: auto;
+		height: 275px;
+		overflow: hidden;
 	}
 
 	.aos-block > .pull-left {
@@ -209,17 +273,43 @@ Author: Schoolcraft College
 
 
 /* --------------------------------------------------------------
-# BASIC TABLE
+# PROGRAMS CONTENT
 -------------------------------------------------------------- */
 
-	table {
-		font-family: 'Jaldi', sans-serif;
+	#program-content {
+		width: 100%;
+		max-width: 1000px;
+		margin: auto;
 	}
 
-	table.basic-table th {
-		background: #fee8b6;
-		text-transform: uppercase;
-		font-weight: bold;
-		text-align: left;
-		font-size: 1.4rem;
+	table.sp-table tr td:nth-child(3) {
+		text-align: right;
+		padding-right: 15px;
+	}
+
+	.column-blocks {
+		display: flex;
+		align-items: center;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+
+	.col-left {
+		display: block;
+		width: 480px;
+		min-height: 400px;
+		background-color: #EEEEEE;
+		padding: 35px;
+		margin-left: 0;
+		margin-right: auto;
+	}
+
+	.col-right {
+		display: block;
+		width: 480px;
+		min-height: 400px;
+		background-color: #EEEEEE;
+		padding: 35px;
+		margin-right: 0;
+		margin-left: auto;
 	}
