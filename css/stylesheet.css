@@ -1063,7 +1063,7 @@ Author: Schoolcraft College
 
 	}
 
-	.event {
+	.event-item {
 		margin-bottom: 65px;
 		list-style: none;
 	}
@@ -1106,7 +1106,7 @@ Author: Schoolcraft College
 -------------------------------------------------------------- */
 	ul.news-list {}
 
-	.news {
+	.news-item {
 		list-style: none;
 		margin-bottom: 35px;
 	}
