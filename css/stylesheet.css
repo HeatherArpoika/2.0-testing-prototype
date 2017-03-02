@@ -93,7 +93,7 @@ Author: Schoolcraft College
 /* --------------------------------------------------------------
 # TYPOGRAPHY
 -------------------------------------------------------------- */
-	#content-main > h1 {
+	#content-main h1 {
 		border-bottom: 2px solid #EEE;
 		font: bold 1.71rem "Jaldi", sans-serif;
 		color: #A07400;
@@ -991,7 +991,6 @@ Author: Schoolcraft College
 	#contact-right-1 a, #contact-right-2 a, #contact-right-3 a {
 		color: #002855;
 		border-bottom: none;
-		font-size: 1rem;
 	}
 
 	#contact-right-1 h3, #contact-right-2 h3, #contact-right-3 h3 {
@@ -1060,8 +1059,13 @@ Author: Schoolcraft College
 /* --------------------------------------------------------------
 ## COLUMN EVENTS
 -------------------------------------------------------------- */
+	.events-list {
+
+	}
+
 	.event {
 		margin-bottom: 65px;
+		list-style: none;
 	}
 
 	.event-date {
@@ -1090,15 +1094,20 @@ Author: Schoolcraft College
 		display: block;
 		line-height: 25px;
 		vertical-align: middle;
+		font-size: 1.2rem;
 	}
 
 	.event-title a:hover {
 		text-decoration: underline;
 	}
+
 /* --------------------------------------------------------------
 ## COLUMN NEWS
 -------------------------------------------------------------- */
+	ul.news-list {}
+
 	.news {
+		list-style: none;
 		margin-bottom: 35px;
 	}
 
