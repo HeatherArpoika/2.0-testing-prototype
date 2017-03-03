@@ -706,6 +706,10 @@ Author: Schoolcraft College
 /* --------------------------------------------------------------
 # SIDE NAVIGATION
 -------------------------------------------------------------- */
+	.side-nav-cont {
+		width: 100%;
+	}
+
 	.sidenav {
 			list-style: none;
 			margin-top: 25px;
