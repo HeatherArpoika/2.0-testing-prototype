@@ -366,5 +366,42 @@ Author: Schoolcraft College
 	}
 
 
+/* --------------------------------------------------------------
+# SC List Expandable - Regular
+-------------------------------------------------------------- */
 
+	ul.sflist {
+		margin: 0;
+	}
 
+	.sflistitem {
+		list-style: none;
+	}
+
+	.sflistItemTitle {
+		font-size: 1.4rem;
+		background: #f2f2f2;
+		border: 1px white solid;
+		padding: 5px 13px;
+		margin: 0;
+	}
+
+	.sflistItemTitle a {
+		color: #000000;
+	}
+
+	.sflistItemTitle i.fa {
+		float: right;
+		padding-right: 13px;
+		line-height: 40px;
+		vertical-align: middle;
+		color: #5BC2E7;
+	}
+
+	.sflistItemContent {
+		padding: 7px;
+	}
+
+	.sflistExpandAllLnkWrp {
+    	text-align: right;
+	}

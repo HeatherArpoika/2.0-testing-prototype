@@ -254,34 +254,6 @@ Author: Schoolcraft College
 		column-gap: 50px;
 	}
 
-	ul.sflist {
-		margin: 0;
-	}
-
-	.sflistitem {
-		list-style: none;
-	}
-
-	.sflistItemTitle {
-		font-size: 1.5rem;
-		background: #f2f2f2;
-		border: 1px white solid;
-		padding: 5px 13px;
-		margin: 0;
-	}
-
-	.sflistItemTitle a {
-		color: #000000;
-	}
-
-	.sflistItemTitle i.fa {
-		float: right;
-		padding-right: 13px;
-		line-height: 40px;
-		vertical-align: middle;
-		color: #5BC2E7;
-	}
-
 
 /* --------------------------------------------------------------
 # MASTHEAD
@@ -763,8 +735,9 @@ Author: Schoolcraft College
 		margin: 50px 0 0 0;
 	}
 
-	li.sidenav-title a {
+	li.sidenav-title a, li.sidenav-title {
 		color: #A07400;
+		font-family: 'Jaldi', sans-serif;
 		font-size: 1.5rem;
 		font-weight: 700;
 		text-transform: uppercase;
@@ -1016,6 +989,14 @@ Author: Schoolcraft College
 
 	#contact-us button {
 		background-color: #a07400;
+	}
+
+	#contact-us button a {
+	    color: #ffffff;
+	}
+
+	#contact-us button a:hover {
+    	text-decoration: none;
 	}
 
 	#contact-right-1 a, #contact-right-2 a, #contact-right-3 a {
