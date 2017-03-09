@@ -216,15 +216,58 @@ Author: Schoolcraft College
 	}
 
 	.btn-yellow {
+		display: inline-block;
 		border-radius: 10px;
 	    background: #CC8A00;
 	    color: #FFFFFF;
-	    padding: 15px;
+	    padding: 10px 15px;
 	    font-family: 'Jaldi', sans-serif;
 	}
 
 	.btn-yellow:hover {
 		color: #FFFFFF;
+		text-decoration: underline;
+	}
+
+	.btn-brown {
+		display: inline-block;
+		border-radius: 10px;
+	    background: #A07400;
+	    color: #FFFFFF;
+	    padding: 10px 15px;
+	    font-family: 'Jaldi', sans-serif;
+	}
+
+	.btn-brown:hover {
+		color: #FFFFFF;
+		text-decoration: underline;
+	}
+
+	.btn-darkblue {
+		display: inline-block;
+		border-radius: 10px;
+	    background: #002855;
+	    color: #FFFFFF;
+	    padding: 10px 15px;
+	    font-family: 'Jaldi', sans-serif;
+	}
+
+	.btn-darkblue:hover {
+		color: #FFFFFF;
+		text-decoration: underline;
+	}
+
+	.btn-lightblue {
+		display: inline-block;
+		border-radius: 10px;
+	    background: #5BC2E7;
+	    color: #000000;
+	    padding: 10px 15px;
+	    font-family: 'Jaldi', sans-serif;
+	}
+
+	.btn-lightblue:hover {
+		color: #000000;
 		text-decoration: underline;
 	}
 
