@@ -1061,6 +1061,13 @@ Author: Schoolcraft College
 		}
 	}
 
+	@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+		#contact-us {
+			height: auto;
+			text-align: center !important;
+		}
+	}
+
 	#contact-right-1 p, #contact-right-2 p, #contact-right-3 p {
 		padding-top: 32.5px;
 		padding-bottom: 32.5px;
