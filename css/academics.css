@@ -222,7 +222,10 @@ Author: Schoolcraft College
 	.aos-block h4 {
 		margin: 25px;
 		font-weight: bold;
+	}
 
+	.aos-block h4:hover {
+		text-decoration: underline;
 	}
 
 	.aos-block p {
